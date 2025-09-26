@@ -1,0 +1,26 @@
+title: "Aung Phone Myat"
+description: "Writing on engineering, music, and music therapy."
+theme: minima
+timezone: Asia/Yangon
+author: "Aung Phone Myat"
+url: "https://YOUR-USERNAME.github.io"  # change to your username site
+
+# Navigation links (minima shows these if the pages exist)
+minima:
+  social_links:
+    - { platform: github, user_url: "https://github.com/YOUR-USERNAME" }
+
+# Enable useful official plugins (supported by GitHub Pages)
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+
+paginate: 6
+paginate_path: "/page:num/"
+
+# Keep assets folder
+include:
+  - assets
+  - _includes
