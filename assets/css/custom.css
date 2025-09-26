@@ -1,0 +1,10 @@
+:root{
+  --text:#111827; --muted:#6b7280; --line:#e5e7eb; --brand:#1f6feb;
+}
+html,body{background:#fff;color:var(--text);font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+.site-header, header{background:#fff;border-bottom:1px solid var(--line)}
+a{color:var(--brand)}
+.post-title, .page-title{letter-spacing:.2px}
+.post-meta, .post-content p, .page-content p{line-height:1.7}
+.site-footer{border-top:1px solid var(--line);color:var(--muted)}
+.page-content img{border-radius:12px}
