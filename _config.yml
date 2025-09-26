@@ -8,7 +8,7 @@ url: "https://eric9435.github.io/AungPhoneMyat.github.io/"  # change to your use
 # Navigation links (minima shows these if the pages exist)
 minima:
   social_links:
-    - { platform: github, user_url: "https://github.com/YOUR-USERNAME" }
+    - { platform: github, user_url: "https://github.com/eric9435" }
 
 # Enable useful official plugins (supported by GitHub Pages)
 plugins:
