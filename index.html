@@ -1,270 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Love • Work • Trust</title>
-  <style>
-    :root {
-      --bg-1: #0f172a; /* slate-900 */
-      --bg-2: #111827; /* gray-900 */
-      --grad-a: #7c3aed; /* violet-600 */
-      --grad-b: #06b6d4; /* cyan-500 */
-      --grad-c: #22c55e; /* emerald-500 */
-      --card: rgba(255,255,255,0.08);
-      --text: #e5e7eb; /* gray-200 */
-      --muted: #94a3b8; /* slate-400 */
-      --accent: #f59e0b; /* amber-500 */
-    }
+---
+layout: home
+title: "Home"
+---
 
-    * { box-sizing: border-box; }
-    html, body { height: 100%; }
-    body {
-      margin: 0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji", "Segoe UI Emoji";
-      color: var(--text);
-      background: linear-gradient(120deg, var(--bg-1), var(--bg-2));
-      overflow: hidden;
-    }
+<!-- Intro section -->
+<section style="padding:2rem 1rem;border-bottom:1px solid #e5e7eb;margin-bottom:2rem;">
+  <h1 style="margin:0;font-size:2rem;font-weight:700;">👋 Hi, I'm Aung Phone Myat</h1>
+  <p style="margin:.5rem 0 1rem;color:#6b7280;max-width:640px;">
+    Welcome to my blog — I write about <strong>engineering</strong>, 
+    <strong>music</strong>, and <strong>music therapy</strong>.
+  </p>
 
-    /* Animated background gradient glow */
-    .glow {
-      position: fixed;
-      inset: -20vmax;
-      background: radial-gradient(50vmax 50vmax at 20% 20%, color-mix(in oklab, var(--grad-a) 60%, transparent), transparent),
-                  radial-gradient(60vmax 60vmax at 80% 30%, color-mix(in oklab, var(--grad-b) 70%, transparent), transparent),
-                  radial-gradient(50vmax 50vmax at 50% 80%, color-mix(in oklab, var(--grad-c) 60%, transparent), transparent);
-      filter: blur(40px);
-      opacity: .6;
-      animation: drift 24s linear infinite alternate;
-      pointer-events: none;
-    }
-    @keyframes drift {
-      from { transform: translate3d(0,0,0) scale(1); }
-      to   { transform: translate3d(-4%, 2%, 0) scale(1.05); }
-    }
+  <nav style="margin-top:1rem;">
+    <a href="/engineering/" style="margin-right:1rem;">⚙️ Engineering</a>
+    <a href="/music/" style="margin-right:1rem;">🎵 Music</a>
+    <a href="/music-therapy/" style="margin-right:1rem;">💙 Music Therapy</a>
+    <a href="/projects/">💼 Projects</a>
+  </nav>
+</section>
 
-    .wrap {
-      position: relative;
-      display: grid;
-      place-items: center;
-      min-height: 100dvh;
-      padding: min(5vw, 32px);
-      z-index: 1;
-    }
+<!-- Projects preview section -->
+<section style="padding:1rem 0;border-bottom:1px solid #e5e7eb;margin-bottom:2rem;">
+  <h2 style="font-size:1.5rem;margin-bottom:1rem;">💼 Featured Projects</h2>
 
-    .card {
-      width: min(900px, 92vw);
-      background: linear-gradient(180deg, rgba(255,255,255,0.12), rgba(255,255,255,0.06));
-      border: 1px solid rgba(255,255,255,0.12);
-      border-radius: 24px;
-      box-shadow: 0 20px 60px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.08);
-      padding: clamp(20px, 5vw, 44px);
-      backdrop-filter: blur(10px) saturate(120%);
-    }
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;">
+    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:1rem;">
+      <h3 style="margin:0 0 .5rem;">HVAC Design Optimization</h3>
+      <p style="color:#6b7280;font-size:.95rem;">
+        Automated air flow simulation for efficient engineering systems.
+      </p>
+    </div>
 
-    .kicker {
-      letter-spacing: .2em;
-      text-transform: uppercase;
-      font-size: clamp(10px, 1.6vw, 12px);
-      color: var(--muted);
-      margin-bottom: 8px;
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-    }
+    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:1rem;">
+      <h3 style="margin:0 0 .5rem;">Lo-Fi Music Collection 2024</h3>
+      <p style="color:#6b7280;font-size:.95rem;">
+        Produced a calming ambient album inspired by therapeutic sound design.
+      </p>
+    </div>
 
-    .kicker .dot {
-      width: 6px; height: 6px; border-radius: 999px; background: var(--accent);
-      box-shadow: 0 0 16px var(--accent);
-      animation: pulse 1.6s ease-in-out infinite;
-    }
-    @keyframes pulse { 0%,100%{ transform: scale(1); opacity: 1 } 50%{ transform: scale(1.35); opacity: .8 } }
+    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:1rem;">
+      <h3 style="margin:0 0 .5rem;">Music Therapy Web App</h3>
+      <p style="color:#6b7280;font-size:.95rem;">
+        Interactive app that plays mood-based music for emotional regulation.
+      </p>
+    </div>
+  </div>
 
-    h1 {
-      margin: 0 0 6px 0;
-      font-size: clamp(28px, 6vw, 56px);
-      line-height: 1.05;
-      letter-spacing: -.02em;
-      font-weight: 800;
-      text-wrap: balance;
-    }
+  <p style="margin-top:1rem;">
+    <a href="/projects/" style="color:#2563eb;text-decoration:none;">View all projects →</a>
+  </p>
+</section>
 
-    .subtitle {
-      margin: 0 0 22px;
-      color: var(--muted);
-      font-size: clamp(14px, 2.4vw, 18px);
-    }
-
-    /* Typewriter area */
-    .type-line {
-      display: inline-block;
-      min-height: 1.6em;
-      border-right: 2px solid rgba(255,255,255,.6);
-      padding-right: 4px;
-      white-space: nowrap;
-      overflow: hidden;
-      animation: caret 1s steps(1) infinite;
-      font-weight: 700;
-    }
-    @keyframes caret { 50% { border-right-color: transparent; } }
-
-    /* Floating hearts */
-    .hearts { position: fixed; inset: 0; pointer-events: none; overflow: hidden; z-index: 0; }
-    .heart {
-      position: absolute;
-      width: 14px; height: 14px;
-      transform: translate(-50%, -50%) rotate(45deg);
-      background: #ef4444; /* red-500 */
-      opacity: .75;
-      filter: drop-shadow(0 4px 10px rgba(239,68,68,.4));
-      animation: floatUp linear forwards;
-    }
-    .heart::before, .heart::after {
-      content: ""; position: absolute; inset: -50% auto auto -50%;
-      width: 14px; height: 14px; border-radius: 50%; background: inherit;
-    }
-    .heart::after { inset: -50% -50% auto auto; }
-    @keyframes floatUp {
-      0% { transform: translate(var(--x, 50vw), 110vh) scale(.7) rotate(45deg); opacity: .0; }
-      10%{ opacity: .8; }
-      100% { transform: translate(var(--x, 50vw), -10vh) scale(1.4) rotate(45deg); opacity: 0; }
-    }
-
-    /* Footer */
-    .footer {
-      margin-top: 20px;
-      display: flex;
-      gap: 12px;
-      align-items: center;
-      flex-wrap: wrap;
-      color: var(--muted);
-      font-size: 13px;
-    }
-    .badge {
-      display: inline-flex; align-items: center; gap: 8px;
-      padding: 8px 12px;
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(255,255,255,0.12);
-      border-radius: 999px; backdrop-filter: blur(4px);
-    }
-  </style>
-</head>
-<body>
-  <div class="glow" aria-hidden="true"></div>
-  <div class="hearts" id="hearts" aria-hidden="true"></div>
-
-  <main class="wrap">
-    <section class="card" role="region" aria-label="Animated declaration">
-      <div class="kicker"><span class="dot"></span> animated message</div>
-      <h1>
-        <span class="type-line" id="typeTarget"></span>
-      </h1>
-      <p class="subtitle">A tiny page that types your words and floats hearts across the screen.</p>
-
-      <div class="footer">
-        <div class="badge" title="Tip: edit the phrases in the code below to customize.">✏️ Edit phrases in code</div>
-        <div class="badge" id="speedBadge">⏱️ Speed: normal</div>
-        <div class="badge" id="toggleBtn" role="button" tabindex="0" aria-pressed="false">▶️ Play</div>
-      </div>
-    </section>
-  </main>
-
-  <script>
-    // --- Customize your phrases here ---
-    const phrases = [
-      "I ONLY LOVE WIFE AND JOB",
-      "Htet Lin Lin Khin❤️",
-    ];
-
-    // Typewriter configuration
-    let typingSpeed = 70;     // ms per character while typing
-    let deletingSpeed = 40;   // ms per character while deleting
-    let holdTime = 1200;      // ms to hold full line before deleting
-
-    const target = document.getElementById('typeTarget');
-    const toggleBtn = document.getElementById('toggleBtn');
-    const speedBadge = document.getElementById('speedBadge');
-
-    let idx = 0, char = 0, deleting = false, playing = true;
-
-    function updateSpeedBadge(){
-      const speeds = { 50: 'fast', 70: 'normal', 100: 'chill' };
-      speedBadge.textContent = `⏱️ Speed: ${speeds[typingSpeed] || 'custom'}`;
-    }
-    updateSpeedBadge();
-
-    toggleBtn.addEventListener('click', ()=>{
-      playing = !playing;
-      toggleBtn.textContent = playing ? '⏸️ Pause' : '▶️ Play';
-      toggleBtn.setAttribute('aria-pressed', playing ? 'true':'false');
-      if (playing) loop();
-    });
-    toggleBtn.addEventListener('keydown', (e)=>{ if(e.key==='Enter'||e.key===' ') toggleBtn.click(); });
-
-    async function sleep(ms){ return new Promise(r=>setTimeout(r, ms)); }
-
-    async function loop(){
-      while(playing){
-        const current = phrases[idx % phrases.length];
-        if(!deleting){
-          // typing
-          target.textContent = current.slice(0, ++char);
-          if(char === current.length){
-            await sleep(holdTime);
-            deleting = true;
-          }
-          await sleep(typingSpeed);
-        } else {
-          // deleting
-          target.textContent = current.slice(0, --char);
-          if(char === 0){
-            deleting = false;
-            idx++;
-            await sleep(220);
-          }
-          await sleep(deletingSpeed);
-        }
-      }
-    }
-
-    // Start animation
-    loop();
-
-    // --- Floating hearts generator ---
-    const hearts = document.getElementById('hearts');
-    const rand = (min, max) => Math.random() * (max - min) + min;
-
-    function spawnHeart(){
-      const h = document.createElement('div');
-      h.className = 'heart';
-      h.style.setProperty('--x', `${rand(5, 95)}vw`);
-      const duration = rand(8, 16);
-      h.style.animationDuration = `${duration}s`;
-      h.style.opacity = String(rand(0.5, 0.9));
-      h.style.width = h.style.height = `${rand(10, 18)}px`;
-      hearts.appendChild(h);
-      setTimeout(()=> h.remove(), duration*1000);
-    }
-
-    // spawn a few each second
-    setInterval(()=>{
-      for(let i=0;i<rand(1,3);i++) spawnHeart();
-    }, 1200);
-
-    // Accessibility: reduce motion preference
-    const mq = window.matchMedia('(prefers-reduced-motion: reduce)');
-    if(mq.matches){
-      document.querySelectorAll('*').forEach(el=> el.style.animationDuration = '0.001s');
-      typingSpeed = 9999; deletingSpeed = 9999; holdTime = 2000; updateSpeedBadge();
-    }
-
-    // Optional: click to cycle speed presets
-    speedBadge.addEventListener('click', ()=>{
-      const presets = [50, 70, 100];
-      const next = presets[(presets.indexOf(typingSpeed)+1)%presets.length];
-      typingSpeed = next; deletingSpeed = Math.max(30, next-20); updateSpeedBadge();
-    });
-  </script>
-</body>
-</html>
+<!-- Blog post list -->
+<section>
+  <h2 style="font-size:1.5rem;margin-bottom:1rem;">📝 Latest Posts</h2>
+  <!-- Jekyll will auto-insert post list below -->
+</section>
