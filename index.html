@@ -3,56 +3,71 @@ layout: home
 title: "Home"
 ---
 
-<!-- Intro section -->
-<section style="padding:2rem 1rem;border-bottom:1px solid #e5e7eb;margin-bottom:2rem;">
-  <h1 style="margin:0;font-size:2rem;font-weight:700;">👋 Hi, I'm Aung Phone Myat</h1>
-  <p style="margin:.5rem 0 1rem;color:#6b7280;max-width:640px;">
-    Welcome to my blog — I write about <strong>engineering</strong>, 
-    <strong>music</strong>, and <strong>music therapy</strong>.
-  </p>
-
-  <nav style="margin-top:1rem;">
-    <a href="/engineering/" style="margin-right:1rem;">⚙️ Engineering</a>
-    <a href="/music/" style="margin-right:1rem;">🎵 Music</a>
-    <a href="/music-therapy/" style="margin-right:1rem;">💙 Music Therapy</a>
-    <a href="/projects/">💼 Projects</a>
-  </nav>
+<!-- Hero -->
+<section class="apm-hero">
+  <div class="apm-hero-inner">
+    <img class="apm-avatar" src="{{ '/assets/img/profile.jpg' | relative_url }}" alt="Eric Scott profile">
+    <div class="apm-hero-text">
+      <h1>Eric Scott</h1>
+      <p>Notes on <strong>Engineering</strong>, <strong>Music</strong>, and <strong>Music Therapy</strong> — practical, clear, and useful.</p>
+    </div>
+  </div>
 </section>
 
-<!-- Projects preview section -->
-<section style="padding:1rem 0;border-bottom:1px solid #e5e7eb;margin-bottom:2rem;">
-  <h2 style="font-size:1.5rem;margin-bottom:1rem;">💼 Featured Projects</h2>
-
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;">
-    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:1rem;">
-      <h3 style="margin:0 0 .5rem;">HVAC Design Optimization</h3>
-      <p style="color:#6b7280;font-size:.95rem;">
-        Automated air flow simulation for efficient engineering systems.
-      </p>
-    </div>
-
-    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:1rem;">
-      <h3 style="margin:0 0 .5rem;">Lo-Fi Music Collection 2024</h3>
-      <p style="color:#6b7280;font-size:.95rem;">
-        Produced a calming ambient album inspired by therapeutic sound design.
-      </p>
-    </div>
-
-    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:1rem;">
-      <h3 style="margin:0 0 .5rem;">Music Therapy Web App</h3>
-      <p style="color:#6b7280;font-size:.95rem;">
-        Interactive app that plays mood-based music for emotional regulation.
-      </p>
+<!-- Category Hub -->
+<section class="apm-hub">
+  <div class="apm-hub-col">
+    <h2>Engineering</h2>
+    <div class="apm-chip-row">
+      <a class="apm-chip" href="{{ '/engineering/' | relative_url }}">All</a>
+      <a class="apm-chip" href="{{ '/engineering/acmv/' | relative_url }}">ACMV</a>
+      <a class="apm-chip" href="{{ '/engineering/electrical/' | relative_url }}">Electrical</a>
+      <a class="apm-chip" href="{{ '/engineering/plumbing/' | relative_url }}">Plumbing</a>
+      <a class="apm-chip" href="{{ '/engineering/fire/' | relative_url }}">Fire</a>
+      <a class="apm-chip" href="{{ '/engineering/sanitary/' | relative_url }}">Sanitary</a>
     </div>
   </div>
 
-  <p style="margin-top:1rem;">
-    <a href="/projects/" style="color:#2563eb;text-decoration:none;">View all projects →</a>
-  </p>
+  <div class="apm-hub-col">
+    <h2>Music</h2>
+    <div class="apm-chip-row">
+      <a class="apm-chip" href="{{ '/music/' | relative_url }}">All</a>
+      <a class="apm-chip" href="{{ '/music/piano/' | relative_url }}">Piano</a>
+      <a class="apm-chip" href="{{ '/music/theory/' | relative_url }}">Music Theory (ABRSM)</a>
+      <a class="apm-chip" href="{{ '/music/music-therapy/' | relative_url }}">Music Therapy</a>
+    </div>
+  </div>
 </section>
 
-<!-- Blog post list -->
-<section>
-  <h2 style="font-size:1.5rem;margin-bottom:1rem;">📝 Latest Posts</h2>
-  <!-- Jekyll will auto-insert post list below -->
+<!-- Recent Posts -->
+<section class="apm-recent">
+  <div class="apm-recent-head">
+    <h2>Latest Posts</h2>
+    <a class="apm-link" href="{{ '/tags/' | relative_url }}">Browse by tags →</a>
+  </div>
+
+  <ul class="apm-post-list">
+    {%- assign recent = site.posts | slice: 0, 8 -%}
+    {%- for post in recent -%}
+    <li class="apm-post-item">
+      <a class="apm-post-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <div class="apm-post-meta">
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
+        {%- if post.categories.size > 0 -%}
+          · {{ post.categories | join: " / " }}
+        {%- endif -%}
+        {%- if post.tags.size > 0 -%}
+          · <span class="apm-tags">
+            {%- for t in post.tags limit:3 -%}
+              <span class="apm-tag">{{ t }}</span>
+            {%- endfor -%}
+          </span>
+        {%- endif -%}
+      </div>
+      {%- if post.excerpt -%}
+        <p class="apm-post-excerpt">{{ post.excerpt | strip_html | truncate: 180 }}</p>
+      {%- endif -%}
+    </li>
+    {%- endfor -%}
+  </ul>
 </section>
