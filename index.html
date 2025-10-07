@@ -160,84 +160,86 @@ title: "Home"
     <input id="ai-query" type="text" placeholder="Ask about ACMV, Electrical, Music Therapy…"
            style="flex:1 1 540px; min-width:260px; padding:.8rem 1rem; border:1px solid #ddd; border-radius:10px;">
     <button id="ai-search" style="padding:.8rem 1.2rem; border:none; border-radius:10px; background:#0078D7; color:#fff; font-weight:600;">
-      Search
+      Ask
     </button>
   </div>
 
-  <div id="ai-results" style="margin-top:1.2rem; display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:1rem;"></div>
-
-  <p id="ai-error" style="text-align:center; color:#999; display:none; margin-top:.8rem;">Building index… try again in a moment.</p>
+  <div id="ai-results" style="margin-top:1.2rem;"></div>
 </section>
 
-<!-- Lunr.js (tiny client search engine) -->
+<!-- Lunr.js (client search) -->
 <script src="https://cdn.jsdelivr.net/npm/lunr/lunr.min.js"></script>
 
 <script>
 (function(){
-  let idx = null, docs = [];
-  const $q = document.getElementById('ai-query');
-  const $btn = document.getElementById('ai-search');
-  const $out = document.getElementById('ai-results');
-  const $err = document.getElementById('ai-error');
+  let idx=null, docs=[];
+  const $q=document.getElementById('ai-query');
+  const $btn=document.getElementById('ai-search');
+  const $out=document.getElementById('ai-results');
 
-  // Load posts JSON
+  // 👉 Replace this with your Worker URL in step 4
+  const WORKER_URL = 'https://YOUR_SUBDOMAIN.workers.dev/ask';
+
+  // 1) Load posts index
   fetch('{{ "/search.json?v=1" | relative_url }}')
-    .then(r => r.json())
-    .then(json => {
-      docs = json;
-      // Build index (title + categories boosted)
-      idx = lunr(function () {
+    .then(r=>r.json())
+    .then(json=>{
+      docs=json;
+      idx=lunr(function(){
         this.ref('id');
-        this.field('title', { boost: 6 });
-        this.field('categories', { boost: 4 });
-        this.field('content', { boost: 1 });
-        json.forEach(d => this.add({
-          id: d.id,
-          title: d.title,
-          categories: (d.categories || []).join(' '),
-          content: d.content
+        this.field('title',{boost:6});
+        this.field('categories',{boost:4});
+        this.field('content',{boost:1});
+        json.forEach(d=>this.add({
+          id:d.id,
+          title:d.title,
+          categories:(d.categories||[]).join(' '),
+          content:d.content
         }), this);
       });
-    })
-    .catch(() => { $err.style.display = 'block'; });
+    });
 
-  function highlight(text, query){
-    if(!query) return text;
-    const terms = query.split(/\s+/).filter(Boolean).map(t=>t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'));
-    if(!terms.length) return text;
-    const re = new RegExp('(' + terms.join('|') + ')','ig');
-    return text.replace(re, '<mark>$1</mark>');
+  function card(html){
+    return <div style="border:1px solid #eee; border-radius:12px; padding:1rem; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,.04);">${html}</div>;
   }
 
-  function search(){
-    const q = $q.value.trim();
-    if(!q || !idx){ $err.style.display = 'block'; return; }
-    $err.style.display = 'none';
-
-    // lunr search; allow word presence OR and fuzzy (~1) for typos
-    const results = idx.search(q + ' ' + q.split(/\s+/).map(t => t + '~1').join(' ')).slice(0, 9);
-
-    $out.innerHTML = results.map(r => {
-      const d = docs.find(x => String(x.id) === String(r.ref)) || {};
-      const cats = (d.categories || []).join(' / ');
-      const excerpt = (d.excerpt  d.content  '').slice(0, 180);
-      return 
-        <div style="border:1px solid #eee; border-radius:12px; padding:1rem; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,.04);">
-          <a href="${d.url}" style="font-weight:700; color:#0078D7; text-decoration:none;">${highlight(d.title, q)}</a>
-          <div style="color:#999; font-size:.85rem; margin:.25rem 0;">${cats}</div>
-          <div style="color:#555; font-size:.9rem;">${highlight(excerpt, q)}…</div>
-        </div>
-      ;
-    }).join('');
-
-    if(results.length === 0){
-      $out.innerHTML = <p style="text-align:center; color:#999;">No matches yet. Try different words.</p>;
+  async function ask(){
+    const query = $q.value.trim();
+    if(!query || !idx){
+      $out.innerHTML=card('<p style="color:#999;">Index not ready. Try again in a moment.</p>');
+      return;
     }
+
+    // 2) Get top matches locally (fast)
+    const hits = idx.search(query + ' ' + query.split(/\s+/).map(t=>t+'~1').join(' ')).slice(0,5);
+    const contexts = hits.map(h=>{
+      const d=docs.find(x=>String(x.id)===String(h.ref))||{};
+      return { url: d.url, title: d.title, excerpt: (d.excerpt||'').slice(0,800) };
+    });
+
+    $out.innerHTML = card('<p>Thinking…</p>');
+
+    // 3) Ask your Worker (which calls OpenRouter)
+    const res = await fetch(WORKER_URL, {
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({ query, contexts })
+    }).catch(()=>null);
+
+    if(!res){ $out.innerHTML = card('<p style="color:#d00;">Network error.</p>'); return; }
+
+    const data = await res.json().catch(()=>({ error:'Invalid JSON' }));
+    if(data.error){ $out.innerHTML = card(<p style="color:#d00;">${data.error}</p>); return; }
+
+    const cites = (data.citations||[]).map(c=><a href="${c.url}">[${c.n}] ${c.title||c.url}</a>).join(' · ');
+    $out.innerHTML = card(
+      <div style="white-space:pre-wrap; line-height:1.55;">${data.answer}</div>
+      ${cites ? <div style="margin-top:.8rem; color:#777; font-size:.9rem;">Sources: ${cites}</div> : ''}
+    );
   }
 
-  $btn.addEventListener('click', search);
-  $q.addEventListener('keydown', e => { if(e.key === 'Enter') search(); });
+  $btn.addEventListener('click', ask);
+  $q.addEventListener('keydown', e=>{ if(e.key==='Enter') ask(); });
 })();
 </script>
-
 
