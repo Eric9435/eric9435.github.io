@@ -1,54 +1,67 @@
 ---
-layout: home
-title: "Home"
+layout: default
+title: "Eric Scott — Blog & Engineering Notes"
 ---
 
-<!-- Hero / Profile Section -->
-<section class="apm-hero" style="text-align:center; margin-top:2rem;">
-  <div class="apm-hero-inner">
-    <img class="apm-avatar" 
-         src="{{ '/assets/img/profile.jpg' | relative_url }}" 
-         alt="Eric Scott profile"
-         style="width:150px; height:150px; border-radius:50%; object-fit:cover; box-shadow:0 0 10px rgba(0,0,0,0.2);">
-    <div class="apm-hero-text" style="margin-top:1rem;">
-      <h1 style="font-size:1.8rem; margin-bottom:0.3rem;">Eric Scott</h1>
-      <p style="color:#666;">
-        Sharing notes on <strong>Engineering</strong>, <strong>Music</strong>, and <strong>Music Therapy</strong> — 
-        blending technical precision with creative harmony.
-      </p>
-    </div>
-  </div>
-</section>
+<header style="text-align:center; padding:2em 0;">
+  <img src="assets/img/profile.jpg" alt="Eric Scott" 
+       style="width:120px; height:120px; border-radius:50%; object-fit:cover; box-shadow:0 0 8px rgba(0,0,0,0.2);">
+  <h1 style="margin-top:15px;">Eric Scott</h1>
+  <p style="color:#777;">Engineering | Music | Music Therapy</p>
+</header>
 
-<!-- Category Section -->
-<section class="apm-hub" style="margin:2rem auto; text-align:center;">
-  <h2 style="margin-bottom:1rem;">Explore Topics</h2>
-  <div class="apm-chip-row" style="display:flex; flex-wrap:wrap; justify-content:center; gap:0.6rem;">
-    <a class="apm-chip" href="{{ '/engineering/' | relative_url }}" style="background:#0078D7; color:#fff; padding:0.5rem 1rem; border-radius:20px; text-decoration:none;">Engineering</a>
-    <a class="apm-chip" href="{{ '/engineering/acmv/' | relative_url }}" style="background:#0078D7; color:#fff; padding:0.5rem 1rem; border-radius:20px; text-decoration:none;">ACMV</a>
-    <a class="apm-chip" href="{{ '/engineering/electrical/' | relative_url }}" style="background:#0078D7; color:#fff; padding:0.5rem 1rem; border-radius:20px; text-decoration:none;">Electrical</a>
-    <a class="apm-chip" href="{{ '/engineering/plumbing/' | relative_url }}" style="background:#0078D7; color:#fff; padding:0.5rem 1rem; border-radius:20px; text-decoration:none;">Plumbing</a>
-    <a class="apm-chip" href="{{ '/engineering/fire/' | relative_url }}" style="background:#0078D7; color:#fff; padding:0.5rem 1rem; border-radius:20px; text-decoration:none;">Fire</a>
-    <a class="apm-chip" href="{{ '/engineering/sanitary/' | relative_url }}" style="background:#0078D7; color:#fff; padding:0.5rem 1rem; border-radius:20px; text-decoration:none;">Sanitary</a>
-    <a class="apm-chip" href="{{ '/music/' | relative_url }}" style="background:#28a745; color:#fff; padding:0.5rem 1rem; border-radius:20px; text-decoration:none;">Music</a>
-    <a class="apm-chip" href="{{ '/music/piano/' | relative_url }}" style="background:#28a745; color:#fff; padding:0.5rem 1rem; border-radius:20px; text-decoration:none;">Piano</a>
-    <a class="apm-chip" href="{{ '/music/musictheory/' | relative_url }}" style="background:#28a745; color:#fff; padding:0.5rem 1rem; border-radius:20px; text-decoration:none;">Music Theory (ABRSM)</a>
-    <a class="apm-chip" href="{{ '/music/musictherapy/' | relative_url }}" style="background:#28a745; color:#fff; padding:0.5rem 1rem; border-radius:20px; text-decoration:none;">Music Therapy</a>
-  </div>
-</section>
-
-<!-- Latest Posts Section -->
-<section class="apm-posts" style="max-width:800px; margin:2rem auto;">
-  <h2 style="text-align:center;">Latest Posts</h2>
-  <ul style="list-style:none; padding:0;">
-    {% for post in site.posts limit:5 %}
-      <li style="margin:1rem 0; padding:1rem; border-bottom:1px solid #eee;">
-        <a href="{{ post.url | relative_url }}" style="font-size:1.1rem; color:#0078D7; text-decoration:none; font-weight:600;">{{ post.title }}</a><br>
-        <small style="color:#999;">{{ post.date | date: "%b %d, %Y" }} · {{ post.categories | join: ' / ' }}</small>
-      </li>
-    {% endfor %}
-  </ul>
-  <p style="text-align:center;">
-    <a href="{{ '/posts/' | relative_url }}" style="color:#0078D7; text-decoration:none; font-weight:600;">Browse all →</a>
+<section style="text-align:center; margin:2em auto; max-width:700px;">
+  <p style="font-size:1.1em; color:#555;">
+    Welcome to my personal blog — where engineering meets art.  
+    I share posts about <strong>ACMV systems</strong>, <strong>plumbing and fire protection</strong>,  
+    as well as <strong>music, piano, and music therapy</strong>.
   </p>
 </section>
+
+<hr style="max-width:700px; margin:2em auto; border:0; border-top:1px solid #ddd;">
+
+<!-- Latest Posts -->
+<section style="max-width:700px; margin:0 auto;">
+  <h2 style="margin-bottom:1em; text-align:center;">📰 Latest Posts</h2>
+  <ul style="list-style:none; padding:0;">
+    {% for post in site.posts limit:5 %}
+    <li style="margin-bottom:1.5em; border-bottom:1px solid #eee; padding-bottom:1em;">
+      <a href="{{ post.url | relative_url }}" style="font-size:1.2em; font-weight:600; color:#007acc;">
+        {{ post.title }}
+      </a>
+      <br>
+      <small style="color:#999;">{{ post.date | date: "%B %d, %Y" }}</small>
+      <p style="margin-top:0.5em; color:#555;">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+
+  <p style="text-align:center; margin-top:2em;">
+    <a href="{{ '/posts/' | relative_url }}" 
+       style="text-decoration:none; background:#007acc; color:white; padding:0.6em 1.2em; border-radius:8px;">
+      Browse All Posts
+    </a>
+  </p>
+</section>
+
+<hr style="max-width:700px; margin:3em auto; border:0; border-top:1px solid #ddd;">
+
+<!-- Categories -->
+<section style="max-width:700px; margin:0 auto;">
+  <h2 style="margin-bottom:1em; text-align:center;">🔍 Explore by Category</h2>
+  <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:1em;">
+    <a href="{{ '/engineering/ACMV/' | relative_url }}" 
+       style="text-decoration:none; background:#f0f8ff; color:#007acc; padding:0.8em 1.2em; border-radius:10px; font-weight:600;">
+       Engineering (ACMV)
+    </a>
+    <a href="{{ '/music/musictherapy/' | relative_url }}" 
+       style="text-decoration:none; background:#fff0f5; color:#cc3366; padding:0.8em 1.2em; border-radius:10px; font-weight:600;">
+       Music Therapy
+    </a>
+  </div>
+</section>
+
+<footer style="text-align:center; padding:2em 0; color:#777; font-size:0.9em;">
+  © <script>document.write(new Date().getFullYear())</script> Eric Scott — All rights reserved.<br>
+  Unauthorized use or reproduction of this content is prohibited.
+</footer>
