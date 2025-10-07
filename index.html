@@ -1,67 +1,162 @@
 ---
-layout: default
-title: "Eric Scott — Blog & Engineering Notes"
+layout: home
+title: "Home"
 ---
 
-<header style="text-align:center; padding:2em 0;">
-  <img src="assets/img/profile.jpg" alt="Eric Scott" 
-       style="width:120px; height:120px; border-radius:50%; object-fit:cover; box-shadow:0 0 8px rgba(0,0,0,0.2);">
-  <h1 style="margin-top:15px;">Eric Scott</h1>
-  <p style="color:#777;">Engineering | Music | Music Therapy</p>
-</header>
-
-<section style="text-align:center; margin:2em auto; max-width:700px;">
-  <p style="font-size:1.1em; color:#555;">
-    Welcome to my personal blog — where engineering meets art.  
-    I share posts about <strong>ACMV systems</strong>, <strong>plumbing and fire protection</strong>,  
-    as well as <strong>music, piano, and music therapy</strong>.
-  </p>
-</section>
-
-<hr style="max-width:700px; margin:2em auto; border:0; border-top:1px solid #ddd;">
-
-<!-- Latest Posts -->
-<section style="max-width:700px; margin:0 auto;">
-  <h2 style="margin-bottom:1em; text-align:center;">📰 Latest Posts</h2>
-  <ul style="list-style:none; padding:0;">
-    {% for post in site.posts limit:5 %}
-    <li style="margin-bottom:1.5em; border-bottom:1px solid #eee; padding-bottom:1em;">
-      <a href="{{ post.url | relative_url }}" style="font-size:1.2em; font-weight:600; color:#007acc;">
-        {{ post.title }}
-      </a>
-      <br>
-      <small style="color:#999;">{{ post.date | date: "%B %d, %Y" }}</small>
-      <p style="margin-top:0.5em; color:#555;">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
-    </li>
-    {% endfor %}
-  </ul>
-
-  <p style="text-align:center; margin-top:2em;">
-    <a href="{{ '/posts/' | relative_url }}" 
-       style="text-decoration:none; background:#007acc; color:white; padding:0.6em 1.2em; border-radius:8px;">
-      Browse All Posts
-    </a>
-  </p>
-</section>
-
-<hr style="max-width:700px; margin:3em auto; border:0; border-top:1px solid #ddd;">
-
-<!-- Categories -->
-<section style="max-width:700px; margin:0 auto;">
-  <h2 style="margin-bottom:1em; text-align:center;">🔍 Explore by Category</h2>
-  <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:1em;">
-    <a href="{{ '/engineering/ACMV/' | relative_url }}" 
-       style="text-decoration:none; background:#f0f8ff; color:#007acc; padding:0.8em 1.2em; border-radius:10px; font-weight:600;">
-       Engineering (ACMV)
-    </a>
-    <a href="{{ '/music/musictherapy/' | relative_url }}" 
-       style="text-decoration:none; background:#fff0f5; color:#cc3366; padding:0.8em 1.2em; border-radius:10px; font-weight:600;">
-       Music Therapy
-    </a>
+<!-- 🌟 Hero Section -->
+<section class="apm-hero">
+  <div class="apm-hero-inner">
+    <img class="apm-avatar" src="{{ '/assets/img/profile.jpg' | relative_url }}" alt="Eric Scott profile">
+    <div class="apm-hero-text">
+      <h1>Eric Scott</h1>
+      <p>
+        Sharing notes on <strong>Engineering</strong>, <strong>Music</strong>, and <strong>Music Therapy</strong> — blending technical precision with creative harmony.
+      </p>
+    </div>
   </div>
 </section>
 
-<footer style="text-align:center; padding:2em 0; color:#777; font-size:0.9em;">
+<!-- 🧭 Category Section -->
+<section class="apm-hub">
+  <h2 class="apm-section-title">Explore Topics</h2>
+  <div class="apm-chip-row">
+    <a class="apm-chip" href="{{ '/engineering/' | relative_url }}">Engineering</a>
+    <a class="apm-chip" href="{{ '/engineering/ACMV/' | relative_url }}">ACMV</a>
+    <a class="apm-chip" href="{{ '/engineering/Electrical/' | relative_url }}">Electrical</a>
+    <a class="apm-chip" href="{{ '/engineering/Plumbing/' | relative_url }}">Plumbing</a>
+    <a class="apm-chip" href="{{ '/engineering/Fire/' | relative_url }}">Fire</a>
+    <a class="apm-chip" href="{{ '/engineering/Sanitary/' | relative_url }}">Sanitary</a>
+  </div>
+
+  <div class="apm-chip-row">
+    <a class="apm-chip" href="{{ '/music/' | relative_url }}">Music</a>
+    <a class="apm-chip" href="{{ '/music/piano/' | relative_url }}">Piano</a>
+    <a class="apm-chip" href="{{ '/music/theory/' | relative_url }}">Music Theory (ABRSM)</a>
+    <a class="apm-chip" href="{{ '/music/musictherapy/' | relative_url }}">Music Therapy</a>
+  </div>
+</section>
+
+<!-- 📰 Latest Posts Section -->
+<section class="apm-recent">
+  <h2 class="apm-section-title">Latest Posts</h2>
+  <ul class="apm-post-grid">
+    {% for post in site.posts limit:6 %}
+      <li class="apm-post-card">
+        <a href="{{ post.url | relative_url }}">
+          <h3>{{ post.title }}</h3>
+          <p class="apm-post-meta">
+            {{ post.date | date: "%b %d, %Y" }} · {{ post.categories | join: " / " }}
+          </p>
+          <p class="apm-post-excerpt">{{ post.excerpt | strip_html | truncate: 120 }}</p>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+  <div class="browse-all">
+    <a href="{{ '/posts/' | relative_url }}">Browse all →</a>
+  </div>
+</section>
+
+<!-- ⚖️ Footer -->
+<footer style="text-align:center; padding:2em 0; font-size:0.9em; color:#777; border-top:1px solid #eaeaea; margin-top:3em;">
   © <script>document.write(new Date().getFullYear())</script> Eric Scott — All rights reserved.<br>
   Unauthorized use or reproduction of this content is prohibited.
 </footer>
+
+<!-- 💅 Inline Styles -->
+<style>
+  .apm-hero {
+    text-align: center;
+    padding: 3em 1em;
+    background: linear-gradient(145deg, #fafafa, #f0f0f0);
+    border-radius: 20px;
+    margin-bottom: 2em;
+  }
+  .apm-avatar {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 1em;
+  }
+  .apm-hero-text h1 {
+    font-size: 2em;
+    margin-bottom: 0.3em;
+  }
+  .apm-hero-text p {
+    font-size: 1.1em;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .apm-hub {
+    text-align: center;
+    margin: 2em 0;
+  }
+  .apm-section-title {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+  }
+  .apm-chip-row {
+    margin-bottom: 1em;
+  }
+  .apm-chip {
+    display: inline-block;
+    margin: 0.4em;
+    padding: 0.6em 1.2em;
+    background-color: #007acc;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: background 0.3s ease;
+  }
+  .apm-chip:hover {
+    background-color: #005fa3;
+  }
+  .apm-post-grid {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1em;
+  }
+  .apm-post-card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    padding: 1.2em;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .apm-post-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  .apm-post-card h3 {
+    font-size: 1.1em;
+    color: #007acc;
+    margin-bottom: 0.5em;
+  }
+  .apm-post-meta {
+    font-size: 0.8em;
+    color: #777;
+    margin-bottom: 0.6em;
+  }
+  .apm-post-excerpt {
+    color: #555;
+    font-size: 0.9em;
+  }
+  .browse-all {
+    text-align: center;
+    margin-top: 1.5em;
+  }
+  .browse-all a {
+    color: #007acc;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .browse-all a:hover {
+    text-decoration: underline;
+  }
+</style>
