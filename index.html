@@ -3,95 +3,102 @@ layout: home
 title: "Home"
 ---
 
-<!-- Hero / Profile Section -->
-<section class="apm-hero" style="text-align:center; margin-top:2rem;">
-  <div class="apm-hero-inner">
-    <img class="apm-avatar" 
-         src="{{ '/assets/img/profile.jpg' | relative_url }}" 
+<!-- ========== HEADER NAVIGATION ========== -->
+<header style="width:100%; background:#fff; border-bottom:1px solid #eee; padding:1rem 2rem; position:sticky; top:0; z-index:1000; display:flex; justify-content:space-between; align-items:center; box-shadow:0 1px 4px rgba(0,0,0,0.05);">
+  <h2 style="margin:0; font-size:1.3rem; color:#0078D7; font-weight:700;">
+    <a href="{{ '/' | relative_url }}" style="text-decoration:none; color:#0078D7;">Eric Scott</a>
+  </h2>
+  <nav>
+    <ul style="list-style:none; margin:0; padding:0; display:flex; gap:1.5rem; align-items:center;">
+      <li><a href="{{ '/' | relative_url }}" style="text-decoration:none; color:#333; font-weight:600;">Home</a></li>
+
+      <!-- Music Menu -->
+      <li style="position:relative;">
+        <a href="{{ '/music/' | relative_url }}" style="text-decoration:none; color:#333; font-weight:600;">Music ▾</a>
+        <ul style="position:absolute; top:1.8rem; left:0; background:#fff; border:1px solid #ddd; border-radius:8px; list-style:none; padding:0.5rem 0; display:none; min-width:180px;">
+          <li><a href="{{ '/music/musictheory/' | relative_url }}" style="display:block; padding:0.4rem 1rem; color:#333; text-decoration:none;">Music Theory (ABRSM)</a></li>
+          <li><a href="{{ '/music/musictherapy/' | relative_url }}" style="display:block; padding:0.4rem 1rem; color:#333; text-decoration:none;">Music Therapy</a></li>
+        </ul>
+      </li>
+
+      <!-- Engineering Menu -->
+      <li style="position:relative;">
+        <a href="{{ '/engineering/' | relative_url }}" style="text-decoration:none; color:#333; font-weight:600;">Engineering ▾</a>
+        <ul style="position:absolute; top:1.8rem; left:0; background:#fff; border:1px solid #ddd; border-radius:8px; list-style:none; padding:0.5rem 0; display:none; min-width:180px;">
+          <li><a href="{{ '/engineering/acmv/' | relative_url }}" style="display:block; padding:0.4rem 1rem; color:#333; text-decoration:none;">ACMV</a></li>
+          <li><a href="{{ '/engineering/electrical/' | relative_url }}" style="display:block; padding:0.4rem 1rem; color:#333; text-decoration:none;">Electrical</a></li>
+          <li><a href="{{ '/engineering/fire/' | relative_url }}" style="display:block; padding:0.4rem 1rem; color:#333; text-decoration:none;">Fire</a></li>
+          <li><a href="{{ '/engineering/plumbing/' | relative_url }}" style="display:block; padding:0.4rem 1rem; color:#333; text-decoration:none;">Plumbing</a></li>
+          <li><a href="{{ '/engineering/sanitary/' | relative_url }}" style="display:block; padding:0.4rem 1rem; color:#333; text-decoration:none;">Sanitary</a></li>
+        </ul>
+      </li>
+
+      <li><a href="{{ '/posts/' | relative_url }}" style="text-decoration:none; color:#333; font-weight:600;">All Posts</a></li>
+    </ul>
+  </nav>
+</header>
+
+<script>
+  // Dropdown hover behavior
+  document.querySelectorAll("nav li").forEach(li => {
+    li.addEventListener("mouseenter", () => {
+      const menu = li.querySelector("ul");
+      if(menu) menu.style.display = "block";
+    });
+    li.addEventListener("mouseleave", () => {
+      const menu = li.querySelector("ul");
+      if(menu) menu.style.display = "none";
+    });
+  });
+</script>
+
+<!-- ========== HERO SECTION (with FIXED BACKGROUND) ========== -->
+<section style="
+  position:relative;
+  text-align:center;
+  margin-top:0;
+  padding:6rem 1rem;
+  background:url('{{ '/assets/img/background.jpg' | relative_url }}') no-repeat center center/cover;
+  background-attachment:fixed;
+  color:white;
+">
+  <div style="background:rgba(0,0,0,0.55); padding:3rem 2rem; border-radius:15px; display:inline-block;">
+    <img src="{{ '/assets/img/profile.jpg' | relative_url }}" 
          alt="Eric Scott profile"
-         style="width:150px; height:150px; border-radius:50%; object-fit:cover; box-shadow:0 0 10px rgba(0,0,0,0.2);">
-    <div class="apm-hero-text" style="margin-top:1rem;">
-      <h1 style="font-size:1.8rem; margin-bottom:0.3rem;">Eric Scott</h1>
-      <p style="color:#666;">
-        Sharing insights on <strong>Engineering</strong>, <strong>Music</strong>, and <strong>Music Therapy</strong> — 
-        blending technical precision with creative harmony.
-      </p>
-    </div>
+         style="width:150px; height:150px; border-radius:50%; object-fit:cover; border:3px solid #fff; box-shadow:0 0 15px rgba(0,0,0,0.4);">
+<h1 style="font-size:2.2rem; margin-top:1rem; color:#fff;">Eric Scott</h1>
+    <p style="color:#f0f0f0; max-width:600px; margin:0 auto; line-height:1.6;">
+      Exploring <strong>Engineering</strong>, <strong>Music</strong>, and <strong>Music Therapy</strong> — 
+      where science meets art.
+    </p>
   </div>
 </section>
 
-<!-- Category Section -->
-<section class="apm-hub" style="margin:2rem auto; text-align:center;">
-  <h2 style="margin-bottom:1rem;">Explore Topics</h2>
-  <div class="apm-chip-row" style="display:flex; flex-wrap:wrap; justify-content:center; gap:0.6rem;">
-    <!-- Engineering Section -->
-    <a class="apm-chip" href="{{ '/engineering/' | relative_url }}" 
-       style="background:#0078D7; color:#fff; padding:0.5rem 1rem; border-radius:20px; text-decoration:none;">
-       Engineering
-    </a>
-    <a class="apm-chip" href="{{ '/engineering/acmv/' | relative_url }}" 
-       style="background:#0078D7; color:#fff; padding:0.5rem 1rem; border-radius:20px; text-decoration:none;">
-       ACMV
-    </a>
-    <a class="apm-chip" href="{{ '/engineering/electrical/' | relative_url }}" 
-       style="background:#0078D7; color:#fff; padding:0.5rem 1rem; border-radius:20px; text-decoration:none;">
-       Electrical
-    </a>
-    <a class="apm-chip" href="{{ '/engineering/plumbing/' | relative_url }}" 
-       style="background:#0078D7; color:#fff; padding:0.5rem 1rem; border-radius:20px; text-decoration:none;">
-       Plumbing
-    </a>
-    <a class="apm-chip" href="{{ '/engineering/fire/' | relative_url }}" 
-       style="background:#0078D7; color:#fff; padding:0.5rem 1rem; border-radius:20px; text-decoration:none;">
-       Fire
-    </a>
-    <a class="apm-chip" href="{{ '/engineering/sanitary/' | relative_url }}" 
-       style="background:#0078D7; color:#fff; padding:0.5rem 1rem; border-radius:20px; text-decoration:none;">
-       Sanitary
-    </a>
-
-    <!-- Music Section -->
-    <a class="apm-chip" href="{{ '/music/' | relative_url }}" 
-       style="background:#28a745; color:#fff; padding:0.5rem 1rem; border-radius:20px; text-decoration:none;">
-       Music
-    </a>
-    <a class="apm-chip" href="{{ '/music/piano/' | relative_url }}" 
-       style="background:#28a745; color:#fff; padding:0.5rem 1rem; border-radius:20px; text-decoration:none;">
-       Piano
-    </a>
-    <a class="apm-chip" href="{{ '/music/musictheory/' | relative_url }}" 
-       style="background:#28a745; color:#fff; padding:0.5rem 1rem; border-radius:20px; text-decoration:none;">
-       Music Theory (ABRSM)
-    </a>
-    <a class="apm-chip" href="{{ '/music/musictherapy/' | relative_url }}" 
-       style="background:#28a745; color:#fff; padding:0.5rem 1rem; border-radius:20px; text-decoration:none;">
-       Music Therapy
-    </a>
-  </div>
-</section>
-
-<!-- Latest Posts Section -->
-<section class="apm-posts" style="max-width:800px; margin:2rem auto;">
-  <h2 style="text-align:center;">Latest Posts</h2>
-  <ul style="list-style:none; padding:0;">
-    {% for post in site.posts limit:5 %}
-      <li style="margin:1rem 0; padding:1rem; border:1px solid #eee; border-radius:10px; transition:all 0.2s;">
+<!-- ========== LATEST POSTS GRID ========== -->
+<section style="max-width:1000px; margin:4rem auto;">
+  <h2 style="text-align:center; margin-bottom:2rem; font-size:1.8rem;">Latest Posts</h2>
+  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1.5rem;">
+    {% for post in site.posts limit:6 %}
+      <div style="border:1px solid #eaeaea; border-radius:10px; padding:1.2rem; background:#fff; transition:all 0.3s; box-shadow:0 2px 6px rgba(0,0,0,0.04);">
         <a href="{{ post.url | relative_url }}" 
-           style="font-size:1.1rem; color:#0078D7; text-decoration:none; font-weight:600;">
+           style="font-size:1.1rem; font-weight:600; color:#0078D7; text-decoration:none; display:block; margin-bottom:0.5rem;">
            {{ post.title }}
-        </a><br>
-        <small style="color:#999;">{{ post.date | date: "%b %d, %Y" }} · {{ post.categories | join: ' / ' }}</small>
-</li>
+        </a>
+        <p style="color:#888; font-size:0.9rem; margin:0;">
+          {{ post.date | date: "%b %d, %Y" }} · {{ post.categories | join: ' / ' }}
+        </p>
+        <p style="color:#555; font-size:0.9rem; margin-top:0.6rem;">{{ post.excerpt | strip_html | truncate: 100 }}</p>
+      </div>
     {% endfor %}
-  </ul>
-  <p style="text-align:center; margin-top:1.5rem;">
+  </div>
+  <p style="text-align:center; margin-top:2.5rem;">
     <a href="{{ '/posts/' | relative_url }}" 
        style="color:#0078D7; text-decoration:none; font-weight:600;">Browse all →</a>
   </p>
 </section>
 
-<!-- Footer -->
-<footer style="text-align:center; padding:1em 0; font-size:0.9em; color:#777; border-top:1px solid #eee; margin-top:2rem;">
+<!-- ========== FOOTER ========== -->
+<footer style="text-align:center; padding:1.5rem 0; font-size:0.9rem; color:#777; border-top:1px solid #eee; margin-top:3rem;">
   © <script>document.write(new Date().getFullYear())</script> Eric Scott — All rights reserved.<br>
   Unauthorized use or reproduction of this content is prohibited.
 </footer>
