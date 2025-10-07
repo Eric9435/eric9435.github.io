@@ -10,7 +10,7 @@ title: "Home"
     <div class="apm-hero-text">
       <h1>Eric Scott</h1>
       <p>
-        Sharing notes on <strong>Engineering</strong>, <strong>Music</strong>, and <strong>Music Therapy</strong> —
+        Sharing notes on <strong>Engineering</strong>, <strong>Music</strong>, and <strong>Music Therapy</strong> –
         blending technical precision with creative harmony.
       </p>
     </div>
@@ -42,7 +42,7 @@ title: "Home"
   </div>
 </section>
 
-<!-- Latest Posts Section -->
+<!-- Latest Posts -->
 <section class="apm-recent">
   <div class="apm-recent-head">
     <h2>Latest Posts</h2>
@@ -56,20 +56,14 @@ title: "Home"
       <a class="apm-post-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
       <div class="apm-post-meta">
         <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
-        {%- if post.categories.size > 0 -%}
-          · {{ post.categories | join: " / " }}
-        {%- endif -%}
-        {%- if post.tags.size > 0 -%}
-          · <span class="apm-tags">
-            {%- for t in post.tags limit:3 -%}
-              <span class="apm-tag">{{ t }}</span>
-            {%- endfor -%}
+        {%- if post.categories and post.categories.size > 0 -%} · {{ post.categories | join: " / " }}{%- endif -%}
+        {%- if post.tags and post.tags.size > 0 -%} ·
+          <span class="apm-tags">
+            {%- for t in post.tags limit:3 -%}<span class="apm-tag">{{ t }}</span>{%- endfor -%}
           </span>
         {%- endif -%}
       </div>
-      {%- if post.excerpt -%}
-        <p class="apm-post-excerpt">{{ post.excerpt | strip_html | truncate: 180 }}</p>
-      {%- endif -%}
+      {%- if post.excerpt -%}<p class="apm-post-excerpt">{{ post.excerpt | strip_html | truncate: 180 }}</p>{%- endif -%}
     </li>
     {%- endfor -%}
   </ul>
