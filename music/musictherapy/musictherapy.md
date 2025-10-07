@@ -1,7 +1,6 @@
 ---
 layout: page
 title: "Music Therapy"
-permalink: /music/musictherapy/
 ---
 
 # 💙 Music Therapy
