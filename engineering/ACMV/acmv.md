@@ -1,43 +1,35 @@
 ---
-layout: category
+layout: default
 title: "ACMV Engineering"
-permalink: /engineering/acmv/
-category: engineering
-tag: ACMV
+permalink: /engineering/ACMV/
 ---
 
-# ⚙️ ACMV Engineering
+# 🌬️ Air-Conditioning & Mechanical Ventilation (ACMV)
 
-Welcome to the **ACMV (Air Conditioning and Mechanical Ventilation)** section — where I share insights on system design, energy efficiency, and field experience.
+Welcome to the **ACMV Engineering** section — a hub for learning about air-conditioning, refrigeration, and ventilation systems.
 
----
-
-## 🧰 Topics Covered
-- Chiller plant & pump systems  
-- Air handling units (AHU)  
-- Ductwork & airflow design  
-- Building automation & control  
-- Energy audits & optimization  
+Here you'll find technical posts and notes on:
+- ❄️ Vapour-Compression Refrigeration Cycles  
+- ⚙️ Chillers and Compressors  
+- 🌡️ Energy Efficiency in HVAC Systems  
+- 🌿 Green Refrigerant Standards  
 
 ---
 
-{% assign filtered_posts = site.posts | where: "categories", "engineering" | where_exp: "post", "post.tags contains 'ACMV'" %}
-{% if filtered_posts.size > 0 %}
+## 🧾 Latest ACMV Posts
+{% assign acmv_posts = site.posts | where_exp: "post", "post.categories contains 'acmv'" %}
 <ul>
-  {% for post in filtered_posts %}
-  <li style="margin-bottom:1.2rem;">
-    <a href="{{ post.url | relative_url }}" style="font-weight:600;font-size:1.05rem;">
+  {% for post in acmv_posts %}
+  <li style="margin-bottom:10px;">
+    <a href="{{ post.url | relative_url }}" style="font-weight:600; color:#007acc;">
       {{ post.title }}
-    </a>
-    <br>
-    <small style="color:#6b7280;">{{ post.date | date: "%b %d, %Y" }}</small>
-    <p style="margin:.2rem 0;color:#4b5563;font-size:.95rem;">
-      {{ post.excerpt | strip_html | truncate: 160 }}
-    </p>
+    </a><br>
+    <small style="color:#888;">{{ post.date | date: "%b %d, %Y" }}</small>
   </li>
   {% endfor %}
 </ul>
-{% else %}
-<p style="color:#6b7280;">No ACMV posts yet — check back soon!</p>
-{% endif %}
 
+---
+
+> *By Eric Scott*  
+> Sharing real-world ACMV engineering knowledge and technical insights.
