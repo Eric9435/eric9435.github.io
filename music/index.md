@@ -45,9 +45,3 @@ title: "Music"
     {% endfor %}
   </ul>
 </section>
-
-<!-- Footer -->
-<footer style="text-align:center; padding:1em 0; font-size:0.9em; color:#777; border-top:1px solid #eee; margin-top:2rem;">
-  © <script>document.write(new Date().getFullYear())</script> Eric Scott — All rights reserved.<br>
-  Unauthorized use or reproduction of this content is prohibited.
-</footer>
