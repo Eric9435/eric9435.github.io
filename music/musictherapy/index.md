@@ -13,4 +13,17 @@ Here you’ll find posts on:
 - Research on music and emotional health  
 - Techniques combining creativity and mindfulness  
 
-Check out the latest posts below 👇
+---
+
+## 📝 Latest Music Therapy Posts
+
+<ul>
+  {% for post in site.posts %}
+    {% if post.categories contains "musictherapy" %}
+      <li>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a><br>
+        <small>{{ post.date | date: "%B %d, %Y" }}</small>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
