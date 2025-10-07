@@ -1,14 +1,14 @@
 ---
 layout: page
 title: "ACMV"
-permalink: /engineering/ACMV/
+permalink: /engineering/acmv/
 ---
 
 # 🧊 ACMV — Air Conditioning & Mechanical Ventilation
 
-Insights, design notes, and discussions about ACMV systems.
+Notes and insights about ACMV design, HVAC systems, and energy efficiency.
 
-<ul class="apm-post-list" style="list-style:none; padding:0;">
+<ul style="list-style:none; padding:0;">
 {% for post in site.posts %}
   {% assign cats = post.categories | join: ' ' | downcase %}
   {% if cats contains 'engineering' and cats contains 'acmv' %}
