@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Healing Vibes: The Role of Music in Emotional Recovery"
+title: "🎶 Music therapy ဂီတကုထုံး- စကားလုံးတွေထက် ပိုမိုတဲ့ ကုသခြင်းတစ်မျိုး 🎶"
 date: 2025-10-07
 categories: [music, musictherapy]
 ---
