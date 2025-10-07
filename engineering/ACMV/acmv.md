@@ -1,35 +1,23 @@
 ---
-layout: default
-title: "ACMV Engineering"
+layout: page
+title: "ACMV"
 permalink: /engineering/ACMV/
 ---
 
-# 🌬️ Air-Conditioning & Mechanical Ventilation (ACMV)
+# 🧊 ACMV — Air Conditioning & Mechanical Ventilation
 
-Welcome to the **ACMV Engineering** section — a hub for learning about air-conditioning, refrigeration, and ventilation systems.
+Notes and insights on ACMV systems, design, and energy efficiency.
 
-Here you'll find technical posts and notes on:
-- ❄️ Vapour-Compression Refrigeration Cycles  
-- ⚙️ Chillers and Compressors  
-- 🌡️ Energy Efficiency in HVAC Systems  
-- 🌿 Green Refrigerant Standards  
-
----
-
-## 🧾 Latest ACMV Posts
-{% assign acmv_posts = site.posts | where_exp: "post", "post.categories contains 'acmv'" %}
-<ul>
-  {% for post in acmv_posts %}
-  <li style="margin-bottom:10px;">
-    <a href="{{ post.url | relative_url }}" style="font-weight:600; color:#007acc;">
-      {{ post.title }}
-    </a><br>
-    <small style="color:#888;">{{ post.date | date: "%b %d, %Y" }}</small>
-  </li>
-  {% endfor %}
+<ul class="apm-post-list">
+{% for post in site.posts %}
+  {% assign cats = post.categories | join: ' ' | downcase %}
+  {% if cats contains 'engineering' and cats contains 'acmv' %}
+    <li class="apm-post-item">
+      <a class="apm-post-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <div class="apm-post-meta">
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
+      </div>
+    </li>
+  {% endif %}
+{% endfor %}
 </ul>
-
----
-
-> *By Eric Scott*  
-> Sharing real-world ACMV engineering knowledge and technical insights.
