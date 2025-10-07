@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "ACMV"
-permalink: /engineering/acmv/
+permalink: /engineering/ACMV/
 ---
 
 # 🧊 ACMV — Air Conditioning & Mechanical Ventilation
