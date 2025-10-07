@@ -2,7 +2,7 @@
 layout: post
 title: "🎶 Music therapy ဂီတကုထုံး- စကားလုံးတွေထက် ပိုမိုတဲ့ ကုသခြင်းတစ်မျိုး 🎶"
 categories: [music]
-tags: [music-therapy]
+tags: [musictherapy]
 author: Eric Scott
 ---
 
