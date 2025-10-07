@@ -1,6 +1,8 @@
 title: "Aung Phone Myat"
 description: "Writing on engineering, music, and music therapy."
 theme: minima
+header_pages: []
+show_excerpts: "true"
 timezone: Asia/Yangon
 author: "Aung Phone Myat"
 url: "https://aungphonemyat.github.io/"  # change to your username site
