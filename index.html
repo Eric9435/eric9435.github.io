@@ -52,27 +52,82 @@ title: "Home"
   });
 </script>
 
-<!-- ========== HERO SECTION (with FIXED BACKGROUND) ========== -->
-<section style="
-  position:relative;
-  text-align:center;
-  margin-top:0;
-  padding:6rem 1rem;
-  background:url('{{ '/assets/img/background.jpg' | relative_url }}') no-repeat center center/cover;
-  background-attachment:fixed;
-  color:white;
-">
-  <div style="background:rgba(0,0,0,0.55); padding:3rem 2rem; border-radius:15px; display:inline-block;">
-    <img src="{{ '/assets/img/profile.jpg' | relative_url }}" 
-         alt="Eric Scott profile"
-         style="width:150px; height:150px; border-radius:50%; object-fit:cover; border:3px solid #fff; box-shadow:0 0 15px rgba(0,0,0,0.4);">
-<h1 style="font-size:2.2rem; margin-top:1rem; color:#fff;">Eric Scott</h1>
-    <p style="color:#f0f0f0; max-width:600px; margin:0 auto; line-height:1.6;">
-      Exploring <strong>Engineering</strong>, <strong>Music</strong>, and <strong>Music Therapy</strong> — 
-      where science meets art.
+<!-- ========== HERO SECTION (Animated) ========== -->
+<section class="hero-animated" style="
+  position:relative; overflow:hidden; text-align:center; color:#fff; 
+  min-height:72vh; display:flex; align-items:center; justify-content:center; padding:4rem 1rem;">
+  
+  <!-- Animated gradient backdrop + blur blobs -->
+  <div class="hero-bg" style="
+    position:absolute; inset:0;
+    background: radial-gradient(1200px 800px at 10% 10%, rgba(0,120,215,0.35), transparent 60%),
+                radial-gradient(900px 600px at 90% 30%, rgba(40,167,69,0.35), transparent 65%),
+                linear-gradient(135deg, #0d1b2a, #1b263b 40%, #0a2540);
+    filter: contrast(105%) saturate(115%);
+    animation: heroShift 18s ease-in-out infinite alternate;">
+  </div>
+
+  <!-- Floating icons: gear (engineering) + music note -->
+  <svg class="float-icon gear" viewBox="0 0 24 24" width="54" height="54" aria-hidden="true" style="
+    position:absolute; top:12%; left:10%; opacity:.25; fill:#9ec8ff; 
+    animation: drift1 16s ease-in-out infinite;">
+    <path d="M19.14,12.94a7.48,7.48,0,0,0,.06-1l1.7-1.32a.5.5,0,0,0,.12-.64l-1.61-2.79a.5.5,0,0,0-.6-.22l-2,.81a7.51,7.51,0,0,0-1.72-1l-.29-2.12a.5.5,0,0,0-.5-.43H9.7a.5.5,0,0,0-.5.43l-.29,2.12a7.51,7.51,0,0,0-1.72,1l-2-.81a.5.5,0,0,0-.6.22L2.98,9a.5.5,0,0,0,.12.64L4.8,11a7.48,7.48,0,0,0,0,2L3.1,14.36a.5.5,0,0,0-.12.64l1.61,2.79a.5.5,0,0,0,.6.22l2-.81a7.51,7.51,0,0,0,1.72,1l.29,2.12a.5.5,0,0,0,.5.43h3.38a.5.5,0,0,0,.5-.43l.29-2.12a7.51,7.51,0,0,0,1.72-1l2,.81a.5.5,0,0,0,.6-.22l1.61-2.79a.5.5,0,0,0-.12-.64ZM12,15.5A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z"/>
+  </svg>
+
+  <svg class="float-icon note" viewBox="0 0 24 24" width="56" height="56" aria-hidden="true" style="
+    position:absolute; bottom:12%; right:10%; opacity:.28; fill:#b7f7c4;
+    animation: drift2 18s ease-in-out infinite;">
+    <path d="M18 3v11.06A4.5 4.5 0 1 1 16 14V7.5L9 9V17.06A4.5 4.5 0 1 1 7 16V8a1 1 0 0 1 .76-.97l9-2A1 1 0 0 1 18 6V3z"/>
+  </svg>
+
+  <!-- Content card -->
+  <div class="hero-card" style="
+    position:relative; z-index:1; backdrop-filter: blur(8px);
+    background: rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.15);
+    border-radius:16px; padding:2rem 2rem; max-width:720px; width:min(92%, 720px);">
+    <img src="{{ '/assets/img/profile.jpg' | relative_url }}" alt="Eric Scott profile" style="
+      width:120px; height:120px; border-radius:50%; object-fit:cover;
+      border:3px solid rgba(255,255,255,0.85); box-shadow:0 6px 18px rgba(0,0,0,0.25);">
+    <h1 style="font-size:2.05rem; margin:.8rem 0 .4rem 0;">Eric Scott</h1>
+    <p style="color:#e8f1ff; margin:0 auto 1rem; max-width:560px; line-height:1.6;">
+      Engineering <span style="opacity:.9;">&bull;</span> Music <span style="opacity:.9;">&bull;</span> Music Therapy
     </p>
+
+    <!-- Quick topic buttons -->
+    <div style="display:flex; flex-wrap:wrap; gap:.6rem; justify-content:center; margin-top:.6rem;">
+      <a href="{{ '/engineering/' | relative_url }}" style="background:#0ea5e9; color:#fff; padding:.55rem 1rem; border-radius:24px; text-decoration:none; font-weight:600;">Engineering</a>
+      <a href="{{ '/engineering/acmv/' | relative_url }}" style="background:#0284c7; color:#fff; padding:.55rem 1rem; border-radius:24px; text-decoration:none;">ACMV</a>
+      <a href="{{ '/music/' | relative_url }}" style="background:#22c55e; color:#fff; padding:.55rem 1rem; border-radius:24px; text-decoration:none; font-weight:600;">Music</a>
+      <a href="{{ '/music/musictherapy/' | relative_url }}" style="background:#16a34a; color:#fff; padding:.55rem 1rem; border-radius:24px; text-decoration:none;">Music Therapy</a>
+      <a href="{{ '/posts/' | relative_url }}" style="background:transparent; color:#fff; padding:.55rem 1rem; border-radius:24px; text-decoration:none; border:1px solid rgba(255,255,255,0.6);">All Posts →</a>
+    </div>
   </div>
 </section>
+
+<!-- Animations -->
+<style>
+@keyframes heroShift {
+  0%   { transform: translate3d(0,0,0) scale(1);   filter: hue-rotate(0deg);   }
+  50%  { transform: translate3d(0,-1.5%,0) scale(1.02); filter: hue-rotate(8deg); }
+  100% { transform: translate3d(0,1.5%,0) scale(1.01);  filter: hue-rotate(-6deg);}
+}
+@keyframes drift1 {
+  0%   { transform: translateY(0) rotate(0deg) scale(1);   opacity:.24; }
+  50%  { transform: translateY(12px) rotate(8deg) scale(1.06); opacity:.3; }
+  100% { transform: translateY(0) rotate(0deg) scale(1);   opacity:.24; }
+}
+@keyframes drift2 {
+  0%   { transform: translateY(0) rotate(0deg) scale(1);   opacity:.26; }
+  50%  { transform: translateY(-14px) rotate(-6deg) scale(1.05); opacity:.32; }
+  100% { transform: translateY(0) rotate(0deg) scale(1);   opacity:.26; }
+}
+
+/* Small screens tweaks */
+@media (max-width: 640px) {
+  .hero-animated { min-height: 68vh !important; padding: 3.2rem 1rem !important; }
+  .hero-card { padding: 1.6rem 1.4rem !important; }
+}
+</style>
 
 <!-- ========== LATEST POSTS GRID ========== -->
 <section style="max-width:1000px; margin:4rem auto;">
