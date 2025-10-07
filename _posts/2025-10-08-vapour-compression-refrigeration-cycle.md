@@ -2,7 +2,7 @@
 layout: post
 title: "Understanding ACMV Systems: Basics and Importance"
 date: 2025-10-07
-categories: [engineering, ACMV]
+categories: [engineering, acmv]
 ---
 
 
