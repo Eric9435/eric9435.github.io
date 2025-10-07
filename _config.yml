@@ -24,3 +24,5 @@ paginate_path: "/page:num/"
 include:
   - assets
   - _includes
+include:
+  - engineering/acmv/_posts
