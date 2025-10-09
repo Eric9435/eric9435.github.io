@@ -75,6 +75,9 @@ Capacitor တွေက ဓာတ်အားစနစ်အတွက် အာ�
 | PF ညံ့ရင် 👉 မီတာခ ပိုတက်တယ် | PF ကောင်းရင် 👉 မီတာခ သက်သာတယ် |
 | PF ညံ့ရင် 👉 စက်ပစ္စည်း ဝန်ပိတယ် | PF ကောင်းရင် 👉 စက်ပစ္စည်း သက်တမ်းရှည်တယ် |
 
+> Power Factor ကောင်းတယ်ဆိုတာ လျှပ်စစ်စနစ်ရဲ့ ကျန်းမာရေး ကောင်းတာပါ။
+> Capacitor တွေက ကျန်းမာရေးအထောက်အကူပြု ဆေးဝါးလိုပဲ။
+
 ---
 
 <footer style="text-align:center; font-size:0.9rem; color:#777; margin-top:2rem; border-top:1px solid #eee; padding-top:1rem;">
