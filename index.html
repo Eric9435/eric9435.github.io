@@ -127,3 +127,130 @@ document.querySelectorAll("nav li").forEach(li => {
     <a href="{{ '/posts/' | relative_url }}" style="color:#0078D7; text-decoration:none; font-weight:600;">Browse all →</a>
   </p>
 </section>
+
+<!-- ☕️ Floating Support Button + Popup -->
+<style>
+  #support-btn {
+    position: fixed;
+    bottom: 1.2rem;
+    right: 1.2rem;
+    background: #ffb703;
+    color: #000;
+    font-weight: 700;
+    padding: 0.9rem 1.4rem;
+    border-radius: 50px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    cursor: pointer;
+    z-index: 9999;
+    transition: all 0.3s ease;
+  }
+  #support-btn:hover { background:#ff9500; transform: scale(1.05); }
+
+  #support-popup {
+    display: none;
+    position: fixed;
+    bottom: 6rem;
+    right: 1rem;
+    width: 340px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 14px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    padding: 1.2rem;
+    z-index: 9998;
+    animation: fadeIn .3s ease;
+  }
+
+  #support-popup h3 {
+    text-align:center;
+    margin-bottom:0.6rem;
+    color:#333;
+  }
+  #support-popup img {
+    width:100%;
+    border-radius:10px;
+    margin-bottom:0.5rem;
+  }
+  #support-popup button {
+    background:#0078D7;
+    color:#fff;
+    border:none;
+    border-radius:6px;
+    padding:0.4rem 0.8rem;
+    cursor:pointer;
+    margin-top:0.3rem;
+  }
+  #support-popup .close-btn {
+    position:absolute;
+    top:0.5rem;
+    right:0.7rem;
+    cursor:pointer;
+    font-size:1.2rem;
+    color:#888;
+  }
+  @keyframes fadeIn {
+    from{opacity:0; transform:translateY(10px);}
+    to{opacity:1; transform:translateY(0);}
+  }
+</style>
+
+<div id="support-btn">☕️ Support Me</div>
+
+<div id="support-popup">
+  <span class="close-btn" onclick="toggleSupport()">✖️</span>
+  <h3>💖 Support Eric Scott</h3>
+  <p style="text-align:center; font-size:0.9rem; color:#555;">Choose your payment method below:</p>
+  <hr style="margin:0.6rem 0;">
+
+  <!-- KBZ Pay -->
+  <div style="margin-bottom:0.6rem; text-align:center;">
+    <strong>📱 KBZ Pay</strong><br>
+    Phone: <strong>09425096424</strong><br>
+    <img src="{{ '/assets/img/qr/kbzpay.png' | relative_url }}" alt="KBZ Pay QR">
+  </div>
+
+  <!-- AYA Pay -->
+  <div style="margin-bottom:0.6rem; text-align:center;">
+    <strong>📱 AYA Pay</strong><br>
+    Phone: <strong>09425096424</strong><br>
+    <img src="{{ '/assets/img/qr/ayapay.png' | relative_url }}" alt="AYA Pay QR">
+  </div>
+
+  <!-- Wave Pay -->
+  <div style="margin-bottom:0.6rem; text-align:center;">
+    <strong>📱 Wave Pay</strong><br>
+    Phone: <strong>09772806376</strong><br>
+    <img src="{{ '/assets/img/qr/wavepay.png' | relative_url }}" alt="Wave Pay QR">
+  </div>
+
+  <!-- Bank Accounts -->
+  <div style="font-size:0.9rem;">
+    <hr>
+    <strong>🏦 AYA Bank</strong><br>
+    200 277 87478 — Aung Phone Myat<br>
+    400 3322 9054 — Aung Phone Myat<br><br>
+
+    <strong>🏦 KBZ Bank</strong><br>
+    06230 10620 1408 001 — Aung Phone Myat<br><br>
+
+    <strong>🏦 UAB Bank</strong><br>
+    055330 1000 60674 — Aung Phone Myat
+  </div>
+
+  <div style="margin-top:1rem; text-align:center;">
+    <a href="https://www.buymeacoffee.com/YOUR_USERNAME" target="_blank" rel="noopener"
+       style="background:#ffdd00; color:#000; text-decoration:none; font-weight:700; padding:.5rem 1rem; border-radius:8px; display:inline-block;">
+       ☕️ Buy Me a Coffee
+    </a>
+  </div>
+</div>
+
+<script>
+  const popup = document.getElementById("support-popup");
+  const btn = document.getElementById("support-btn");
+
+  btn.addEventListener("click", toggleSupport);
+  function toggleSupport(){
+    popup.style.display = (popup.style.display === "block") ? "none" : "block";
+  }
+</script>
