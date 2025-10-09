@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "ဗို့အားတည်ငြိမ်မှု (Voltage Stability) — လျှပ်စစ်စနစ်ရဲ့ “သွေးဖိအားညီညွတ်မှု”"
-date: 2025-10-11
+date: 2025-10-09
 categories: [engineering, electrical]
 image: /assets/img/posts/voltage-stability.jpg
 description: "ဗို့အားတည်ငြိမ်မှု (Voltage Stability) ဆိုတာ လျှပ်စစ်စနစ်တစ်ခုလုံးကျန်းမာဖို့အတွက် အရေးကြီးတဲ့ အချက်တစ်ခုပါ။"
