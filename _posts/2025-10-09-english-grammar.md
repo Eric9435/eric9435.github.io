@@ -2,7 +2,7 @@
 layout: post
 title: "English Grammar – All 12 Tenses with Examples"
 date: 2025-10-09
-categories: [English, Grammar]
+categories: [english, grammar]
 ---
 
 ## 🕒 English Grammar: The 12 Tenses Explained
