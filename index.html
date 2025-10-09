@@ -22,12 +22,31 @@ title: "Home"
       </li>
 
       <!-- English Menu -->
-      <li>
-        <a href="{{ '/english/' | relative_url }}"
-           style="background:#ff9900; color:#fff; padding:0.5rem 1rem; border-radius:20px; text-decoration:none; font-weight:600;">
-          🇬🇧 English
-        </a>
-      </li>
+   <li style="position:relative;">
+  <a href="{{ '/english/' | relative_url }}" 
+     style="text-decoration:none; color:#333; font-weight:600;">English ▾</a>
+  <ul style="
+      position:absolute; 
+      top:1.8rem; left:0; 
+      background:#fff; 
+      border:1px solid #ddd; 
+      border-radius:8px; 
+      list-style:none; 
+      padding:0.5rem 0; 
+      display:none; 
+      min-width:180px;">
+    <li><a href="{{ '/english/grammar/' | relative_url }}" 
+           style="display:block; padding:0.4rem 1rem; color:#333; text-decoration:none;">Grammar</a></li>
+    <li><a href="{{ '/english/vocabulary/' | relative_url }}" 
+           style="display:block; padding:0.4rem 1rem; color:#333; text-decoration:none;">Vocabulary</a></li>
+    <li><a href="{{ '/english/speaking/' | relative_url }}" 
+           style="display:block; padding:0.4rem 1rem; color:#333; text-decoration:none;">Speaking</a></li>
+    <li><a href="{{ '/english/writing/' | relative_url }}" 
+           style="display:block; padding:0.4rem 1rem; color:#333; text-decoration:none;">Writing</a></li>
+    <li><a href="{{ '/english/listening/' | relative_url }}" 
+           style="display:block; padding:0.4rem 1rem; color:#333; text-decoration:none;">Listening</a></li>
+  </ul>
+</li>
 
       <!-- Engineering Menu -->
       <li style="position:relative;">
