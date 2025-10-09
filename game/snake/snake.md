@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "🐍 Snake Mini Game"
-permalink: /english/snake/
+permalink: /game/snake/
 ---
 
 <h2 style="text-align:center;">🐍 Snake Mini Game</h2>
