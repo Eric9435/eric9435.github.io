@@ -130,7 +130,6 @@ document.querySelectorAll("nav li").forEach(li => {
 
   fetch('{{ "/search.json?v=1" | relative_url }}')
 
-Scott, [10/9/2025 11:49 AM]
 .then(r=>r.json()).then(json=>{
     docs=json;
     idx=lunr(function(){
