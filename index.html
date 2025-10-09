@@ -16,21 +16,18 @@ title: "Home"
       <!-- Music Menu -->
       <li style="position:relative;">
         <a href="{{ '/music/' | relative_url }}" style="text-decoration:none; color:#333; font-weight:600;">Music ▾</a>
-        <ul style="position:absolute; top:1.8rem; left:0; background:#fff; border:1px solid #ddd; border-radius:8px; list-style:none; padding:0.5rem 0; display:none; min-width:200px;">
+        <ul style="position:absolute; top:1.8rem; left:0; background:#fff; border:1px solid #ddd; border-radius:8px; list-style:none; padding:0.5rem 0; display:none; min-width:180px;">
           <li><a href="{{ '/music/musictheory/' | relative_url }}" style="display:block; padding:0.4rem 1rem; color:#333; text-decoration:none;">Music Theory (ABRSM)</a></li>
           <li><a href="{{ '/music/musictherapy/' | relative_url }}" style="display:block; padding:0.4rem 1rem; color:#333; text-decoration:none;">Music Therapy</a></li>
         </ul>
       </li>
 
       <!-- English Menu -->
-      <li style="position:relative;">
-        <a href="{{ '/english/' | relative_url }}" style="text-decoration:none; color:#333; font-weight:600;">🇬🇧 English ▾</a>
-        <ul style="position:absolute; top:1.8rem; left:0; background:#fff; border:1px solid #ddd; border-radius:8px; list-style:none; padding:0.5rem 0; display:none; min-width:160px;">
-          <li><a href="{{ '/english/grammar/' | relative_url }}" style="display:block; padding:0.4rem 1rem; color:#333; text-decoration:none;">Grammar</a></li>
-          <li><a href="{{ '/english/speaking/' | relative_url }}" style="display:block; padding:0.4rem 1rem; color:#333; text-decoration:none;">Speaking</a></li>
-          <li><a href="{{ '/english/writing/' | relative_url }}" style="display:block; padding:0.4rem 1rem; color:#333; text-decoration:none;">Writing</a></li>
-          <li><a href="{{ '/english/vocabulary/' | relative_url }}" style="display:block; padding:0.4rem 1rem; color:#333; text-decoration:none;">Vocabulary</a></li>
-        </ul>
+      <li>
+        <a href="{{ '/english/' | relative_url }}" 
+           style="background:#ff9900; color:#fff; padding:0.5rem 1rem; border-radius:20px; text-decoration:none; font-weight:600;">
+          🇬🇧 English
+        </a>
       </li>
 
       <!-- Engineering Menu -->
@@ -50,31 +47,35 @@ title: "Home"
   </nav>
 </header>
 
-<!-- Dropdown hover -->
 <script>
-document.querySelectorAll("nav li").forEach(li => {
-  li.addEventListener("mouseenter", () => {
-    const menu = li.querySelector("ul");
-    if(menu) menu.style.display = "block";
+  // Dropdown hover behavior
+  document.querySelectorAll("nav li").forEach(li => {
+    li.addEventListener("mouseenter", () => {
+      const menu = li.querySelector("ul");
+      if(menu) menu.style.display = "block";
+    });
+    li.addEventListener("mouseleave", () => {
+      const menu = li.querySelector("ul");
+      if(menu) menu.style.display = "none";
+    });
   });
-  li.addEventListener("mouseleave", () => {
-    const menu = li.querySelector("ul");
-    if(menu) menu.style.display = "none";
-  });
-});
 </script>
 
 <!-- 🌟 Hero Section -->
 <section style="position:relative; text-align:center; padding:6rem 1rem; overflow:hidden; color:white;">
   <div style="
-    position:absolute; top:0; left:0; right:0; bottom:0;
+    position:absolute; 
+    top:0; left:0; right:0; bottom:0; 
     background: linear-gradient(-45deg, #0078D7, #28a745, #6f42c1, #17a2b8);
     background-size: 400% 400%;
     animation: gradientMove 12s ease infinite;
-    z-index:0;"></div>
+    z-index:0;
+  "></div>
 
-  <div style="position:relative; z-index:1; max-width:700px; margin:auto;">
-    <img src="{{ '/assets/img/profile.jpg' | relative_url }}" alt="Eric Scott Profile"
+<div style="position:relative; z-index:1; max-width:700px; margin:auto;">
+    <img 
+      src="{{ '/assets/img/profile.jpg' | relative_url }}" 
+      alt="Eric Scott Profile"
       style="width:160px; height:160px; border-radius:50%; object-fit:cover; box-shadow:0 8px 20px rgba(0,0,0,0.3); border:4px solid rgba(255,255,255,0.8);">
     <h1 style="font-size:2.2rem; margin-top:1.2rem; font-weight:700;">Eric Scott</h1>
     <p style="font-size:1.1rem; color:#f0f0f0; max-width:580px; margin:0.5rem auto 0;">
@@ -92,29 +93,38 @@ document.querySelectorAll("nav li").forEach(li => {
 }
 </style>
 
-<!-- 📰 Latest Posts -->
+<!-- ========== LATEST POSTS GRID ========== -->
 <section style="max-width:1000px; margin:4rem auto;">
   <h2 style="text-align:center; margin-bottom:2rem; font-size:1.8rem;">Latest Posts</h2>
   <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1.5rem;">
     {% for post in site.posts limit:6 %}
-    <div style="border:1px solid #eaeaea; border-radius:10px; padding:1.2rem; background:#fff; transition:all 0.3s; box-shadow:0 2px 6px rgba(0,0,0,0.04);">
-      <a href="{{ post.url | relative_url }}" style="font-size:1.1rem; font-weight:600; color:#0078D7; text-decoration:none; display:block; margin-bottom:0.5rem;">{{ post.title }}</a>
-      <p style="color:#888; font-size:0.9rem; margin:0;">{{ post.date | date: "%b %d, %Y" }} · {{ post.categories | join: ' / ' }}</p>
-      <p style="color:#555; font-size:0.9rem; margin-top:0.6rem;">{{ post.excerpt | strip_html | truncate: 100 }}</p>
-    </div>
+      <div style="border:1px solid #eaeaea; border-radius:10px; padding:1.2rem; background:#fff; transition:all 0.3s; box-shadow:0 2px 6px rgba(0,0,0,0.04);">
+        <a href="{{ post.url | relative_url }}" 
+           style="font-size:1.1rem; font-weight:600; color:#0078D7; text-decoration:none; display:block; margin-bottom:0.5rem;">
+           {{ post.title }}
+        </a>
+        <p style="color:#888; font-size:0.9rem; margin:0;">
+          {{ post.date | date: "%b %d, %Y" }} · {{ post.categories | join: ' / ' }}
+        </p>
+        <p style="color:#555; font-size:0.9rem; margin-top:0.6rem;">{{ post.excerpt | strip_html | truncate: 100 }}</p>
+      </div>
     {% endfor %}
   </div>
   <p style="text-align:center; margin-top:2.5rem;">
-    <a href="{{ '/posts/' | relative_url }}" style="color:#0078D7; text-decoration:none; font-weight:600;">Browse all →</a>
+    <a href="{{ '/posts/' | relative_url }}" 
+       style="color:#0078D7; text-decoration:none; font-weight:600;">Browse all →</a>
   </p>
 </section>
 
-<!-- ✅ Ask AI (beta) -->
+<!-- ========== ASK AI (beta) ========== -->
 <section style="max-width:1000px; margin:3rem auto; padding:1.2rem;">
   <h2 style="text-align:center; margin-bottom:1rem;">Ask AI (beta)</h2>
   <div style="display:flex; gap:.6rem; justify-content:center; flex-wrap:wrap;">
-    <input id="ai-query" type="text" placeholder="Ask about ACMV, Electrical, Music Therapy…" style="flex:1 1 540px; min-width:260px; padding:.8rem 1rem; border:1px solid #ddd; border-radius:10px;">
-    <button id="ai-search" style="padding:.8rem 1.2rem; border:none; border-radius:10px; background:#0078D7; color:#fff; font-weight:600;">Ask</button>
+    <input id="ai-query" type="text" placeholder="Ask about ACMV, Electrical, Music Therapy…" 
+           style="flex:1 1 540px; min-width:260px; padding:.8rem 1rem; border:1px solid #ddd; border-radius:10px;">
+    <button id="ai-search" style="padding:.8rem 1.2rem; border:none; border-radius:10px; background:#0078D7; color:#fff; font-weight:600;">
+      Ask
+    </button>
   </div>
   <div id="ai-results" style="margin-top:1.2rem;"></div>
 </section>
@@ -126,185 +136,38 @@ document.querySelectorAll("nav li").forEach(li => {
   const $q=document.getElementById('ai-query');
   const $btn=document.getElementById('ai-search');
   const $out=document.getElementById('ai-results');
-  const WORKER_URL='https://YOUR_SUBDOMAIN.workers.dev/ask'; // update later
+  const WORKER_URL = 'https://YOUR_SUBDOMAIN.workers.dev/ask';
 
   fetch('{{ "/search.json?v=1" | relative_url }}')
-
-.then(r=>r.json()).then(json=>{
-    docs=json;
-    idx=lunr(function(){
-      this.ref('id'); this.field('title',{boost:6});
-      this.field('categories',{boost:4}); this.field('content',{boost:1});
-      json.forEach(d=>this.add({id:d.id,title:d.title,categories:(d.categories||[]).join(' '),content:d.content}),this);
+    .then(r=>r.json())
+    .then(json=>{
+      docs=json;
+      idx=lunr(function(){
+        this.ref('id');
+        this.field('title',{boost:6});
+        this.field('categories',{boost:4});
+        this.field('content',{boost:1});
+        json.forEach(d=>this.add(d),this);
+      });
     });
-  });
 
-  function ask(){
-    const query=$q.value.trim();
-    if(!query||!idx){$out.innerHTML='<p style="color:#999;">Index not ready. Try again.</p>';return;}
-    $out.innerHTML='<p>Thinking…</p>';
-    fetch(WORKER_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({query})})
-    .then(r=>r.json()).then(data=>{
-      if(data.error){$out.innerHTML='<p style="color:#d00;">'+data.error+'</p>';return;}
-      $out.innerHTML='<div style="white-space:pre-wrap; line-height:1.55;">'+data.answer+'</div>';
-    }).catch(()=>{$out.innerHTML='<p style="color:#d00;">Network error.</p>';});
-  }
+  async function ask(){
+    const query = $q.value.trim();
+    if(!query || !idx){
+      $out.innerHTML = '<p style="color:#999;">Index not ready. Try again in a moment.</p>';
+      return;
+    }
+    $out.innerHTML = '<p>Thinking…</p>';
+    const res = await fetch(WORKER_URL, {
 
-  $btn.addEventListener('click', ask);
-  $q.addEventListener('keydown', e=>{ if(e.key==='Enter') ask(); });
-})();
-</script>
-
----
-layout: home
-title: "Home"
----
-
-<!-- ========== HEADER NAVIGATION ========== -->
-<header style="width:100%; background:#fff; border-bottom:1px solid #eee; padding:1rem 2rem; position:sticky; top:0; z-index:1000; display:flex; justify-content:space-between; align-items:center; box-shadow:0 1px 4px rgba(0,0,0,0.05);">
-  <h2 style="margin:0; font-size:1.3rem; color:#0078D7; font-weight:700;">
-    <a href="{{ '/' | relative_url }}" style="text-decoration:none; color:#0078D7;">Eric Scott</a>
-  </h2>
-
-  <nav>
-    <ul style="list-style:none; margin:0; padding:0; display:flex; gap:1.5rem; align-items:center;">
-      <li><a href="{{ '/' | relative_url }}" style="text-decoration:none; color:#333; font-weight:600;">Home</a></li>
-
-      <!-- Music Menu -->
-      <li style="position:relative;">
-        <a href="{{ '/music/' | relative_url }}" style="text-decoration:none; color:#333; font-weight:600;">Music ▾</a>
-        <ul style="position:absolute; top:1.8rem; left:0; background:#fff; border:1px solid #ddd; border-radius:8px; list-style:none; padding:0.5rem 0; display:none; min-width:200px;">
-          <li><a href="{{ '/music/musictheory/' | relative_url }}" style="display:block; padding:0.4rem 1rem; color:#333; text-decoration:none;">Music Theory (ABRSM)</a></li>
-          <li><a href="{{ '/music/musictherapy/' | relative_url }}" style="display:block; padding:0.4rem 1rem; color:#333; text-decoration:none;">Music Therapy</a></li>
-        </ul>
-      </li>
-
-      <!-- English Menu -->
-      <li style="position:relative;">
-        <a href="{{ '/english/' | relative_url }}" style="text-decoration:none; color:#333; font-weight:600;">🇬🇧 English ▾</a>
-        <ul style="position:absolute; top:1.8rem; left:0; background:#fff; border:1px solid #ddd; border-radius:8px; list-style:none; padding:0.5rem 0; display:none; min-width:160px;">
-          <li><a href="{{ '/english/grammar/' | relative_url }}" style="display:block; padding:0.4rem 1rem; color:#333; text-decoration:none;">Grammar</a></li>
-          <li><a href="{{ '/english/speaking/' | relative_url }}" style="display:block; padding:0.4rem 1rem; color:#333; text-decoration:none;">Speaking</a></li>
-          <li><a href="{{ '/english/writing/' | relative_url }}" style="display:block; padding:0.4rem 1rem; color:#333; text-decoration:none;">Writing</a></li>
-          <li><a href="{{ '/english/vocabulary/' | relative_url }}" style="display:block; padding:0.4rem 1rem; color:#333; text-decoration:none;">Vocabulary</a></li>
-        </ul>
-      </li>
-
-      <!-- Engineering Menu -->
-      <li style="position:relative;">
-        <a href="{{ '/engineering/' | relative_url }}" style="text-decoration:none; color:#333; font-weight:600;">Engineering ▾</a>
-        <ul style="position:absolute; top:1.8rem; left:0; background:#fff; border:1px solid #ddd; border-radius:8px; list-style:none; padding:0.5rem 0; display:none; min-width:180px;">
-          <li><a href="{{ '/engineering/acmv/' | relative_url }}" style="display:block; padding:0.4rem 1rem; color:#333; text-decoration:none;">ACMV</a></li>
-          <li><a href="{{ '/engineering/electrical/' | relative_url }}" style="display:block; padding:0.4rem 1rem; color:#333; text-decoration:none;">Electrical</a></li>
-          <li><a href="{{ '/engineering/fire/' | relative_url }}" style="display:block; padding:0.4rem 1rem; color:#333; text-decoration:none;">Fire</a></li>
-          <li><a href="{{ '/engineering/plumbing/' | relative_url }}" style="display:block; padding:0.4rem 1rem; color:#333; text-decoration:none;">Plumbing</a></li>
-          <li><a href="{{ '/engineering/sanitary/' | relative_url }}" style="display:block; padding:0.4rem 1rem; color:#333; text-decoration:none;">Sanitary</a></li>
-        </ul>
-      </li>
-
-      <li><a href="{{ '/posts/' | relative_url }}" style="text-decoration:none; color:#333; font-weight:600;">All Posts</a></li>
-    </ul>
-  </nav>
-</header>
-
-<!-- Dropdown hover -->
-<script>
-document.querySelectorAll("nav li").forEach(li => {
-  li.addEventListener("mouseenter", () => {
-    const menu = li.querySelector("ul");
-    if(menu) menu.style.display = "block";
-  });
-  li.addEventListener("mouseleave", () => {
-    const menu = li.querySelector("ul");
-    if(menu) menu.style.display = "none";
-  });
-});
-</script>
-
-<!-- 🌟 Hero Section -->
-<section style="position:relative; text-align:center; padding:6rem 1rem; overflow:hidden; color:white;">
-  <div style="
-    position:absolute; top:0; left:0; right:0; bottom:0;
-    background: linear-gradient(-45deg, #0078D7, #28a745, #6f42c1, #17a2b8);
-    background-size: 400% 400%;
-    animation: gradientMove 12s ease infinite;
-    z-index:0;"></div>
-
-  <div style="position:relative; z-index:1; max-width:700px; margin:auto;">
-    <img src="{{ '/assets/img/profile.jpg' | relative_url }}" alt="Eric Scott Profile"
-      style="width:160px; height:160px; border-radius:50%; object-fit:cover; box-shadow:0 8px 20px rgba(0,0,0,0.3); border:4px solid rgba(255,255,255,0.8);">
-    <h1 style="font-size:2.2rem; margin-top:1.2rem; font-weight:700;">Eric Scott</h1>
-    <p style="font-size:1.1rem; color:#f0f0f0; max-width:580px; margin:0.5rem auto 0;">
-      Blending <strong>Engineering</strong> precision and <strong>Musical</strong> creativity — 
-      sharing knowledge on ACMV, Electrical, Plumbing, Fire, Sanitary, Piano, and Music Therapy.
-    </p>
-  </div>
-</section>
-
-<style>
-@keyframes gradientMove {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-</style>
-
-<!-- 📰 Latest Posts -->
-<section style="max-width:1000px; margin:4rem auto;">
-  <h2 style="text-align:center; margin-bottom:2rem; font-size:1.8rem;">Latest Posts</h2>
-  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1.5rem;">
-    {% for post in site.posts limit:6 %}
-    <div style="border:1px solid #eaeaea; border-radius:10px; padding:1.2rem; background:#fff; transition:all 0.3s; box-shadow:0 2px 6px rgba(0,0,0,0.04);">
-      <a href="{{ post.url | relative_url }}" style="font-size:1.1rem; font-weight:600; color:#0078D7; text-decoration:none; display:block; margin-bottom:0.5rem;">{{ post.title }}</a>
-      <p style="color:#888; font-size:0.9rem; margin:0;">{{ post.date | date: "%b %d, %Y" }} · {{ post.categories | join: ' / ' }}</p>
-      <p style="color:#555; font-size:0.9rem; margin-top:0.6rem;">{{ post.excerpt | strip_html | truncate: 100 }}</p>
-    </div>
-    {% endfor %}
-  </div>
-  <p style="text-align:center; margin-top:2.5rem;">
-    <a href="{{ '/posts/' | relative_url }}" style="color:#0078D7; text-decoration:none; font-weight:600;">Browse all →</a>
-  </p>
-</section>
-
-<!-- ✅ Ask AI (beta) -->
-<section style="max-width:1000px; margin:3rem auto; padding:1.2rem;">
-  <h2 style="text-align:center; margin-bottom:1rem;">Ask AI (beta)</h2>
-  <div style="display:flex; gap:.6rem; justify-content:center; flex-wrap:wrap;">
-    <input id="ai-query" type="text" placeholder="Ask about ACMV, Electrical, Music Therapy…" style="flex:1 1 540px; min-width:260px; padding:.8rem 1rem; border:1px solid #ddd; border-radius:10px;">
-    <button id="ai-search" style="padding:.8rem 1.2rem; border:none; border-radius:10px; background:#0078D7; color:#fff; font-weight:600;">Ask</button>
-  </div>
-  <div id="ai-results" style="margin-top:1.2rem;"></div>
-</section>
-
-<script src="https://cdn.jsdelivr.net/npm/lunr/lunr.min.js"></script>
-<script>
-(function(){
-  let idx=null, docs=[];
-  const $q=document.getElementById('ai-query');
-  const $btn=document.getElementById('ai-search');
-  const $out=document.getElementById('ai-results');
-  const WORKER_URL='https://YOUR_SUBDOMAIN.workers.dev/ask'; // update later
-
-  fetch('{{ "/search.json?v=1" | relative_url }}')
-
-.then(r=>r.json()).then(json=>{
-    docs=json;
-    idx=lunr(function(){
-      this.ref('id'); this.field('title',{boost:6});
-      this.field('categories',{boost:4}); this.field('content',{boost:1});
-      json.forEach(d=>this.add({id:d.id,title:d.title,categories:(d.categories||[]).join(' '),content:d.content}),this);
-    });
-  });
-
-  function ask(){
-    const query=$q.value.trim();
-    if(!query||!idx){$out.innerHTML='<p style="color:#999;">Index not ready. Try again.</p>';return;}
-    $out.innerHTML='<p>Thinking…</p>';
-    fetch(WORKER_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({query})})
-    .then(r=>r.json()).then(data=>{
-      if(data.error){$out.innerHTML='<p style="color:#d00;">'+data.error+'</p>';return;}
-      $out.innerHTML='<div style="white-space:pre-wrap; line-height:1.55;">'+data.answer+'</div>';
-    }).catch(()=>{$out.innerHTML='<p style="color:#d00;">Network error.</p>';});
+method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({ query })
+    }).catch(()=>null);
+    if(!res){ $out.innerHTML='<p style="color:#d00;">Network error.</p>'; return; }
+    const data = await res.json().catch(()=>({error:'Invalid JSON'}));
+    if(data.error){ $out.innerHTML='<p style="color:#d00;">'+data.error+'</p>'; return; }
+    $out.innerHTML='<div style="white-space:pre-wrap; line-height:1.55;">'+data.answer+'</div>';
   }
 
   $btn.addEventListener('click', ask);
