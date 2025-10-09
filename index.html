@@ -128,129 +128,136 @@ document.querySelectorAll("nav li").forEach(li => {
   </p>
 </section>
 
-<!-- ☕️ Floating Support Button + Popup -->
+<!-- ☕️ Floating Support Me (Animated Popup, All Pages) -->
 <style>
+  /* Floating button */
   #support-btn {
     position: fixed;
-    bottom: 1.2rem;
-    right: 1.2rem;
-    background: #ffb703;
-    color: #000;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    background: linear-gradient(135deg, #ffb703, #fb8500);
+    color: #fff;
     font-weight: 700;
-    padding: 0.9rem 1.4rem;
+    padding: 1rem 1.5rem;
     border-radius: 50px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.3);
     cursor: pointer;
-    z-index: 9999;
-    transition: all 0.3s ease;
+    z-index: 10001;
+    animation: pulse 2s infinite;
+    transition: transform .25s ease, box-shadow .25s ease;
   }
-  #support-btn:hover { background:#ff9500; transform: scale(1.05); }
+  #support-btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+  }
 
+  /* Button animation */
+  @keyframes pulse {
+    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255,183,3,0.4); }
+    70% { transform: scale(1.05); box-shadow: 0 0 0 20px rgba(255,183,3,0); }
+    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255,183,3,0); }
+  }
+
+  /* Popup */
   #support-popup {
     display: none;
     position: fixed;
     bottom: 6rem;
-    right: 1rem;
-    width: 340px;
+    right: 1.2rem;
+    width: 330px;
     background: #fff;
-    border: 1px solid #ddd;
     border-radius: 14px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-    padding: 1.2rem;
-    z-index: 9998;
-    animation: fadeIn .3s ease;
+    border: 1px solid #ddd;
+    box-shadow: 0 8px 28px rgba(0,0,0,0.25);
+    z-index: 10000;
+    animation: slideUp .4s ease forwards;
   }
 
-  #support-popup h3 {
-    text-align:center;
-    margin-bottom:0.6rem;
-    color:#333;
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
   }
+
+  #support-popup header {
+    text-align: center;
+    background: linear-gradient(135deg, #ffb703, #fb8500);
+    color: #fff;
+    padding: 0.7rem;
+    border-radius: 14px 14px 0 0;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+
+  #support-popup .content {
+    padding: 1rem;
+    text-align: center;
+  }
+
   #support-popup img {
-    width:100%;
-    border-radius:10px;
-    margin-bottom:0.5rem;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 0.6rem;
   }
+
   #support-popup button {
-    background:#0078D7;
-    color:#fff;
-    border:none;
-    border-radius:6px;
-    padding:0.4rem 0.8rem;
-    cursor:pointer;
-    margin-top:0.3rem;
+    background: #0078D7;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.4rem 0.8rem;
+    cursor: pointer;
+    font-size: 0.85rem;
   }
+
   #support-popup .close-btn {
-    position:absolute;
-    top:0.5rem;
-    right:0.7rem;
-    cursor:pointer;
-    font-size:1.2rem;
-    color:#888;
-  }
-  @keyframes fadeIn {
-    from{opacity:0; transform:translateY(10px);}
-    to{opacity:1; transform:translateY(0);}
+    position: absolute;
+    top: 0.6rem;
+    right: 0.8rem;
+    font-size: 1.2rem;
+    color: #fff;
+    cursor: pointer;
   }
 </style>
 
+<!-- Floating Button -->
 <div id="support-btn">☕️ Support Me</div>
 
+<!-- Popup -->
 <div id="support-popup">
-  <span class="close-btn" onclick="toggleSupport()">✖️</span>
-  <h3>💖 Support Eric Scott</h3>
-  <p style="text-align:center; font-size:0.9rem; color:#555;">Choose your payment method below:</p>
-  <hr style="margin:0.6rem 0;">
-
-  <!-- KBZ Pay -->
-  <div style="margin-bottom:0.6rem; text-align:center;">
-    <strong>📱 KBZ Pay</strong><br>
-    Phone: <strong>09425096424</strong><br>
-    <img src="{{ '/assets/img/kbzpay.png' | relative_url }}" alt="KBZ Pay QR">
-  </div>
-
-  <!-- AYA Pay -->
-  <div style="margin-bottom:0.6rem; text-align:center;">
-    <strong>📱 AYA Pay</strong><br>
-    Phone: <strong>09425096424</strong><br>
-    <img src="{{ '/assets/img/ayapay.png' | relative_url }}" alt="AYA Pay QR">
-  </div>
-
-  <!-- Wave Pay -->
-  <div style="margin-bottom:0.6rem; text-align:center;">
-    <strong>📱 Wave Pay</strong><br>
-    Phone: <strong>09772806376</strong><br>
-    <img src="{{ '/assets/img/qr/wavepay.png' | relative_url }}" alt="Wave Pay QR">
-  </div>
-
-  <!-- Bank Accounts -->
-  <div style="font-size:0.9rem;">
+  <header>
+    Support Eric Scott
+    <span class="close-btn" onclick="toggleSupport()">✖️</span>
+  </header>
+  <div class="content">
+    <p>Thank you for supporting my work 💛</p>
+    <strong>KBZ Pay</strong><br>
+    <img src="/assets/img/kbzpay.png" alt="KBZ Pay QR">
+    <strong>AYA Pay</strong><br>
+    <img src="/assets/img/ayapay.png" alt="AYA Pay QR">
     <hr>
-    <strong>🏦 AYA Bank</strong><br>
-    200 277 87478 — Aung Phone Myat<br>
-    400 3322 9054 — Aung Phone Myat<br><br>
-
-    <strong>🏦 KBZ Bank</strong><br>
-    06230 10620 1408 001 — Aung Phone Myat<br><br>
-
-    <strong>🏦 UAB Bank</strong><br>
-    055330 1000 60674 — Aung Phone Myat
-  </div>
-
-  <div style="margin-top:1rem; text-align:center;">
-    <a href="https://www.buymeacoffee.com/YOUR_USERNAME" target="_blank" rel="noopener"
-       style="background:#ffdd00; color:#000; text-decoration:none; font-weight:700; padding:.5rem 1rem; border-radius:8px; display:inline-block;">
-       ☕️ Buy Me a Coffee
+    <strong>🏦 Bank Accounts</strong>
+    <p>AYA Bank: <b>20027787478</b><br>
+       KBZ Bank: <b>06230106201408001</b><br>
+       UAB Bank: <b>055330100060674</b></p>
+    <a href="https://www.buymeacoffee.com/YOUR_USERNAME" target="_blank">
+      <button>☕️ Buy Me a Coffee</button>
     </a>
   </div>
 </div>
 
 <script>
-  const popup = document.getElementById("support-popup");
-  const btn = document.getElementById("support-btn");
+  const btn = document.getElementById('support-btn');
+  const popup = document.getElementById('support-popup');
 
-  btn.addEventListener("click", toggleSupport);
-  function toggleSupport(){
-    popup.style.display = (popup.style.display === "block") ? "none" : "block";
+  btn.addEventListener('click', toggleSupport);
+  function toggleSupport() {
+    popup.style.display = popup.style.display === 'block' ? 'none' : 'block';
   }
+
+  // Optional: close popup when clicking outside
+  window.addEventListener('click', function(e) {
+    if (!popup.contains(e.target) && e.target !== btn) {
+      popup.style.display = 'none';
+    }
+  });
 </script>
