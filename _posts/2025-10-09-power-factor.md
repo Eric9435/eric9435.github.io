@@ -79,8 +79,3 @@ Capacitor တွေက ဓာတ်အားစနစ်အတွက် အာ�
 > Capacitor တွေက ကျန်းမာရေးအထောက်အကူပြု ဆေးဝါးလိုပဲ။
 
 ---
-
-<footer style="text-align:center; font-size:0.9rem; color:#777; margin-top:2rem; border-top:1px solid #eee; padding-top:1rem;">
-  © <script>document.write(new Date().getFullYear())</script> Eric Scott — All rights reserved.<br>
-  Unauthorized use or reproduction of this content is prohibited.
-</footer>
