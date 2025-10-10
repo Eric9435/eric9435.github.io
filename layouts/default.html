@@ -6,6 +6,13 @@
     <title>{{ page.title | escape }} | {{ site.title | escape }}</title>
     {% seo %}
     <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+    <!-- Open Graph (Facebook) Preview -->
+{% if page.image %}
+  <meta property="og:image" content="{{ page.image }}" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+{% endif %}
   </head>
 
   <body>
