@@ -1,13 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-B77C04H7TZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-B77C04H7TZ');
-</script>
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -37,5 +29,36 @@
     <footer>
       {% include footer.html %}
     </footer>
+    <!-- 👁️ Google Analytics Visitor Counter -->
+<div id="live-stats" style="text-align:center;margin:1rem 0;font-size:1.1rem;">
+  👁️ <strong>Visitors (24h):</strong> <span id="visitors">Loading...</span>
+</div>
+
+<script>
+  // 🔹 Replace this with your actual Google Analytics PROPERTY ID (numbers only)
+  const PROPERTY_ID = "508019427";   // ← put your real Property ID here
+
+  // 🔹 Replace this with your real Google API key
+  const API_KEY = "AIzaSyAvr0irbLbZvJscZAAInVaZftUJRkEPIUc"; 
+
+  async function fetchVisitors() {
+    const res = await fetch(
+      https://analyticsdata.googleapis.com/v1beta/properties/${PROPERTY_ID}:runReport?key=${API_KEY},
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          dateRanges: [{ startDate: "yesterday", endDate: "today" }],
+          metrics: [{ name: "activeUsers" }]
+        })
+      }
+    );
+    const data = await res.json();
+    const count = data?.rows?.[0]?.metricValues?.[0]?.value || "0";
+    document.getElementById("visitors").textContent = count;
+  }
+
+  fetchVisitors();
+</script>
   </body>
 </html>
