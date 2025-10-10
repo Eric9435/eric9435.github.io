@@ -3,10 +3,10 @@ layout: post
 title: "⚡️ Power Factor (စွမ်းအားမြှောက်ကိန်း) ဆိုတာ ဘာလဲ?"
 date: 2025-10-09
 categories: [engineering, electrical]
-image: /assets/img/power-factor-calculator_1731042000.jpg
+image: /assets/img/hyperlynx-power-integrity-og-1200x630.jpg
 ---
 
-![Power Factor](/assets/img/power-factor-calculator_1731042000.jpg)
+![Power Factor](/assets/img/hyperlynx-power-integrity-og-1200x630.jpg)
 
 ⚡️ Power Factor (စွမ်းအားမြှောက်ကိန်း) ဆိုတာ တကယ်တော့ ဘာလဲ?
 
