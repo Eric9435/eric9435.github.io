@@ -6,6 +6,8 @@ categories: [engineering, electrical]
 image: /assets/img/power-factor-calculator_1731042000.jpg
 ---
 
+![Power Factor](/assets/img/power-factor-calculator_1731042000.jpg)
+
 ⚡️ Power Factor (စွမ်းအားမြှောက်ကိန်း) ဆိုတာ တကယ်တော့ ဘာလဲ?
 
 ရိုးရိုးလေးပြောရရင် Power Factor ဆိုတာ သင်ဝယ်လိုက်တဲ့ လျှပ်စစ်မီးကို ဘယ်လောက်ထိ တန်အောင် သုံးနေလဲ ဆိုတာကို ပြတာပါပဲ။
