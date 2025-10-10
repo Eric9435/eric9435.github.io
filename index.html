@@ -261,3 +261,17 @@ document.querySelectorAll("nav li").forEach(li => {
     }
   });
 </script>
+
+<!-- 🌍 Website View Counter -->
+<div style="text-align:center; margin:30px 0; color:#555;">
+  👀 Total Site Visits: <strong id="apm-views">—</strong>
+</div>
+
+<script>
+fetch('https://api.countapi.xyz/hit/aungphonemyat.github.io/site')
+  .then(r => r.json())
+  .then(d => {
+    document.getElementById('apm-views').textContent = (d.value || 0).toLocaleString();
+  })
+  .catch(() => {});
+</script>
