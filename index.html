@@ -262,20 +262,6 @@ document.querySelectorAll("nav li").forEach(li => {
   });
 </script>
 
-<!-- 🌍 Website View Counter -->
-<div style="text-align:center; margin:30px 0; color:#555;">
-  👀 Total Site Visits: <strong id="apm-views">—</strong>
-</div>
-
-<script>
-fetch('https://api.countapi.xyz/hit/aungphonemyat.github.io/site')
-  .then(r => r.json())
-  .then(d => {
-    document.getElementById('apm-views').textContent = (d.value || 0).toLocaleString();
-  })
-  .catch(() => {});
-</script>
-
 <!-- JOIN MEMBERSHIP -->
 <div style="margin:1.2rem 0; text-align:center;">
   <h3 style="margin-bottom:.6rem;">🌟 Join Membership</h3>
@@ -313,3 +299,7 @@ fetch('https://api.countapi.xyz/hit/aungphonemyat.github.io/site')
     By subscribing, you agree to receive updates. You can unsubscribe anytime.
   </p>
 </form>
+
+<p style="text-align:center;">
+  <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Faungphonemyat.github.io&count_bg=%230078D7&title_bg=%23BBBBBB&icon=eye.svg&icon_color=%23FFFFFF&title=Visitors&edge_flat=false"/>
+</p>
