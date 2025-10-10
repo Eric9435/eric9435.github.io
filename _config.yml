@@ -1,31 +1,35 @@
-{% seo %}
 title: "Aung Phone Myat"
 description: "Writing on engineering, music, and music therapy."
 theme: minima
-header_pages: []
-show_excerpts: "true"
+show_excerpts: true
 timezone: Asia/Yangon
 author: "Aung Phone Myat"
-url: "https://aungphonemyat.github.io/"  # change to your username site
-logo: /assets/img/cover.jpg
-# Navigation links (minima shows these if the pages exist)
+
+# --- URL Settings ---
+url: "https://aungphonemyat.github.io"  # no trailing slash
+baseurl: ""  # leave empty for user site (e.g., username.github.io)
+
+# --- Default Social Image ---
+logo: /assets/img/cover.jpg  # must exist; best size = 1200x630
+
+# --- Navigation / Social Links ---
 minima:
   social_links:
     - { platform: github, user_url: "https://github.com/eric9435" }
 
-# Enable useful official plugins (supported by GitHub Pages)
+# --- Plugins (for GitHub Pages SEO, sitemap, feed, etc.) ---
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-paginate
 
+# --- Pagination ---
 paginate: 6
 paginate_path: "/page:num/"
 
-# Keep assets folder
+# --- Include folders for build ---
 include:
   - assets
   - _includes
-include:
   - engineering/acmv/_posts
