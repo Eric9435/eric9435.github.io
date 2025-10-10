@@ -300,6 +300,21 @@ document.querySelectorAll("nav li").forEach(li => {
   </p>
 </form>
 
-<p style="text-align:center;">
-  <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Feric9435.github.io&count_bg=%230078D7&title_bg=%23BBBBBB&icon=eye.svg&icon_color=%23FFFFFF&title=Visitors&edge_flat=false"/>
-</p>
+<!-- Visitors counter -->
+<div style="text-align:center; margin:16px 0; color:#555;">
+  👀 Total Site Visits: <strong id="apm-views">—</strong>
+</div>
+
+<script>
+  // Use your domain as the namespace; "site" is the key you count
+  fetch('https://api.countapi.xyz/hit/eric9435.github.io/site')
+    .then(r => r.json())
+    .then(d => {
+      const el = document.getElementById('apm-views');
+      if (el) el.textContent = (d.value || 0).toLocaleString();
+    })
+    .catch(() => {
+      const el = document.getElementById('apm-views');
+      if (el) el.textContent = '—'; // fail silently
+    });
+</script>
