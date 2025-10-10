@@ -6,7 +6,7 @@ categories: [engineering, electrical]
 image: /assets/img/power-factor.jpg
 ---
 
-![Power Factor](/assets/img/power-factor.jpg)
+![Power Factor](https://github.com/Eric9435/eric9435.github.io/blob/main/assets/img/power-factor.jpg)
 
 ⚡️ Power Factor (စွမ်းအားမြှောက်ကိန်း) ဆိုတာ တကယ်တော့ ဘာလဲ?
 
