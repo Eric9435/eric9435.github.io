@@ -48,13 +48,14 @@ title: "Home"
            style="display:block; padding:0.4rem 1rem; color:#333; text-decoration:none;">Listening</a></li>
   </ul>
 </li>
-      <!-- Google Analytics (GA4) -->
+     <!-- Google Analytics (GA4) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-B77C04H7TZ"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-B77C04H7TZ');
+  // Debug mode enabled to show data in DebugView
+  gtag('config', 'G-B77C04H7TZ', { 'debug_mode': true });
 </script>
       <!-- Engineering Menu -->
       <li style="position:relative;">
