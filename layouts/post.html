@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    {% if page.date %}
+      <p class="post-meta">{{ page.date | date: "%b %d, %Y" }}</p>
+    {% endif %}
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  <!-- 💬 COMMENTS SECTION -->
+  <section id="comments" style="margin-top:3rem;">
+    <h3 style="text-align:center;">💬 Comments</h3>
+    <div class="commentbox"></div>
+  </section>
+
+  <!-- CommentBox.io script -->
+  <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      commentBox('5633793352269824-proj', {
+        className: 'commentbox',
+        defaultBoxId: 'commentbox',
+        tlcParam: 'tlc'
+      });
+    });
+  </script>
+</article>
