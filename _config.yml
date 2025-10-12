@@ -33,3 +33,10 @@ include:
   - assets
   - _includes
   - engineering/acmv/_posts
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
