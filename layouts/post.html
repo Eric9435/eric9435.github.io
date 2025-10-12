@@ -1,56 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>{{ page.title }} | {{ site.title }}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  {%- seo -%}
-  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
-</head>
-<body>
+---
+layout: default
+---
 
-  <!-- Header from your default layout, optional -->
-  {% include header.html %}
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-meta">
+      {{ page.date | date: "%B %d, %Y" }}
+    </p>
+  </header>
 
-  <main class="page-content" aria-label="Content">
-    <div class="wrapper">
-      <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
-        <header class="post-header">
-          <h1 class="post-title p-name" itemprop="headline">{{ page.title }}</h1>
-          <p class="post-meta">
-            <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-              {{ page.date | date: "%b %-d, %Y" }}
-            </time>
-            {%- if page.categories and page.categories.size > 0 -%}
-              · {{ page.categories | join: " / " }}
-            {%- endif -%}
-          </p>
-        </header>
+  <div class="post-content">
+    {{ content }}
+  </div>
+</article>
 
-        <div class="post-content e-content" itemprop="articleBody">
-          {{ content }}
-        </div>
+<!-- 💬 Comment Section -->
+<section id="comments" style="margin-top:3rem;">
+  <h3>💬 Comments</h3>
+  <div class="commentbox"></div>
+</section>
 
-        <!-- 💬 Comments -->
-        <section id="comments" style="margin-top:2.5rem">
-          <h3>Comments</h3>
-          <div class="commentbox"></div>
-          <noscript><p style="color:#999">Enable JavaScript to view comments.</p></noscript>
-        </section>
-      </article>
-    </div>
-  </main>
-
-  {% include footer.html %}
-
-  <!-- CommentBox.io -->
-  <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
-  <script>
-    commentBox('5633793352269824-proj', {
-      className: 'commentbox',
-      defaultBoxId: 'commentbox',
-      tlcParam: 'tlc'
-    });
-  </script>
-</body>
-</html>
+<!-- ✅ CommentBox.io script -->
+<script src="https://cdn.jsdelivr.net/npm/commentbox.io/dist/commentBox.min.js"></script>
+<script>
+  commentBox('5633793352269824-proj', {
+    className: 'commentbox',
+    defaultBoxId: 'commentbox',
+    tlcParam: 'tlc'
+  });
+</script>
