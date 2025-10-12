@@ -308,21 +308,36 @@ document.querySelectorAll("nav li").forEach(li => {
   </p>
 </form>
 
-<!-- Visitors counter -->
-<div style="text-align:center; margin:16px 0; color:#555;">
-  👀 Total Site Visits: <strong id="apm-views">—</strong>
-</div>
+<p style="text-align:center; color:#666; margin-top:1rem;">
+  👁️ Site views: <strong id="apm-view-count">…</strong>
+</p>
 
 <script>
-  // Use your domain as the namespace; "site" is the key you count
-  fetch('https://api.countapi.xyz/hit/eric9435.github.io/site')
-    .then(r => r.json())
-    .then(d => {
-      const el = document.getElementById('apm-views');
-      if (el) el.textContent = (d.value || 0).toLocaleString();
-    })
-    .catch(() => {
-      const el = document.getElementById('apm-views');
-      if (el) el.textContent = '—'; // fail silently
-    });
+(function () {
+  // Only count when on the real homepage
+  var isHome = location.pathname === '/' || location.pathname.endsWith('/index.html');
+  if (!isHome) return;
+
+  // Use a stable namespace+key for your site
+  var NS = 'eric9435_github_io';
+  var KEY = 'homepage_total_views';
+
+  // Create the counter if it doesn't exist, then increment and show it
+  var createUrl = 'https://api.countapi.xyz/create?namespace=' + NS + '&key=' + KEY + '&value=0';
+  var hitUrl = 'https://api.countapi.xyz/hit/' + NS + '/' + KEY;
+
+  function setCount(n){ 
+    var el = document.getElementById('apm-view-count');
+    if (el) el.textContent = n.toLocaleString();
+  }
+
+  // Try to create once (idempotent), ignore errors if it exists already
+  fetch(createUrl).finally(function(){
+    fetch(hitUrl)
+      .then(r => r.json())
+      .then(d => setCount(d.value || 0))
+      .catch(() => setCount(0));
+  });
+})();
 </script>
+
