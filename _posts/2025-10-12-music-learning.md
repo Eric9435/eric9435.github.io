@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "🎶 ဂီတကုထုံးနှင့် ကလေးများ၏ သင်ယူမှု- ဂီတမှတစ်ဆင့် ကလေးများဖွံဖြိုးတိုးတက်မှု (Music Therapy & Learning: How Music Boosts Child Development)
+title: "🎶 ဂီတကုထုံးနှင့် ကလေးများ၏ သင်ယူမှု- ဂီတမှတစ်ဆင့် ကလေးများဖွံဖြိုးတိုးတက်မှု (Music Therapy & Learning: How Music Boosts Child Development)"
 date: 2025-10-12
 categories: [music, musictherapy]
 ---
