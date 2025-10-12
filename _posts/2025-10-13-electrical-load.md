@@ -6,7 +6,6 @@ categories: [engineering, electrical]
 image: /assets/img/load-balance.png
 ---
 
-![Load-Balance](/assets/img/load-balance.png)
 
 # ⚙️ Load Balancing (ဝန်အား ညှိနှိုင်းမှု) — လျှပ်စစ်စနစ်ရဲ့ ခြေထောက်သုံးချောင်း 🦵🦵🦵
 
