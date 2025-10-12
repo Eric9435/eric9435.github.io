@@ -2,31 +2,40 @@
 layout: default
 ---
 
-<article class="post">
-  <header class="post-header" style="margin-bottom:1.5rem;">
-    <h1 class="post-title" style="font-size:2rem; font-weight:700;">{{ page.title }}</h1>
-    {% if page.date %}
-    <p class="post-meta" style="color:#888;">{{ page.date | date: "%B %d, %Y" }}</p>
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="headline">{{ page.title }}</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {{ page.date | date: "%b %-d, %Y" }}
+      </time>
+      {% if page.categories.size > 0 %} · {{ page.categories | join: " / " }}{% endif %}
+    </p>
+    {% if page.image %}
+      <img src="{{ page.image | relative_url }}" alt="" style="max-width:100%;border-radius:12px;margin:1rem 0;">
     {% endif %}
   </header>
 
-  <div class="post-content" style="line-height:1.6;">
+  <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>
-
-  <!-- 💬 Comments Section -->
-  <section id="comments" style="margin-top:3rem;">
-    <h3 style="text-align:center;">💬 Comments</h3>
-    <div class="commentbox"></div>
-  </section>
 </article>
 
-<!-- CommentBox.io script -->
-<script src="https://cdn.jsdelivr.net/npm/commentbox.io/dist/commentBox.min.js"></script>
+<!-- Comments -->
+<section id="comments" style="margin-top:2rem;">
+  <h3 style="text-align:center;margin-bottom:.5rem;">💬 Comments</h3>
+  <div class="commentbox"></div>
+</section>
+
+<!-- CommentBox.io -->
+<script defer src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
 <script>
-  commentBox('5633793352269824-proj', {
-    className: 'commentbox',
-    defaultBoxId: 'commentbox',
-    tlcParam: 'tlc'
+  document.addEventListener('DOMContentLoaded', function () {
+    // Your real project key:
+    commentBox('5633793352269824-proj', {
+      className: 'commentbox',
+      defaultBoxId: 'commentbox',
+      tlcParam: 'tlc'
+    });
   });
 </script>
