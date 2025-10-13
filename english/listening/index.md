@@ -1,32 +1,33 @@
 ---
 layout: page
-title: "🎧 English Listening Practice"
-description: "Improve your English listening skills with stories, exercises, and audio lessons."
+title: "Listening"
 permalink: /english/listening/
 ---
 
-# 🎧 English Listening Practice
+# 📘 English Listening Blog
 
 Listening helps you understand pronunciation, rhythm, and natural English speaking.  
 Here you’ll find blog posts and lessons about English listening —  
 with practice audios, tips, and exercises.
-
 ---
 
-{% assign listening_posts = site.posts | where_exp:"post", "post.categories contains 'Listening'" %}
-{% if listening_posts.size > 0 %}
-  <div class="post-grid" style="display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:1rem; margin-top:1rem;">
-  {% for post in listening_posts %}
-    <article style="border:1px solid #ddd; border-radius:10px; padding:1rem; background:#fff;">
-      {% if post.image %}
-        <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" style="width:100%; height:auto; border-radius:8px;">
-      {% endif %}
-      <h3 style="margin-top:.5rem;"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-      <p style="color:#555; font-size:.9rem;">{{ post.excerpt | strip_html | truncate: 120 }}</p>
-      <a href="{{ post.url | relative_url }}" style="color:#0078D7; font-weight:600;">Read More →</a>
-    </article>
-  {% endfor %}
-  </div>
+{% assign listening_posts = site.posts 
+  | where_exp: "p", "p.categories contains 'english'" 
+  | where_exp: "p", "p.categories contains 'listening'" 
+  | sort: 'date' | reverse %}
+
+{% if listening_posts.size == 0 %}
+<p style="color:#888;">No listening posts yet. Please check back later.</p>
 {% else %}
-  <p style="text-align:center; color:#777;">No Listening posts yet. Check back soon!</p>
+<div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:1.5rem;">
+  {% for post in listening_posts %}
+  <div style="border:1px solid #eee; border-radius:10px; padding:1rem; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.05);">
+    <a href="{{ post.url | relative_url }}" style="text-decoration:none; font-weight:600; color:#0078D7;">
+      {{ post.title }}
+    </a>
+    <p style="font-size:0.9rem; color:#777;">{{ post.date | date: "%b %d, %Y" }}</p>
+    <p style="font-size:0.9rem; color:#555;">{{ post.excerpt | strip_html | truncate: 100 }}</p>
+  </div>
+  {% endfor %}
+</div>
 {% endif %}
