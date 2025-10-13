@@ -1,6 +1,7 @@
 ---
 layout: post
-title: "IELTS Listening Tricks – Detailed Guide"
+title: "🎧 IELTS Listening Tricks – Detailed Guide"
+date: 2025-10-13
 categories: [english, listening]
 ---
 
@@ -177,3 +178,15 @@ Aung Phone Myat, [10/13/2025 10:57 AM]
 
 > 🧭 Remember: IELTS Listening rewards focus, prediction, and pattern awareness, not just vocabulary.  
 > Practice under real test conditions, and learn to trust your ears!
+
+
+
+
+
+
+
+
+
+
+
+
