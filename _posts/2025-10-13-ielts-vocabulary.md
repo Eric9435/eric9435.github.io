@@ -2,7 +2,7 @@
 layout: post
 title: "🎧 IELTS Vocabulary Tricks – Table"
 date: 2025-10-13
-categories: [english, vocabulary]
+categories: [english,vocabulary]
 ---
 
 # English Vocabulary Master List (Table Format)
