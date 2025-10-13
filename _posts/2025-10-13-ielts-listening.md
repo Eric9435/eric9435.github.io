@@ -155,7 +155,6 @@ Plural mistakes also cost marks:
 
 ## 🎯 Final Pro Tips for Band 8+
 
-Aung Phone Myat, [10/13/2025 10:57 AM]
 1. Never leave blanks — guess logically.  
 2. Check plurals and grammar fit.  
 3. Underline dates and numbers before listening.  
