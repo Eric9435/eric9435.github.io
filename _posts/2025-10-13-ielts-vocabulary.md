@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "🎧 IELTS Vocabulary – Table"
+title: "🎧 IELTS Vocabulary – Table (PART 1)"
 date: 2025-10-13
 categories: [english, vocabulary]
 ---
