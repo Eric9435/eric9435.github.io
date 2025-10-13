@@ -7,7 +7,7 @@ categories: [english, listening]
 
 # 🎧 IELTS Listening Tricks – Detailed Guide
 
-## 🧩 Overview
+##  Overview
 
 The IELTS Listening test checks how well you understand spoken English across different situations — from everyday conversations to academic lectures.
 
@@ -24,9 +24,9 @@ The IELTS Listening test checks how well you understand spoken English across di
 
 ---
 
-## 🧠 Key IELTS Listening Tricks
+##  Key IELTS Listening Tricks
 
-### 🎯 1. Predict Before You Listen
+###  1. Predict Before You Listen
 - Read the questions before the recording starts.
 - Underline keywords (names, numbers, dates).
 - Predict the type of answer (noun, number, address, etc.).
@@ -37,7 +37,7 @@ The IELTS Listening test checks how well you understand spoken English across di
 
 ---
 
-### 🔄 2. Listen for Paraphrasing
+###  2. Listen for Paraphrasing
 The test rarely uses the exact words from the question.
 
 Question: “The hotel provides free breakfast.”  
@@ -48,7 +48,7 @@ Audio: “Breakfast is included in the price.”
 
 ---
 
-### ⚠️ 3. Beware of Traps
+###  3. Beware of Traps
 Speakers often change or correct information.
 
 Audio Example:
@@ -56,27 +56,27 @@ Audio Example:
 
 ✅ Correct Answer: 43
 
-> 🧭 Tip: Don’t write the first thing you hear. Wait till the speaker finishes the sentence.
+>  Tip: Don’t write the first thing you hear. Wait till the speaker finishes the sentence.
 
 ---
 
-### ⏱️ 4. Questions Follow Audio Order
+###  4. Questions Follow Audio Order
 - Answers come in the same sequence as the recording.
 - If you miss one, don’t panic — move on.
 - Guess logically and keep listening for the next clue.
 
 ---
 
-### ⌛ 5. Manage Your Time Smartly
+###  5. Manage Your Time Smartly
 - Before audio: Scan and predict.
 - During: Focus and listen for key words.
 - After: Transfer and check grammar/spelling.
 
-💻 For computer-based tests, you get 2 extra minutes to review answers.
+ For computer-based tests, you get 2 extra minutes to review answers.
 
 ---
 
-## 🗂️ Common Question Types & Strategies
+##  Common Question Types & Strategies
 
 | Type | What to Do |
 |------|-------------|
@@ -88,7 +88,7 @@ Audio Example:
 
 ---
 
-## ✍️ Grammar & Spelling Rules
+##  Grammar & Spelling Rules
 
 - Spelling must be correct or it’s marked wrong.
 - Use CAPITAL LETTERS for clarity.
@@ -98,7 +98,7 @@ Audio Example:
 
 ---
 
-## 🌍 Accent Training
+##  Accent Training
 
 You’ll hear various accents:
 - British
@@ -107,16 +107,16 @@ You’ll hear various accents:
 - American
 - New Zealand
 
-🎧 Improve by:
+ Improve by:
 - Watching BBC/ABC news.
 - Listening to English podcasts.
 - Practicing with Cambridge IELTS materials (Books 9–18).
 
 ---
 
-## 💡 Hidden Tricks Used by Top Scorers
+##  Hidden Tricks Used by Top Scorers
 
-### 🪄 A. Anticipate Grammar
+###  A. Anticipate Grammar
 If the question says:
 > “The main reason for the visit was __.”
 
@@ -132,7 +132,7 @@ Tone often signals corrections or emphasis.
 
 ---
 
-### 📏 C. Check Word Limits & Plurals
+###  C. Check Word Limits & Plurals
 Follow the instructions exactly.  
 “NO MORE THAN TWO WORDS” = up to 2 words only.
 
@@ -141,7 +141,7 @@ Plural mistakes also cost marks:
 
 ---
 
-## 🧩 10-Day Practice Plan
+##  10-Day Practice Plan
 
 | Day | Focus | Task |
 |------|--------|------|
@@ -153,7 +153,7 @@ Plural mistakes also cost marks:
 
 ---
 
-## 🎯 Final Pro Tips for Band 8+
+##  Final Pro Tips for Band 8+
 
 1. Never leave blanks — guess logically.  
 2. Check plurals and grammar fit.  
@@ -163,7 +163,7 @@ Plural mistakes also cost marks:
 
 ---
 
-## ✅ Summary
+##  Summary
 
 | Skill | What to Focus On |
 |--------|------------------|
@@ -175,7 +175,7 @@ Plural mistakes also cost marks:
 
 ---
 
-> 🧭 Remember: IELTS Listening rewards focus, prediction, and pattern awareness, not just vocabulary.  
+>  Remember: IELTS Listening rewards focus, prediction, and pattern awareness, not just vocabulary.  
 > Practice under real test conditions, and learn to trust your ears!
 
 
