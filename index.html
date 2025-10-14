@@ -1,0 +1,309 @@
+---
+layout: home
+title: "Home"
+---
+
+<!-- ====== HEADER NAVIGATION ====== -->
+<header style="width:100%; background:#fff; border-bottom:1px solid #eee; padding:1rem 2rem; position:sticky; top:0; z-index:1000; display:flex; justify-content:space-between; align-items:center; box-shadow:0 1px 4px rgba(0,0,0,0.05);">
+  <h2 style="margin:0; font-size:1.3rem; color:#0078D7; font-weight:700;">
+    <a href="{{ '/' | relative_url }}" style="text-decoration:none; color:#0078D7;">Eric Scott</a>
+  </h2>
+  <nav>
+    <ul style="list-style:none; margin:0; padding:0; display:flex; gap:1.5rem; align-items:center;">
+      <li><a href="{{ '/' | relative_url }}" style="text-decoration:none; color:#333; font-weight:600;">Home</a></li>
+
+
+      <!-- Music Menu -->
+      <li style="position:relative;">
+        <a href="{{ '/music/' | relative_url }}" style="text-decoration:none; color:#333; font-weight:600;">Music ▾</a>
+        <ul style="position:absolute; top:1.8rem; left:0; background:#fff; border:1px solid #ddd; border-radius:8px; list-style:none; padding:0.5rem 0; display:none; min-width:180px;">
+          <li><a href="{{ '/music/musictheory/' | relative_url }}" style="display:block; padding:0.4rem 1rem; color:#333; text-decoration:none;">Music Theory (ABRSM)</a></li>
+          <li><a href="{{ '/music/musictherapy/' | relative_url }}" style="display:block; padding:0.4rem 1rem; color:#333; text-decoration:none;">Music Therapy</a></li>
+        </ul>
+      </li>
+
+      <!-- English Menu -->
+   <li style="position:relative;">
+  <a href="{{ '/english/' | relative_url }}" 
+     style="text-decoration:none; color:#333; font-weight:600;">English ▾</a>
+  <ul style="
+      position:absolute; 
+      top:1.8rem; left:0; 
+      background:#fff; 
+      border:1px solid #ddd; 
+      border-radius:8px; 
+      list-style:none; 
+      padding:0.5rem 0; 
+      display:none; 
+      min-width:180px;">
+    <li><a href="{{ '/english/grammar/' | relative_url }}" 
+           style="display:block; padding:0.4rem 1rem; color:#333; text-decoration:none;">Grammar</a></li>
+    <li><a href="{{ '/english/vocabulary/' | relative_url }}" 
+           style="display:block; padding:0.4rem 1rem; color:#333; text-decoration:none;">Vocabulary</a></li>
+    <li><a href="{{ '/english/speaking/' | relative_url }}" 
+           style="display:block; padding:0.4rem 1rem; color:#333; text-decoration:none;">Speaking</a></li>
+    <li><a href="{{ '/english/writing/' | relative_url }}" 
+           style="display:block; padding:0.4rem 1rem; color:#333; text-decoration:none;">Writing</a></li>
+    <li><a href="{{ '/english/listening/' | relative_url }}" 
+           style="display:block; padding:0.4rem 1rem; color:#333; text-decoration:none;">Listening</a></li>
+  </ul>
+</li>
+     <!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B77C04H7TZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  // Debug mode enabled to show data in DebugView
+  gtag('config', 'G-B77C04H7TZ', { 'debug_mode': true });
+</script>
+      <!-- Engineering Menu -->
+      <li style="position:relative;">
+        <a href="{{ '/engineering/' | relative_url }}" style="text-decoration:none; color:#333; font-weight:600;">Engineering ▾</a>
+        <ul style="position:absolute; top:1.8rem; left:0; background:#fff; border:1px solid #ddd; border-radius:8px; list-style:none; padding:0.5rem 0; display:none; min-width:180px;">
+          <li><a href="{{ '/engineering/acmv/' | relative_url }}" style="display:block; padding:0.4rem 1rem; color:#333; text-decoration:none;">ACMV</a></li>
+          <li><a href="{{ '/engineering/electrical/' | relative_url }}" style="display:block; padding:0.4rem 1rem; color:#333; text-decoration:none;">Electrical</a></li>
+          <li><a href="{{ '/engineering/fire/' | relative_url }}" style="display:block; padding:0.4rem 1rem; color:#333; text-decoration:none;">Fire</a></li>
+          <li><a href="{{ '/engineering/plumbing/' | relative_url }}" style="display:block; padding:0.4rem 1rem; color:#333; text-decoration:none;">Plumbing</a></li>
+          <li><a href="{{ '/engineering/sanitary/' | relative_url }}" style="display:block; padding:0.4rem 1rem; color:#333; text-decoration:none;">Sanitary</a></li>
+        </ul>
+      </li>
+
+      <li><a href="{{ '/posts/' | relative_url }}" style="text-decoration:none; color:#333; font-weight:600;">All Posts</a></li>
+    </ul>
+  </nav>
+</header>
+
+<script>
+document.querySelectorAll("nav li").forEach(li => {
+  li.addEventListener("mouseenter", () => {
+    const menu = li.querySelector("ul");
+    if(menu) menu.style.display = "block";
+  });
+  li.addEventListener("mouseleave", () => {
+    const menu = li.querySelector("ul");
+    if(menu) menu.style.display = "none";
+  });
+});
+</script>
+
+<!-- ====== HERO SECTION ====== -->
+<section style="position:relative; text-align:center; padding:6rem 1rem; overflow:hidden; color:white;">
+  <div style="
+    position:absolute; top:0; left:0; right:0; bottom:0;
+    background: linear-gradient(-45deg, #0078D7, #28a745, #6f42c1, #17a2b8);
+    background-size: 400% 400%;
+    animation: gradientMove 12s ease infinite;
+    z-index:0;">
+  </div>
+
+  <div style="position:relative; z-index:1; max-width:700px; margin:auto;">
+    <img src="{{ '/assets/img/profile.jpg' | relative_url }}" alt="Eric Scott Profile"
+      style="width:160px; height:160px; border-radius:50%; object-fit:cover; box-shadow:0 8px 20px rgba(0,0,0,0.3); border:4px solid rgba(255,255,255,0.8);">
+    <h1 style="font-size:2.2rem; margin-top:1.2rem; font-weight:700;">Eric Scott</h1>
+    <p style="font-size:1.1rem; color:#f0f0f0; max-width:580px; margin:0.5rem auto 0;">
+      Blending <strong>Engineering</strong> precision and <strong>Musical</strong> creativity — 
+      sharing knowledge on ACMV, Electrical, Plumbing, Fire, Sanitary, Piano, and Music Therapy.
+    </p>
+  </div>
+</section>
+
+<style>
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+</style>
+
+<!-- ====== POSTS GRID ====== -->
+<section style="max-width:1000px; margin:4rem auto;">
+  <h2 style="text-align:center; margin-bottom:2rem; font-size:1.8rem;">Latest Posts</h2>
+  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1.5rem;">
+    {% for post in site.posts limit:6 %}
+      <div style="border:1px solid #eaeaea; border-radius:10px; padding:1.2rem; background:#fff; transition:all 0.3s; box-shadow:0 2px 6px rgba(0,0,0,0.04);">
+        <a href="{{ post.url | relative_url }}" style="font-size:1.1rem; font-weight:600; color:#0078D7; text-decoration:none; display:block; margin-bottom:0.5rem;">
+          {{ post.title }}
+        </a>
+        <p style="color:#888; font-size:0.9rem; margin:0;">
+          {{ post.date | date: "%b %d, %Y" }} · {{ post.categories | join: ' / ' }}
+        </p>
+        <p style="color:#555; font-size:0.9rem; margin-top:0.6rem;">{{ post.excerpt | strip_html | truncate: 100 }}</p>
+      </div>
+    {% endfor %}
+  </div>
+  <p style="text-align:center; margin-top:2.5rem;">
+    <a href="{{ '/posts/' | relative_url }}" style="color:#0078D7; text-decoration:none; font-weight:600;">Browse all →</a>
+  </p>
+</section>
+
+<!-- ☕️ Floating Support Me (Animated Popup, All Pages) -->
+<style>
+  /* Floating button */
+  #support-btn {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    background: linear-gradient(135deg, #ffb703, #fb8500);
+    color: #fff;
+    font-weight: 700;
+    padding: 1rem 1.5rem;
+    border-radius: 50px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+    cursor: pointer;
+    z-index: 10001;
+    animation: pulse 2s infinite;
+    transition: transform .25s ease, box-shadow .25s ease;
+  }
+  #support-btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+  }
+
+  /* Button animation */
+  @keyframes pulse {
+    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255,183,3,0.4); }
+    70% { transform: scale(1.05); box-shadow: 0 0 0 20px rgba(255,183,3,0); }
+    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255,183,3,0); }
+  }
+
+  /* Popup */
+  #support-popup {
+    display: none;
+    position: fixed;
+    bottom: 6rem;
+    right: 1.2rem;
+    width: 330px;
+    background: #fff;
+    border-radius: 14px;
+    border: 1px solid #ddd;
+    box-shadow: 0 8px 28px rgba(0,0,0,0.25);
+    z-index: 10000;
+    animation: slideUp .4s ease forwards;
+  }
+
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  #support-popup header {
+    text-align: center;
+    background: linear-gradient(135deg, #ffb703, #fb8500);
+    color: #fff;
+    padding: 0.7rem;
+    border-radius: 14px 14px 0 0;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+
+  #support-popup .content {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  #support-popup img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 0.6rem;
+  }
+
+  #support-popup button {
+    background: #0078D7;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.4rem 0.8rem;
+    cursor: pointer;
+    font-size: 0.85rem;
+  }
+
+  #support-popup .close-btn {
+    position: absolute;
+    top: 0.6rem;
+    right: 0.8rem;
+    font-size: 1.2rem;
+    color: #fff;
+    cursor: pointer;
+  }
+</style>
+
+<!-- Floating Button -->
+<div id="support-btn">☕️ Support Me</div>
+
+<!-- Popup -->
+<div id="support-popup">
+  <header>
+    Support Eric Scott
+    <span class="close-btn" onclick="toggleSupport()">✖️</span>
+  </header>
+  <div class="content">
+    <p>Thank you for supporting my work 💛</p>
+    <strong>KBZ Pay</strong><br>
+    <img src="/assets/img/kbzpay.png" alt="KBZ Pay QR">
+    <strong>AYA Pay</strong><br>
+    <img src="/assets/img/ayapay.png" alt="AYA Pay QR">
+    <hr>
+    <strong>🏦 Bank Accounts</strong>
+    <p>AYA Bank: <b>20027787478</b><br>
+       KBZ Bank: <b>06230106201408001</b><br>
+       UAB Bank: <b>055330100060674</b></p>
+    <a href="https://www.buymeacoffee.com/YOUR_USERNAME" target="_blank">
+    </a>
+  </div>
+</div>
+
+<script>
+  const btn = document.getElementById('support-btn');
+  const popup = document.getElementById('support-popup');
+
+  btn.addEventListener('click', toggleSupport);
+  function toggleSupport() {
+    popup.style.display = popup.style.display === 'block' ? 'none' : 'block';
+  }
+
+  // Optional: close popup when clicking outside
+  window.addEventListener('click', function(e) {
+    if (!popup.contains(e.target) && e.target !== btn) {
+      popup.style.display = 'none';
+    }
+  });
+</script>
+
+<!-- JOIN MEMBERSHIP -->
+<div style="margin:1.2rem 0; text-align:center;">
+  <h3 style="margin-bottom:.6rem;">🌟 Join Membership</h3>
+  <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:10px;">
+    <a href="https://www.buymeacoffee.com/YOUR_ID" target="_blank" rel="noopener"
+       style="background:#ffdd00; color:#111; padding:.65rem 1rem; border-radius:10px; font-weight:700; text-decoration:none;">
+      ☕ Buy Me a Coffee
+    </a>
+    <a href="https://ko-fi.com/YOUR_ID" target="_blank" rel="noopener"
+       style="background:#29abe0; color:#fff; padding:.65rem 1rem; border-radius:10px; font-weight:700; text-decoration:none;">
+      ❤️ Ko-fi Membership
+    </a>
+    <a href="{{ '/support/' | relative_url }}"
+       style="background:#f3f4f6; color:#111; padding:.65rem 1rem; border-radius:10px; font-weight:600; text-decoration:none;">
+      💳 KBZ / AYA / Bank
+    </a>
+  </div>
+</div>
+
+<!-- 📬 SUBSCRIBE (Formspree Quick) -->
+<form action="https://formspree.io/f/xzzjjvgp" method="POST"
+      style="max-width:520px; margin:1.2rem auto; padding:1rem; border:1px solid #e5e7eb; border-radius:12px; background:#fff;">
+  <h3 style="margin:0 0 .5rem; text-align:center;">📬 Subscribe for new posts</h3>
+  <div style="display:flex; gap:.5rem; flex-wrap:wrap;">
+    <input type="email" name="email" required placeholder="Your email"
+           style="flex:1 1 260px; min-width:220px; padding:.75rem 1rem; border:1px solid #ddd; border-radius:10px;">
+    <button type="submit"
+            style="padding:.75rem 1rem; border:none; border-radius:10px; background:#0078D7; color:#fff; font-weight:700; cursor:pointer;">
+      Subscribe
+    </button>
+  </div>
+  <input type="hidden" name="_subject" value="New subscriber from Aung Phone Myat site">
+  <input type="hidden" name="source" value="homepage">
+  <p style="margin:.6rem 0 0; font-size:.9rem; color:#777; text-align:center;">
+    By subscribing, you agree to receive updates. You can unsubscribe anytime.
+  </p>
+</form>
