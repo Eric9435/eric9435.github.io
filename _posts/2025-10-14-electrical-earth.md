@@ -6,6 +6,7 @@ categories: [engineering, electrical]
 image: /assets/img/sddefault.jpg
 description: "🌍 Earthing & Grounding (မြေချိတ်မှု) — လျှပ်စစ်စနစ်ရဲ့ “သက်တမ်းအာမခံ ကာကွယ်မှု” ⚡"
 ---
+
 # 🌍 Earthing & Grounding (မြေချိတ်မှု) — လျှပ်စစ်စနစ်ရဲ့ “သက်တမ်းအာမခံ ကာကွယ်မှု” ⚡
 
 လျှပ်စစ်စနစ်တစ်ခု အေးအေးဆေးဆေး လည်ပတ်နေတာ ကြည့်ရတာ ပျော်ဖို့ကောင်းပေမယ့် —  
