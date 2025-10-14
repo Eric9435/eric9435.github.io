@@ -13,14 +13,14 @@ categories: [english, vocabulary]
 |------|---------------------------|------------------|----------------|
 | Bad | <details><summary>Show</summary>**Abominable**, **Deplorable**</details> | မကောင်းသော၊ အပြစ်အနာတရရှိသော | His behavior was abominable. |
 | Good | <details><summary>Show</summary>**Acceptable**, **Palatable**, **Satisfactory**, **Reasonable**</details> | ကောင်းသော၊ လက်ခံရနိုင်သော | The food was good and satisfactory. |
-| Harmful | <details><summary>Show</summary>Adverse, Deleterious, Detrimental, Inimical, Injurious, Destructive</details> | ထိခိုက်စေသော၊ အနာတရဖြစ်စေသော | Smoking is harmful to health. |
-| Useful | <details><summary>Show</summary>Effective, Fruitful, Advantageous, Constructive, Beneficial</details> | အသုံးဝင်သော၊ အကျိုးရှိသော | This book is very useful for students. |
-| Busy | <details><summary>Show</summary>Active, Engaged, Involved</details> | အလုပ်များသော၊ လှုပ်ရှားနေသော | She is always busy with her work. |
-| Crowded | <details><summary>Show</summary>Congested, Replete, Crammed, Clamped, Flooded</details> | လူများအုံအုံကြည့်သော | The bus was too crowded to enter. |
-| Empty | <details><summary>Show</summary>Blank, Bare</details> | ဗလာဖြစ်သော၊ အလွတ်ဖြစ်သော | The classroom was empty after class. |
-| Hopeful | <details><summary>Show</summary>Life-affirming, Optimistic, Sanguine</details> | မျှော်လင့်မှုရှိသော၊ စိတ်ဝင်စားဖြစ်သော | He remains hopeful about his future. |
-| Sad | <details><summary>Show</summary>Bereft, Disconsolate, Desolate, Despondent</details> | စိတ်မကောင်းသော၊ ဝမ်းနည်းသော | She felt sad after hearing the news. |
-| Happy | <details><summary>Show</summary>Blissful, Charmed, Cheerful, Delighted</details> | ပျော်ရွှင်သော၊ စိတ်ချမ်းသာသော | They were happy to see each other again. |
+| Harmful | <details><summary>Show</summary>**Adverse**, **Deleterious**, **Detrimental**, **Inimical**, **Injurious**, **Destructive**</details> | ထိခိုက်စေသော၊ အနာတရဖြစ်စေသော | Smoking is harmful to health. |
+| Useful | <details><summary>Show</summary>**Effective**, **Fruitful**, **Advantageous**, **Constructive**, **Beneficial**</details> | အသုံးဝင်သော၊ အကျိုးရှိသော | This book is very useful for students. |
+| Busy | <details><summary>Show</summary>**Active**, **Engaged**, **Involved**</details> | အလုပ်များသော၊ လှုပ်ရှားနေသော | She is always busy with her work. |
+| Crowded | <details><summary>Show</summary>**Congested**, **Replete**, **Crammed**, **Clamped**, **Flooded**</details> | လူများအုံအုံကြည့်သော | The bus was too crowded to enter. |
+| Empty | <details><summary>Show</summary>**Blank**, **Bare**</details> | ဗလာဖြစ်သော၊ အလွတ်ဖြစ်သော | The classroom was empty after class. |
+| Hopeful | <details><summary>Show</summary>**Life-affirming**, **Optimistic**, **Sanguine**</details> | မျှော်လင့်မှုရှိသော၊ စိတ်ဝင်စားဖြစ်သော | He remains hopeful about his future. |
+| Sad | <details><summary>Show</summary>**Bereft**, **Disconsolate**, **Desolate**, **Despondent**</details> | စိတ်မကောင်းသော၊ ဝမ်းနည်းသော | She felt sad after hearing the news. |
+| Happy | <details><summary>Show</summary>**Blissful**, **Charmed**, **Cheerful**, **Delighted**</details> | ပျော်ရွှင်သော၊ စိတ်ချမ်းသာသော | They were happy to see each other again. |
 | Satisfied | <details><summary>Show</summary>Complacent, Content</details> | ပြည့်စုံသော၊ သက်တောင့်သက်သာရှိသော | He felt satisfied with his results. |
 | Satisfactory | <details><summary>Show</summary>Palatable, Acceptable</details> | လက်ခံနိုင်သော၊ သင့်တော်သော | The solution was satisfactory for both sides. |
 | Having controlling ability | <details><summary>Show</summary>Authoritative, Commanding</details> | အာဏာရှိသော၊ ညွှန်ကြားနိုင်သော | She spoke in an authoritative voice. |
