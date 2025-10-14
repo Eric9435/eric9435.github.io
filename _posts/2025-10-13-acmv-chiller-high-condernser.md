@@ -5,7 +5,7 @@ date: 2025-10-13
 categories: [engineering, acmv]
 ---
 
-# High Condenser Approach — Chiller System အတွက် အနားမလွတ်သင့်တဲ့ သတိပေးချက် ⚠️
+# High Condenser Approach — Chiller System အတွက် သတိပေးချက် ⚠️
 
 Carrier, Trane, York, Daikin စတဲ့ Chiller System တွေမှာ  
 အကြိမ်ကြိမ်တွေ့ရတဲ့ Alarm တစ်ခုပဲရှိတယ် —  
@@ -112,7 +112,7 @@ Chiller Load တက်တယ်၊ Compressor ပိုအားသုံးတ�
 
 ## 🏭 လုပ်ငန်းခွင် ဥပမာ
 
-Yangon Airport CH-6 Carrier Chiller မှာ  
+Carrier Chiller မှာ  
 Display ပေါ်က Warning ➡️ “High Condenser Approach” 😬  
 
 စစ်ကြည့်ရင် — Cooling Tower Fan မလည်တာတွေ့တယ်။  
@@ -137,8 +137,6 @@ Result:
 | ဖြေရှင်းနည်း | Clean Tube / Check Tower / Maintain Water Quality |
 
 ---
-
-## 💬 နောက်ဆုံးသတင်းလေး
 
 Chiller System တစ်ခုဟာ အေးအေးလေး လည်နေဖို့  
 Condenser Side အပူဖြုတ်မှုက အဓိကပါ။  
