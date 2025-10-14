@@ -6,6 +6,7 @@ categories: [engineering, electrical]
 image: /assets/img/sddefault.jpg
 description: "Electric Shock (ဓာတ်လိုက်ခြင်း)က Currentကြောင့်လား Voltageကြောင့်လား?"
 ---
+
 # ⚡ Electric Shock (ဓာတ်လိုက်ခြင်း) — ဗို့အားနဲ့ လျှပ်စီး၊ ဘယ်အရာ‌ကြောင့်ဖြစ်‌စေလဲ?
 
 လျှပ်စစ်ပညာလေ့လာသူတိုင်းအတွက် —  
