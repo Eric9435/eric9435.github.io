@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "IELTS Vocabulary – Examples"
+title: "IELTS Vocabulary – Examples, Synonym တစ်ခုချင်းစီ ဥပမာ"
 date: 2025-10-14
 categories: [english, vocabulary]
 ---
