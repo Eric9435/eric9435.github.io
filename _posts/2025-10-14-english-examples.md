@@ -1,6 +1,9 @@
-
-
-
+---
+layout: post
+title: "IELTS Vocabulary – Examples"
+date: 2025-10-14
+categories: [english, vocabulary]
+---
 
 # English Vocabulary with Myanmar Meanings and Examples
 
