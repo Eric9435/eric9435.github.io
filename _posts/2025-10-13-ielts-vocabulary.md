@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "🎧 IELTS Vocabulary – Table (PART 1)"
+title: "🎧 IELTS Vocabulary – Table"
 date: 2025-10-13
 categories: [english, vocabulary]
 ---
@@ -53,6 +53,77 @@ categories: [english, vocabulary]
 | Happening a lot or all the time | Constant, Frequent, Endless | မရပ်မနားဖြစ်နေသော | It rains constantly in this season. |
 | Enough | Adequate, Fair | လုံလောက်သော၊ သင့်တော်သော | We have adequate food for everyone. |
 | Essential / Important part / Basic | Fundamental, Integral, Indispensable, Requisite | အခြေခံသော၊ မရှိမဖြစ်လိုအပ်သော | Education is a fundamental need. |
+| Keep | Store | သိမ်းဆည်းသည်၊ ထိန်းသိမ်းသည် | Please keep your files in the folder. |
+| Feel unhappy | Become disappointed, Disappoint | စိတ်မကောင်းဖြစ်သည်၊ မျှော်လင့်ချက်လျှော့သည် | She felt disappointed with the results. |
+| Refresh | Restore, Rejuvenate | ပြန်လည်အသက်သွင်းသည်၊ ပြန်လည်အားသန်စေသည် | A short nap can refresh your mind. |
+| Make happen faster | Accelerate | မြန်ဆန်အောင်လုပ်သည် | The company wants to accelerate production. |
+| Send out | Emit | ထုတ်လွှင့်သည်၊ ထုတ်ပေးသည် | The lamp emits bright light. |
+| Begin | Commence | စတင်သည် | The meeting will commence at 9 a.m. |
+| Go to school | Attend school | ကျောင်းသို့သွားသည် | Children attend school every day. |
+| Receive education | Acquire an education | ပညာရသွားသည် | Everyone should acquire an education. |
+| Force | Oblige, Compel, Impose | တိုက်တွန်းသည်၊ အတင်းအကြပ်ပြုသည် | The rules compel students to attend class. |
+| Want | Intend to, Plan to | မျှော်လင့်သည်၊ စိတ်ကူးသည် | I intend to visit Japan next year. |
+| Put up | Install | တပ်ဆင်သည် | They installed a new air conditioner. |
+| Try | Make an effort | ကြိုးစားသည် | Try your best to succeed. |
+| Keep eye on sb/sth | Supervise, Monitor | စောင့်ကြည့်ထိန်းသိမ်းသည် | The teacher monitors students during exams. |
+| Pay attention to | Attend | အာရုံစိုက်သည် | Please attend to what I’m saying. |
+| Be keen on / Interested in | To be enthusiastic about, Show enthusiasm regarding | စိတ်ဝင်စားသည်၊ စိတ်အားထက်သန်သည် | He is enthusiastic about learning English. |
+| Love | Show affection towards | ချစ်သည်၊ မေတ္တာပြသည် | She shows affection towards her parents. |
+| Spend time on | Devote, Contribute to | အချိန်ဖြုန်းသည်၊ ပေးဆပ်သည် | He devoted his time to helping others. |
+| Use | Consume, Utilize, Apply in | အသုံးပြုသည် | We use electricity every day. |
+| Work | Function | လုပ်ဆောင်သည်၊ တာဝန်ထမ်းဆောင်သည် | The machine is functioning properly. |
+| Understand, Tell from | Recognize, Discern, Identify, Interpret, Absorb | နားလည်သိရှိသည်၊ ခွဲခြားသိနိုင်သည် | I can recognize his voice easily. |
+| Give opinion about | Comment on | မှတ်ချက်ပေးသည် | She commented on the teacher’s lecture. |
+| Pay for sth | Afford | ငွေပေးချေသည်၊ ဝယ်ယူနိုင်သည် | I can’t afford that expensive car. |
+| Make up for | Compensate | ပြန်လည်ဖြည့်တင်းသည် | He compensated for his mistake. |
+| Say | Argue, Believe, Maintain, Claim | ပြောသည်၊ ယုံကြည်သည် | They claim that the story is true. |
+| Suggest | Recommend, Pose | အကြံပြုသည် | I recommend you take a rest. |
+| Move toward | Approach | နီးသွားသည်၊ ချဉ်းကပ်သည် | She approached the door quietly. |
+| Think | Assume | စိတ်ကူးသည်၊ ယူဆသည် | I assume he is at home. |
+| Take advantage / Be useful | Benefit | အကျိုးရှိသည် | This plan will benefit everyone. |
+| To have sth | Possess | ပိုင်ဆိုင်သည် | He possesses great knowledge. |
+| To be able to use sth | To have access to sth | အသုံးပြုခွင့်ရှိသည် | Students have access to online books. |
+| Make up of sth | Consist of sth | ပါဝင်ဖွဲ့စည်းသည် | The team consists of ten members. |
+| Make up | Constitute, Involve, Comprise | ဖွဲ့စည်းသည်၊ ပါဝင်သည် | Women constitute half of the population. |
+| Explain | Justify | ရှင်းပြသည်၊ မှန်ကန်ကြောင်းဖော်ပြသည် | She justified her decision clearly. |
+| Test | Assess | စစ်ဆေးသုံးသပ်သည် | The teacher assessed the students’ progress. |
+| Open sth / Set up | Establish, Found | တည်ထောင်သည် | They established a new company in 2020. |
+| Show | Indicate, Illustrate, Demonstrate, Reveal | ပြသသည်၊ ဖော်ပြသည် | The graph illustrates the data clearly. |
+| Make rule | Legislate | ဥပဒေပြုသည် | The government legislated a new law. |
+| Happen | Occur | ဖြစ်ပွားသည် | The accident occurred suddenly. |
+| (To cause) Move forward | Proceed, Propel, Inspire | တိုးတက်အောင်လုပ်သည်၊ အားပေးသည် | He proceeded to the next stage confidently. |
+| Need | Require | လိုအပ်သည် | We require more information. |
+| Ask for | Demand, Request | တောင်းဆိုသည် | They requested permission to leave early. |
+| Do research | Conduct, Carry out, Undertake | သုတေသနပြုသည် | She conducted research on climate change. |
+| Say yes | Accept, Approve, Admit | လက်ခံသည်၊ ချက်ချင်းသဘောတူသည် | He accepted the offer immediately. |
+| Answer | Respond, Reply | ဖြေသည် | She replied to my message quickly. |
+| Make | Structure, Form, Construct | ဖန်တီးသည်၊ တည်ဆောက်သည် | They constructed a new bridge. |
+| Change | Alter, Vary | ပြောင်းလဲသည် | He altered the design slightly. |
+| Do something successfully | Achieve, Fulfill, Attain | အောင်မြင်သည် | She achieved her lifelong dream. |
+| Get | Gain, Acquire, Become, Obtain | ရရှိသည် | He obtained his visa last week. |
+| Do | Administer | ဆောင်ရွက်သည် | The nurse administered the medicine. |
+| Put into categories | Categorize, Classify | အုပ်စုခွဲသည် | The books are classified by subject. |
+| Help | Assist | ကူညီသည် | He assisted the old man to cross the road. |
+| To end sth / Finish | Conclude, Terminate, Adjourn | အဆုံးသတ်သည် | The meeting concluded at noon. |
+| Calculate the value / Judge | Evaluate | သုံးသပ်ချင့်ခြင်းပြုသည် | The teacher evaluated the test papers. |
+| Look for | Seek | ရှာဖွေသည် | They are seeking a new manager. |
+| Choose | Select, Adopt | ရွေးချယ်သည် | You can select your favorite color. |
+| To live | Reside | နေထိုင်သည် | They reside in Yangon. |
+| Believe | Perceive | ယုံကြည်သည်၊ သဘောတူသည် | She perceives the world differently. |
+| Buy | Purchase | ဝယ်ယူသည် | I purchased a new phone. |
+| To move to | Transfer | လှည့်ပြောင်းသည် | He was transferred to another branch. |
+| To control sth | Regulate | ထိန်းညှိသည် | The government regulates fuel prices. |
+| Combine / Match | Coordinate, Aggregate | တွဲဖက်သည်၊ သဟဇာတဖြစ်သည် | The colors coordinate nicely. |
+| Help (again) | Coordinate, Provide aid | ကူညီပေးသည် | The volunteers provided aid to victims. |
+| Communicate | Interact | ဆက်သွယ်ပြောဆိုသည် | Students interact in group discussions. |
+| Limit / Control | Constrain | ထိန်းချုပ်သည်၊ ကန့်သတ်သည် | Time constraints limit our choices. |
+| Write | Correspond | စာပို့ရေးသားသည် | We correspond regularly by email. |
+| Capitalize on sth | Emphasize, Highlight | အရေးကြီးအောင်ပြသည် | The ad highlighted the product’s benefits. |
+| Make sure | Ensure | သေချာအောင်လုပ်သည် | Please ensure all doors are locked. |
+| Fill | Occupy, Obsess | ပြည့်စွမ်းသည်၊ စိတ်ထဲကိုသွင်းယူသည် | Thoughts of success occupied his mind. |
+| Depend on | Rely on | မူတည်သည် | We rely on the internet for information. |
+| No have in sth | Exclude, Remove | ဖယ်ရှားသည် | They removed his name from the list. |
+
 
 
 
