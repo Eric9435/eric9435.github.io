@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "IELTS Vocabulary – Table with FlashCard"
+title: "IELTS Vocabulary – Table with FlashCard စာကျက်ဖို့အတွက် သင်ထောက်ကူ"
 date: 2025-10-13
 categories: [english, vocabulary]
 ---
