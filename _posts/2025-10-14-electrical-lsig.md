@@ -3,7 +3,7 @@ layout: post
 title: "ပတ်လမ်းဖြတ်တောက်ရေး ကိရိယာများရှိ ပရိုဂရမ်ပြုလုပ်နိုင်သော အကာအကွယ် (LSIG)”"
 date: 2025-10-14
 categories: [engineering, electrical]
-image: /assets/img/posts/sddefault.jpg
+image: /assets/img/sddefault.jpg
 description: "LSIG ဟူသော စကားလုံးအတိုကောက်သည် ပရိုဂရမ်ပြုလုပ်နိုင်သော အဓိက အကာအကွယ် လေးမျိုးကို ရည်ညွှန်းသည်။"
 ---
 # ပတ်လမ်းဖြတ်တောက်ရေး ကိရိယာများရှိ ပရိုဂရမ်ပြုလုပ်နိုင်သော အကာအကွယ် (LSIG)
