@@ -11,8 +11,8 @@ categories: [english, vocabulary]
 
 | Word | Synonyms (Click to Show) | မြန်မာအဓိပ္ပါယ် | Example Sentence |
 |------|---------------------------|------------------|----------------|
-| Bad | <details><summary>Show</summary>Abominable, Deplorable</details> | မကောင်းသော၊ အပြစ်အနာတရရှိသော | His behavior was abominable. |
-| Good | <details><summary>Show</summary>Acceptable, Palatable, Satisfactory, Reasonable</details> | ကောင်းသော၊ လက်ခံရနိုင်သော | The food was good and satisfactory. |
+| Bad | <details><summary>Show</summary>**Abominable**, **Deplorable**</details> | မကောင်းသော၊ အပြစ်အနာတရရှိသော | His behavior was abominable. |
+| Good | <details><summary>Show</summary>**Acceptable, **Palatable**, **Satisfactory**, **Reasonable**</details> | ကောင်းသော၊ လက်ခံရနိုင်သော | The food was good and satisfactory. |
 | Harmful | <details><summary>Show</summary>Adverse, Deleterious, Detrimental, Inimical, Injurious, Destructive</details> | ထိခိုက်စေသော၊ အနာတရဖြစ်စေသော | Smoking is harmful to health. |
 | Useful | <details><summary>Show</summary>Effective, Fruitful, Advantageous, Constructive, Beneficial</details> | အသုံးဝင်သော၊ အကျိုးရှိသော | This book is very useful for students. |
 | Busy | <details><summary>Show</summary>Active, Engaged, Involved</details> | အလုပ်များသော၊ လှုပ်ရှားနေသော | She is always busy with her work. |
