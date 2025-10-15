@@ -62,6 +62,7 @@ This document outlines the **engineering principles**, **code requirements**, **
 - Support **firefighting operations**.
 
 ### 1.2 Types of Fire Protection Systems
+
 | Category | Systems Included |
 |-----------|------------------|
 | **Active Protection** | Sprinklers, Hydrants, Hosereels, Fire Alarm, Suppression Systems |
@@ -87,6 +88,7 @@ This document outlines the **engineering principles**, **code requirements**, **
 - **SS 575:2012+A1:2015** and **SCDF Fire Code 2018**.
 
 ### 2.2 System Components
+
 | Component | Description |
 |------------|-------------|
 | Fire Pump | Delivers required flow and pressure to system |
@@ -96,6 +98,7 @@ This document outlines the **engineering principles**, **code requirements**, **
 | Pipework | Galvanized steel or ductile iron (min 100 mm dia.) |
 
 ### 2.3 Flow Requirements
+
 | System | Flow (L/min) | Pressure (bar) |
 |---------|---------------|----------------|
 | Hosereel | 27 | 4 |
@@ -117,6 +120,7 @@ This document outlines the **engineering principles**, **code requirements**, **
 ## 3. Automatic Sprinkler System
 
 ### 3.1 System Types
+
 | Type | Description |
 |------|--------------|
 | Wet Pipe | Always filled with water (default type) |
@@ -125,6 +129,7 @@ This document outlines the **engineering principles**, **code requirements**, **
 | Deluge | Open heads with deluge valve, controlled by detection |
 
 ### 3.2 Design Density (as per SS 575)
+
 | Occupancy Type | Density (mm/min) | Design Area (m²) |
 |----------------|------------------|------------------|
 | Light Hazard | 2.5 | 260 |
@@ -137,6 +142,7 @@ This document outlines the **engineering principles**, **code requirements**, **
 - Extra Hazard: **60–90 minutes**
 
 ### 3.4 Sprinkler Head Coverage
+
 | Type | Max Coverage (m²) | Max Spacing (m) |
 |------|--------------------|----------------|
 | Pendant / Upright | 12 | 4.6 |
@@ -191,6 +197,7 @@ Where:
 Fire pumps supply pressure to hydrant, hosereel, and sprinkler systems.
 
 ### 5.2 Types of Pumps
+
 | Type | Use | Control |
 |-------|------|----------|
 | Electric Pump | Primary duty pump | Auto/manual |
@@ -203,6 +210,7 @@ H_total = H_static + H_friction + H_residual
 ```
 
 ### 5.4 Fire Water Storage
+
 | Building Type | Duration | Storage (min volume) |
 |----------------|-----------|----------------------|
 | Residential / Office | 30 min | 45 m³ |
@@ -234,6 +242,7 @@ H_total = H_static + H_friction + H_residual
 - Prevent smoke infiltration into protected zones.
 
 ### 6.2 Pressurization Requirements
+
 | Space | Pressure Differential | Air Change Rate |
 |--------|-----------------------|----------------|
 | Staircase | 50 Pa | ≥ 10 ACH |
@@ -254,6 +263,7 @@ Where:
 ## 7. Portable Fire Extinguishers
 
 ### 7.1 Classification (SS 578 / NFPA 10)
+
 | Fire Class | Type of Fire | Suitable Agent |
 |-------------|---------------|----------------|
 | A | Ordinary combustibles | Water / Foam |
@@ -267,6 +277,7 @@ Where:
 - Mounting height ≤ 1.5 m (top of handle).
 
 ### 7.3 Minimum Provision
+
 | Area | Type | Quantity |
 |-------|------|-----------|
 | Office | 9L water or 4.5kg CO₂ | 1 per 200 m² |
