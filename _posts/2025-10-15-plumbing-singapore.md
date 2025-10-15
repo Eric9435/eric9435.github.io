@@ -12,15 +12,15 @@ description: "Plumbing Building Services — Singapore"
 ---
 
 ## 📘 Table of Contents
-1. [Introduction](#introduction)
-2. [1. Water Supply System (SS 636)](#1-water-supply-system-ss-636)
-3. [2. Sanitary & Sewerage Drainage (COPSSW)](#2-sanitary--sewerage-drainage-copssw)
-4. [3. Stormwater Drainage System](#3-stormwater-drainage-system)
-5. [4. Fire Protection Water Systems](#4-fire-protection-water-systems)
-6. [5. Special Systems](#5-special-systems)
-7. [6. Inspection & Maintenance Checklist](#6-inspection--maintenance-checklist)
-8. [7. Design Calculation Guide](#7-design-calculation-guide)
-9. [8. Reference Codes and Standards](#8-reference-codes-and-standards)
+[Introduction](#introduction)
+[1. Water Supply System (SS 636)](#1-water-supply-system-ss-636)
+[2. Sanitary & Sewerage Drainage (COPSSW)](#2-sanitary--sewerage-drainage-copssw)
+[3. Stormwater Drainage System](#3-stormwater-drainage-system)
+[4. Fire Protection Water Systems](#4-fire-protection-water-systems)
+[5. Special Systems](#5-special-systems)
+[6. Inspection & Maintenance Checklist](#6-inspection--maintenance-checklist)
+[7. Design Calculation Guide](#7-design-calculation-guide)
+[8. Reference Codes and Standards](#8-reference-codes-and-standards)
 
 ---
 
