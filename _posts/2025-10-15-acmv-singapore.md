@@ -60,6 +60,7 @@ It forms a key component of **Mechanical Building Services**, governed by Singap
 - Ensure efficient energy performance.
 
 ### 1.2 Classification of Systems
+
 | System Type | Description | Application |
 |--------------|-------------|--------------|
 | Centralized | Chiller + AHU + Ducting | Large buildings |
@@ -72,6 +73,7 @@ It forms a key component of **Mechanical Building Services**, governed by Singap
 ## 2. Air-Conditioning Systems
 
 ### 2.1 Types
+
 | System | Description |
 |---------|--------------|
 | **Direct Expansion (DX)** | Refrigerant directly cools air via coil (VRF, Split). |
@@ -79,6 +81,7 @@ It forms a key component of **Mechanical Building Services**, governed by Singap
 | **District Cooling (DC)** | Central plant supplies chilled water to multiple buildings. |
 
 ### 2.2 Comfort Design Conditions
+
 | Parameter | Recommended Range | Reference |
 |------------|-------------------|-----------|
 | Temperature | 23–25°C | SS 553 / ASHRAE 55 |
@@ -105,6 +108,7 @@ Where:
 - Remove contaminants and fumes.
 
 ### 3.2 Minimum Ventilation Rates (SS 553)
+
 | Area | Air Changes per Hour (ACH) | Fresh Air (L/s per m²) |
 |------|-----------------------------|------------------------|
 | Toilet | 10 | 10 |
@@ -139,6 +143,7 @@ Where:
 - Expansion tank, strainers, and control valves
 
 ### 4.2 Chilled Water Temperature Range
+
 | Parameter | Value |
 |------------|--------|
 | Supply Temperature | 6–7°C |
@@ -168,6 +173,7 @@ Where:
 ## 5. Ductwork Design and Air Distribution
 
 ### 5.1 Duct Material
+
 | Material | Use |
 |-----------|-----|
 | GI Sheet (galvanized steel) | Standard ducting |
@@ -182,6 +188,7 @@ P_loss = f × (L/D) × (ρ × v² / 2)
 Typical friction rate: **0.8–1.2 Pa/m**
 
 ### 5.3 Velocity Limits (SS 553)
+
 | Location | Velocity (m/s) |
 |-----------|----------------|
 | Main supply duct | 6–8 |
@@ -223,6 +230,7 @@ Q_coil = 1.2 × CFM × (h_in - h_out)
 ## 7. Filtration, IAQ, and Controls
 
 ### 7.1 Filtration Standards
+
 | Location | Filter Type | Efficiency |
 |-----------|--------------|-------------|
 | Office / Retail | MERV 8–11 | 90% dust removal |
@@ -247,6 +255,7 @@ Maintain per **SS 554:2016**:
 ## 8. Energy Efficiency and BCA Green Mark Requirements
 
 ### 8.1 Performance Targets
+
 | Parameter | Requirement | Standard |
 |------------|-------------|-----------|
 | **Chiller Plant COP** | ≥ 5.0 (kW/RT) | SS 530 / Green Mark |
