@@ -111,6 +111,7 @@ The LV system distributes power to lighting, sockets, HVAC, lifts, and other bui
 ```
 
 ### 2.4 Load Categorization
+
 | Load Type | Typical Power Factor | Demand Factor | Example |
 |------------|---------------------|----------------|----------|
 | Lighting | 0.95 | 0.9 | Office lighting |
@@ -171,6 +172,7 @@ Where:
 - Meet visual comfort and safety requirements.
 
 ### 4.2 Illumination Levels (Lux)
+
 | Area | Lux | Standard |
 |------|-----|-----------|
 | Office (general) | 500 | SS 530 |
@@ -259,6 +261,7 @@ t = (V × Ah × η) / (Load W)
 Systems operating at ≤ 50V AC or ≤ 120V DC.
 
 ### 7.2 Common ELV Systems
+
 | System | Description |
 |---------|--------------|
 | Fire Alarm | Addressable / conventional, per SS 645 |
