@@ -205,8 +205,6 @@ Add Auto Restart Delay = 3 sec
 
 ---
 
-##  နိဂုံးချုပ်
-
 > PLC ဟာ စက်ရုံအလိုအလျောက်စနစ် (Industrial Automation) ထဲမှာ အဓိက ဦးနှောက်တစ်လုံးဖြစ်ပါတယ်။  
 > Input, Logic, Output ကို တစ်ချက်ချင်းချင်း ချိတ်ဆက်ပြီး စနစ်တစ်ခုလုံးကို စိတ်ကြိုက် ထိန်းချုပ်နိုင်စေပါတယ်။  
 > Modern PLC တွေဟာ Cloud System, AI Control, IoT Integration နဲ့အတူ Fourth Industrial Revolution ရဲ့ အဓိက အစိတ်အပိုင်း ဖြစ်လာပါပြီ။
@@ -215,5 +213,322 @@ Add Auto Restart Delay = 3 sec
 
 ---
 
+##  PLC Brands & Types — ဈေးကွက်အထင်ကြီးဆုံး PLC များ 
+
+PLC (Programmable Logic Controller) ဟာ လုပ်ငန်းအလိုအလျောက် စနစ် (Industrial Automation) တစ်ခုအတွက် အဓိက ဦးနှောက် ဖြစ်တဲ့အတွက်  
+ကမ္ဘာတစ်ဝှမ်းမှာ ထုတ်လုပ်သူ (Manufacturers) များစွာရှိပါတယ်။  
+အောက်မှာဆိုတာက **အကြီးဆုံး PLC Brand များနဲ့ သူတို့ရဲ့ အင်အားအနည်းအများများ** ဖြစ်ပါတယ်။ 
+
+---
+
+### 🇩🇪 **Siemens PLC (Germany)**  
+> **Series:** LOGO!, S7-200, S7-300, S7-1200, S7-1500  
+> **Software:** TIA Portal / Step 7  
+
+**အထူးအင်အား:**  
+- Modular Design, Networking လုပ်ရလွယ်  
+- Industrial Automation, Factory, Process Control အတွက် ပေါင်းစပ်သုံးနိုင်  
+- PROFINET, PROFIBUS Communication များကို Support  
+- Industry 4.0 Ready
+
+**သုံးရာနေရာများ:**  
+Power Plant, Cement Plant, Factory Automation
+
+---
+
+### 🇺🇸 **Allen-Bradley (Rockwell Automation, USA)**  
+> **Series:** MicroLogix, CompactLogix, ControlLogix  
+> **Software:** RSLogix 500 / Studio 5000  
+
+**အထူးအင်အား:**  
+- Heavy-Duty Industrial Application အတွက် သင့်တော်  
+- EtherNet/IP Communication Standard  
+- Diagnostic & Safety PLC အတွက် ထင်ရှား  
+
+**သုံးရာနေရာများ:**  
+Automotive Industry, Oil & Gas Plant, Packaging Line
+
+---
+
+### 🇯🇵 **Mitsubishi Electric (Japan)**  
+> **Series:** FX Series, Q Series, iQ-R Series  
+> **Software:** GX Developer / GX Works2 / GX Works3  
+
+**အထူးအင်အား:**  
+- Compact PLC Design  
+- Fast Processing Speed  
+- Asia-Pacific Market မှာ အလွန်ပြန့်နှံ့  
+
+**သုံးရာနေရာများ:**  
+Manufacturing Line, Robotics Control, HVAC Automation
+
+---
+
+### 🇯🇵 **Omron (Japan)**  
+> **Series:** CP1, CJ2, NX1P2, NJ Series  
+> **Software:** CX-Programmer / Sysmac Studio  
+
+**အထူးအင်အား:**  
+- High-speed Motion Control  
+- Integrated with Sensor, Vision System  
+- IoT Connectivity Built-in  
+
+**သုံးရာနေရာများ:**  
+Packaging, Food & Beverage, Pharmaceutical
+
+---
+
+### 🇯🇵 **Keyence (Japan)**  
+> **Series:** KV-5500, KV-8000  
+> **Software:** KV Studio  
+
+**အထူးအင်အား:**  
+- Ultra High-speed Scan Cycle  
+- Built-in Networking (EtherNet/IP, Modbus)  
+- Compact Size for Machine Integration  
+
+**သုံးရာနေရာများ:**  
+Precision Machine Control, Assembly Automation
+
+---
+
+### 🇫🇷 **Schneider Electric (France)**  
+> **Series:** Modicon M221, M241, M580  
+> **Software:** EcoStruxure Machine Expert  
+
+**အထူးအင်အား:**  
+- Strong in Process & Energy Industry  
+- Modbus TCP/RTU Communication Standard  
+- SCADA Integration (EcoStruxure Platform)  
+
+**သုံးရာနေရာများ:**  
+Water Treatment, Energy Management, HVAC
+
+---
+
+### 🇯🇵 **Panasonic (Japan)**  
+> **Series:** FP0R, FP-X, FP7  
+> **Software:** FPWIN Pro  
+
+**အထူးအင်အား:**  
+- Compact, Reliable  
+- Medium-size Machine Automation  
+- Low Power Consumption  
+
+---
+
+### 🇮🇹 **ABB (Switzerland / Italy)**  
+> **Series:** AC500, AC800M  
+> **Software:** Automation Builder  
+
+**အထူးအင်အား:**  
+- High Reliability, Industrial-grade  
+- IEC 61131-3 Compliant  
+- Perfect for Process Automation & Power Plant  
+
+---
+
+### 🇰🇷 **LS Electric (Korea)**  
+> **Series:** XGB, XEC, XBC  
+> **Software:** XG5000  
+
+**အထူးအင်အား:**  
+- Cost-effective PLC  
+- Asian Market Support  
+- Easy Integration with HMI  
+
+---
+
+### 🧰 **Summary Table**
+
+| Brand | Origin | Typical Use | Software |
+|---|---|---|---|
+| Siemens | Germany | Factory, Process | TIA Portal |
+| Allen-Bradley | USA | Industrial, Heavy Duty | Studio 5000 |
+| Mitsubishi | Japan | Manufacturing, Robotics | GX Works3 |
+| Omron | Japan | Automation + IoT | Sysmac Studio |
+| Schneider | France | Process, Energy | EcoStruxure |
+| ABB | Switzerland | Power System | Automation Builder |
+| Keyence | Japan | Precision Machinery | KV Studio |
+| Panasonic | Japan | Compact Machines | FPWIN Pro |
+| LS Electric | Korea | General Purpose | XG5000 |
+
+---
+
+#  PLC Selection Guide — သင့် Project အတွက် မှန်ကန်တဲ့ PLC ရွေးချယ်နည်း 
+
+PLC (Programmable Logic Controller) ဟာ စက်ရုံ၊ စက်ပစ္စည်း၊ Automation System တို့ရဲ့ ဦးနှောက်ဖြစ်တဲ့အတွက်  
+**မှန်ကန်တဲ့ PLC ကို ရွေးချယ်ခြင်းဟာ စနစ်တစ်ခုလုံးရဲ့ အောင်မြင်မှုကို ဆုံးဖြတ်ပေးတတ်ပါတယ်။**  
+
+ဒီ Section မှာတော့ Professional Engineer တွေအနေနဲ့ PLC တစ်လုံးကို ရွေးချယ်ရာမှာ  
+အကြောင်းအရာ ၁၀ ချက်အထိ အသေးစိတ် (Micro Detail) ဖြင့် ရှင်းပြသွားပါမယ်။ ⚙️  
+
+---
+
+##  1️⃣ Define the Application Type
+
+PLC တစ်လုံးကို ရွေးမတိုင်ခင် **သုံးမယ့်နေရာ (Application)** ကို သေချာသိထားဖို့လိုပါတယ်။  
+
+| Application Type | Description | Example |
+|---|---|---|
+| **Discrete Control** | ON/OFF Logic, Sequence Control | Conveyor, Machine Start/Stop |
+| **Process Control** | Continuous Analog Values | Temperature, Pressure Control |
+| **Motion Control** | Servo, Stepper, Axis Movement | Robotics, Packaging Machine |
+| **Hybrid System** | Mixed Digital + Analog | Water Treatment, HVAC |
+
+➡️ Application ကို မသိရင် Specification ဘယ်လိုလည်း သတ်မှတ်လို့ မရပါ။
+
+---
+
+##  2️⃣ Determine I/O Requirements
+
+###  Digital I/O
+- **Digital Input (DI)** → Push Buttons, Proximity Sensors  
+- **Digital Output (DO)** → Contactors, Relays, Alarms  
+
+###  Analog I/O
+- **Analog Input (AI)** → 4–20 mA, 0–10V (Temperature, Flow)  
+- **Analog Output (AO)** → Control Signals to VFD, Valves  
+
+| I/O Type | Typical Range | Example |
+|---|---|---|
+| DI | 8–512 Points | Sensors, Switches |
+| DO | 8–512 Points | Motor Starters |
+| AI | 2–64 Channels | Temperature Sensors |
+| AO | 2–64 Channels | Speed Control, Valve |
+
+ **Rule of Thumb:**  
+အနာဂတ်မှာ Expansion လုပ်နိုင်အောင် I/O Point 20–30% ခန့် ထပ်ထားပါ။
+
+---
+
+##  3️⃣ Choose the PLC Size & Type
+
+| PLC Type | Description | Advantage | Example |
+|---|---|---|---|
+| **Nano / Micro PLC** | Small I/O Count (<64 I/O) | Low Cost, Compact | Siemens LOGO!, Mitsubishi FX |
+| **Modular PLC** | Expandable I/O Slots | Flexible, Mid-Range | Siemens S7-1200, AB CompactLogix |
+| **Rack PLC (Large)** | High I/O, Multi-Rack | For Large Plants | Siemens S7-1500, AB ControlLogix |
+| **Safety PLC** | SIL2–SIL3 Certified | Human Protection | Pilz, Siemens F-Series |
+
+---
+
+##  4️⃣ Processing Speed & Memory
+
+###  Scan Time
+- Small Machine → <10 ms  
+- Process Control → <5 ms  
+- High-speed Machine → <1 ms  
+
+###  Memory Capacity
+
+| Memory Type | Function | Typical Range |
+|---|---|---|
+| Program Memory | Ladder Logic, Functions | 16 KB – 2 MB |
+| Data Memory | Variable & Setpoints | 8 KB – 1 MB |
+| Retentive Memory | Save Data after Power Loss | Optional |
+
+ **Tip:**  
+PLC Scan Time မျှ Short ဖြစ်လေ၊ System Response ပိုမြန်လေ။
+
+---
+
+##  5️⃣ Power Supply & Voltage Rating
+
+| Parameter | Typical Values | Notes |
+|---|---|---|
+| PLC Power Input | 24VDC / 110VAC / 220VAC | Depend on Model |
+| Input Signal | 24VDC (Standard), 110VAC | Sensor Type သုံးမှုအပေါ်မူတည် |
+| Output Type | Relay / Transistor / Triac | Control Load Type အပေါ်မူတည် |
+
+➡️ DC System တွေမှာ 24VDC PLC များ သုံးရလွယ်။  
+➡️ AC Load များသုံးတဲ့နေရာတွင် Relay Output PLC သုံးပါ။
+
+---
+
+##  6️⃣ Communication & Networking Requirement
+
+Modern PLC တွေဟာ Network Communication လုပ်နိုင်ဖို့လိုပါတယ်။  
+အောက်ပါ Protocol များအပေါ် မူတည်ပြီး System Integration လုပ်နိုင်သလား စစ်ပါ။
+
+| Protocol | Use Case | Note |
+|---|---|---|
+| **Modbus RTU/TCP** | General PLC ↔ HMI | Widely Supported |
+| **PROFINET / PROFIBUS** | Siemens Standard | For Industrial Plant |
+| **EtherNet/IP** | Allen-Bradley Standard | For Factory Integration |
+| **CANopen / DeviceNet** | Field Devices | Motor Drives, Sensors |
+| **MQTT / OPC UA** | Cloud, IIoT | Industry 4.0 |
+
+ **Future Ready:**  
+IoT / Smart Factory Integration ရဲ့ အတွက် MQTT, OPC UA ပါရှိတဲ့ PLC ကို ရွေးပါ။
+
+---
+
+##  7️⃣ Programming Software Compatibility
+
+| Brand | Software | File Extension |
+|---|---|---|
+| Siemens | TIA Portal | *.awl, *.lad, *.xml |
+| Allen-Bradley | RSLogix / Studio 5000 | *.acd |
+| Mitsubishi | GX Works3 | *.gxw |
+| Omron | Sysmac Studio | *.smc2 |
+| Schneider | EcoStruxure | *.prj |
+
+**Important:**  
+Project Team ရဲ့ Experience နဲ့ Software Familiarity ကိုလည်း ထည့်တွက်ပါ။  
+Software License, Support Cost ကိုလည်း မမေ့ပါနဲ့။
+
+---
+
+##  8️⃣ Environmental & Installation Conditions
+
+| Factor | Specification | Consideration |
+|---|---|---|
+| Operating Temp | 0°C – 55°C | Factory Heat? |
+| Humidity | < 90% | Moisture Protection |
+| Vibration | < 2 g | Mounting Location |
+| IP Rating | IP20 – IP65 | Dust / Water Proofing |
+
+ Outdoor Panel မှာ IP54+ PLC ကို အသုံးပြုပါ။  
+ Hot Area မှာ Ventilation Fan / Air Conditioner ထည့်ပါ။
+
+---
+
+##  9️⃣ Budget vs Support Considerations
+
+| Type | Advantage | Disadvantage |
+|---|---|---|
+| **High-End PLC (Siemens, AB)** | Long-term Support, Expandable | High Cost |
+| **Mid-Range PLC (Mitsubishi, Omron)** | Balanced Performance | Moderate Price |
+| **Economy PLC (LS, Delta)** | Low Cost | Limited Feature, Small Memory |
+
+💬 **Tip:**  
+နည်းပညာပိုင်းနဲ့ Support Team ရှိတဲ့ Brand ကို ရွေးပါ။  
+Spare Part ရှာရလွယ်တဲ့ Brand များက လုပ်ငန်းပျက်ကွက်ခြင်းကို လျှော့ပါးစေပါတယ်။
+
+---
+
+##  1️⃣0️⃣ Safety & Future Expandability
+
+- Future I/O Expansion Slot ရှိရမယ်  
+- Redundancy Option (Dual CPU) ပါဝင်ရမယ်  
+- Safety Certification (SIL2/3) များရှိရမယ်  
+- Data Logging / SCADA Integration Support  
+
+---
+
+## 💬 နိဂုံးချုပ်
+
+> PLC ဟာ စက်ရုံအလိုအလျောက်စနစ် (Industrial Automation) ထဲမှာ အဓိက ဦးနှောက်တစ်လုံးဖြစ်ပါတယ်။  
+> Input, Logic, Output ကို တစ်ချက်ချင်းချင်း ချိတ်ဆက်ပြီး စနစ်တစ်ခုလုံးကို စိတ်ကြိုက် ထိန်းချုပ်နိုင်စေပါတယ်။  
+> Modern PLC တွေဟာ Cloud System, AI Control, IoT Integration နဲ့အတူ Fourth Industrial Revolution ရဲ့ အဓိက အစိတ်အပိုင်း ဖြစ်လာပါပြီ။
+> PLC Brand ရွေးချယ်ရာမှာ မည်သည့် Brand က ပိုကောင်းသလဲဆိုတာထက် —  
+> Application (အသုံးပြုရာနေရာ), Budget, Maintenance Support ပေါ်မူတည်ပါတယ်။  
+> အရေးကြီးဆုံးကတော့ — သင်သုံးမယ့် PLC ကို နားလည်နက်နက်ရှိုင်းရှိုင်း သိထားဖို့ပါ။
+> PLC ရွေးချယ်မှုဟာ ပိုက်ဆံအမြောက်အများ သုံးတာထက် ပိုနက်နက်ရှိုင်းရှိုင်း စဉ်းစားဖို့ လိုပါတယ်။  
+> I/O Requirement မှ စပြီး Software, Network, Safety အထိ တစ်ချက်ချင်းစီ တန်ဖိုးထားဖို့ လိုပါတယ်။  
+
+#PLC #Automation #EngineerMyanmar #IndustrialControl #SCADA #PLCBrands #ElectricalBlogSeries 
+
 **Tags**
-#PLC #Automation #EngineerMyanmar #IndustrialControl #SCADA #ElectricalBlogSeries #SmartFactory
+#PLC #Automation #EngineerMyanmar #IndustrialControl #SCADA #ElectricalBlogSeries #SmartFactory #PLC #Automation #IndustrialControl #SCADA #ElectricalBlogSeries #SmartFactory #PLCSelection #Automation #ElectricalBlogSeries #IndustrialControl #SmartFactory
