@@ -209,8 +209,6 @@ Add Auto Restart Delay = 3 sec
 > Input, Logic, Output ကို တစ်ချက်ချင်းချင်း ချိတ်ဆက်ပြီး စနစ်တစ်ခုလုံးကို စိတ်ကြိုက် ထိန်းချုပ်နိုင်စေပါတယ်။  
 > Modern PLC တွေဟာ Cloud System, AI Control, IoT Integration နဲ့အတူ Fourth Industrial Revolution ရဲ့ အဓိက အစိတ်အပိုင်း ဖြစ်လာပါပြီ။
 
-**PLC ကို နားလည်ရင် — စက်ရုံတစ်ခုလုံးကို နားလည်နိုင်တယ်။** 
-
 ---
 
 ##  PLC Brands & Types — ဈေးကွက်အထင်ကြီးဆုံး PLC များ 
