@@ -7,7 +7,7 @@ permalink: /engineering/sanitary/
 <section style="max-width:900px; margin:2rem auto;">
   <h2 style="text-align:center;">Sanitary Engineering</h2>
   <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:1rem; margin-top:1.5rem;">
-    {% assign Sanitary_posts = site.posts | where_exp: "post", "post.categories contains 'sanitary'" %}
+    {% assign sanitary_posts = site.posts | where_exp: "post", "post.categories contains 'sanitary'" %}
     {% for post in sanitary_posts %}
       <article style="border:1px solid #eee; border-radius:12px; padding:1rem; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.05);">
         {% if post.image %}
