@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Transformer Protection & Maintenance — စနစ်ရဲ့ “နှလုံးသားကောင်းမွန်ရေး”"
+title: "Transformer Protection & Maintenance — စနစ်ရဲ့ “နှလုံးသားကောင်းမွန်ရေး” "
 date: 2025-10-15
 categories: [engineering, electrical]
 image: /assets/img/
-description: "Transformer Protection & Maintenance — စနစ်ရဲ့ “နှလုံးသားကောင်းမွန်ရေး”
+description: "Transformer Protection & Maintenance — စနစ်ရဲ့ “နှလုံးသားကောင်းမွန်ရေး” "
 ---
 
 # Transformer Protection & Maintenance — စနစ်ရဲ့ “နှလုံးသားကောင်းမွန်ရေး” 
