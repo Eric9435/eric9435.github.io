@@ -4,14 +4,14 @@ title: "C1-C2 Advanced Verb Forms"
 categories: [english, grammar]
 ---
 
-# 🎓 C1–C2 Advanced Verb Forms Practice
+#  C1–C2 Advanced Verb Forms Practice
 
 > Fill in each blank with the correct **verb form** (infinitive, gerund, participle, modal, perfect form, etc.).  
 > Click each section to reveal the **answer** and **C1–C2 level explanation**.
 
 ---
 
-## ⚙️ 1. Verb Form Recognition
+##  1. Verb Form Recognition
 
 ### Sentence 1  
 If she __________ (know) the truth, she would have reacted differently.
@@ -84,7 +84,7 @@ Compare: *He forgot to send* (he never sent it).
 
 ---
 
-## 🧠 2. Gerunds vs Infinitives
+##  2. Gerunds vs Infinitives
 
 ### Sentence 6  
 They stopped __________ (talk) when the lecturer entered the room.
@@ -128,7 +128,7 @@ Register: official letters or business English.
 
 ---
 
-## 🌿 3. Participial and Non-Finite Constructions
+##  3. Participial and Non-Finite Constructions
 
 ### Sentence 9  
 __________ (Given) more time, the team could have finished the project.
@@ -186,7 +186,7 @@ __________ (Approaching) the station, I realized I had forgotten my passport.
 
 ---
 
-## ⚡ 4. Modal and Perfect Forms
+##  4. Modal and Perfect Forms
 
 ### Sentence 13  
 You __________ (must / forget) to attach the document — it’s missing from the email.
@@ -244,7 +244,7 @@ It’s time we __________ (address) the issue instead of avoiding it.
 
 ---
 
-## 💎 5. Advanced Nominal and Infinitive Clauses
+##  5. Advanced Nominal and Infinitive Clauses
 
 ### Sentence 17  
 To __________ (understand) this theory properly requires years of study.
@@ -320,14 +320,14 @@ C2 note: subtle use of mood to express politeness and social tone.
 
 ---
 
-# 🎓 C2 Verb Transformation Mastery — Part 2
+#  C2 Verb Transformation Mastery — Part 2
 
 > Rewrite each sentence using the correct advanced verb form, tense, or structure.  
 > Then click to reveal the full C2-level explanation.
 
 ---
 
-## ⚙️ 1. Infinitive ↔ Gerund Transformations
+##  1. Infinitive ↔ Gerund Transformations
 
 ### Sentence 1  
 She said, “I regret not telling him the truth earlier.”  
@@ -373,7 +373,7 @@ She avoided answering any personal questions.
 
 ---
 
-## 🌿 2. Participle Clauses ↔ Full Clauses
+##  2. Participle Clauses ↔ Full Clauses
 
 ### Sentence 4  
 Because he was confused by the instructions, he made several mistakes.  
@@ -417,7 +417,7 @@ Since he didn’t know what to say, he remained silent.
 
 ---
 
-## 🔁 3. Active ↔ Passive Transformations
+##  3. Active ↔ Passive Transformations
 
 ### Sentence 7  
 They believe that the artist painted this masterpiece in 1889.  
@@ -463,7 +463,7 @@ They expect that the results will change scientific thinking.
 
 ---
 
-## ⚡ 4. Subjunctive & Conditional Transformations
+##  4. Subjunctive & Conditional Transformations
 
 ### Sentence 10  
 It’s essential that every member **attends** the meeting.  
@@ -508,7 +508,7 @@ If I were you, I’d reconsider your strategy.
 
 ---
 
-## 🧩 5. Modal & Perfect Infinitive Transformations
+##  5. Modal & Perfect Infinitive Transformations
 
 ### Sentence 13  
 Perhaps he missed the meeting because he overslept.  
@@ -552,7 +552,7 @@ I’m sure she didn’t notice you.
 
 ---
 
-## 💎 6. Causative & Passive Causative Forms
+##  6. Causative & Passive Causative Forms
 
 ### Sentence 16  
 A professional cleaned my house yesterday.  
@@ -583,7 +583,7 @@ Someone will repair the roof next week.
 
 ---
 
-## 🧠 7. Reporting & Sequence of Tenses
+##  7. Reporting & Sequence of Tenses
 
 ### Sentence 18  
 He said, “I have completed the report.”  
@@ -647,14 +647,14 @@ He said, “I will contact you once I have the details.”
 
 ---
 
-# 🎓 C2 Verb & Syntax Transformation Mastery — Part 3
+#  C2 Verb & Syntax Transformation Mastery — Part 3
 
 > Rewrite or complete each sentence using the target advanced structure.  
 > Click each item to reveal the **answer** and **C2-level grammatical explanation**.
 
 ---
 
-## 🔁 1. Inversion & Fronting
+##  1. Inversion & Fronting
 
 ### Sentence 1  
 He had hardly sat down when the phone rang.  
@@ -698,7 +698,7 @@ They didn’t realize how serious the situation was until the warning came.
 
 ---
 
-## 🌿 2. Nominalization (Verb → Noun Clauses)
+##  2. Nominalization (Verb → Noun Clauses)
 
 ### Sentence 4  
 When the team discovered the error, they corrected it immediately.  
@@ -728,7 +728,7 @@ Because the committee rejected the proposal, funding was delayed.
 
 ---
 
-## ⚙️ 3. Ellipsis & Reduction
+##  3. Ellipsis & Reduction
 
 ### Sentence 6  
 Although she was advised to rest, she continued working.  
@@ -758,7 +758,7 @@ If you are selected, you will be notified by email.
 
 ---
 
-## 💎 4. Emphatic & Cleft Constructions
+##  4. Emphatic & Cleft Constructions
 
 ### Sentence 8  
 He left the meeting early because he felt unwell.  
@@ -788,7 +788,7 @@ Julia won the scholarship, not her brother.
 
 ---
 
-## ⚡ 5. Perfect Participles & Result Clauses
+##  5. Perfect Participles & Result Clauses
 
 ### Sentence 10  
 After he had completed his degree, he moved abroad.  
@@ -818,7 +818,7 @@ Since she has lived abroad, she speaks several languages fluently.
 
 ---
 
-## 🔗 6. Mixed Transformation (Modal + Syntax)
+##  6. Mixed Transformation (Modal + Syntax)
 
 ### Sentence 12  
 Perhaps he forgot to reply to your email.  
@@ -848,7 +848,7 @@ I’m sure he didn’t notice the warning signs.
 
 ---
 
-## 🧠 7. Advanced Cohesive Transformations
+##  7. Advanced Cohesive Transformations
 
 ### Sentence 14  
 Although he had been warned repeatedly, he ignored the advice.  
@@ -878,7 +878,7 @@ The experiment failed because the sample was contaminated.
 
 ---
 
-## 🌟 8. Elliptical Clauses & Comparatives
+##  8. Elliptical Clauses & Comparatives
 
 ### Sentence 16  
 He earns more money than his brother earns.  
@@ -908,7 +908,7 @@ If she were taller, she could reach the shelf.
 
 ---
 
-## 📘 9. Fronted & Passive Infinitive Clauses
+##  9. Fronted & Passive Infinitive Clauses
 
 ### Sentence 18  
 It’s believed that the company will announce a merger soon.  
@@ -939,7 +939,7 @@ To finish this task will require a lot of effort.
 
 ---
 
-## 🪶 10. Synthesis Challenge
+##  10. Synthesis Challenge
 
 ### Sentence 20  
 He didn’t realize how much he had changed until he returned home.  
@@ -976,14 +976,14 @@ These transformations demonstrate full control over **aspect, voice, emphasis, a
 
 ---
 
-# 🎓 C2 Nominalization & Cohesion Mastery — Part 4
+#  C2 Nominalization & Cohesion Mastery — Part 4
 
 > Convert full clauses into nominalized or prepositional structures.  
 > Click each task to reveal the **answer** and a detailed **C2-level explanation**.
 
 ---
 
-## ⚙️ 1. Verb → Noun Nominalization
+##  1. Verb → Noun Nominalization
 
 ### Sentence 1  
 The researchers discovered that the results were inconsistent.  
@@ -1030,7 +1030,7 @@ When the policy failed, the company suffered heavy losses.
 
 ---
 
-## 🌿 2. Cause & Result Nominalization
+##  2. Cause & Result Nominalization
 
 ### Sentence 4  
 Because the data was inaccurate, the conclusions were unreliable.  
@@ -1062,7 +1062,7 @@ The company performed well, so investors showed confidence.
 
 ---
 
-## 💎 3. Prepositional Cohesion (Replacing Clauses with Phrases)
+##  3. Prepositional Cohesion (Replacing Clauses with Phrases)
 
 ### Sentence 6  
 After the law was passed, protests immediately began.  
@@ -1108,7 +1108,7 @@ Although the plan was ambitious, it succeeded.
 
 ---
 
-## 🔗 4. Abstract Noun Conversions (Action → Concept)
+##  4. Abstract Noun Conversions (Action → Concept)
 
 ### Sentence 9  
 They tried to reduce costs.  
@@ -1139,7 +1139,7 @@ The scientists improved the method, which increased accuracy.
 
 ---
 
-## ⚡ 5. Nominalization of Mental & Speech Processes
+##  5. Nominalization of Mental & Speech Processes
 
 ### Sentence 11  
 The professor explained that the data contradicted the hypothesis.  
@@ -1169,7 +1169,7 @@ The manager argued that the plan lacked feasibility.
 
 ---
 
-## 🧠 6. Time & Condition Reduction
+##  6. Time & Condition Reduction
 
 ### Sentence 13  
 When the project was completed, the team celebrated.  
@@ -1200,7 +1200,7 @@ If the policy changes, further reviews will be needed.
 
 ---
 
-## 🌟 7. Parallel Nominalization for Cohesion
+##  7. Parallel Nominalization for Cohesion
 
 ### Sentence 15  
 The government promised to reduce inflation and improve employment rates.  
@@ -1230,7 +1230,7 @@ The speaker inspired the audience and changed their perspective.
 
 ---
 
-## 💬 8. Integrating Prepositional Cohesion
+##  8. Integrating Prepositional Cohesion
 
 ### Sentence 17  
 Because the proposal was rejected, the project was abandoned.  
@@ -1262,7 +1262,7 @@ Although many experts disagreed, the policy was implemented.
 
 ---
 
-## 🔗 9. Abstract Summary Nominalization
+##  9. Abstract Summary Nominalization
 
 ### Sentence 19  
 The results show that global warming is accelerating.  
@@ -1311,14 +1311,14 @@ Achieve dense, cohesive, and formal writing typical of **academic research**, **
 
 ---
 
-# 🎓 C2 Inversion, Emphasis & Stylistic Variation — Part 5
+#  C2 Inversion, Emphasis & Stylistic Variation — Part 5
 
 > Complete or transform each sentence using advanced inversion or emphasis.  
 > Click each task to reveal the **answer** and **C2-level explanation**.
 
 ---
 
-## ⚙️ 1. Negative-Adverb Inversion
+##  1. Negative-Adverb Inversion
 
 ### 1  
 He had never experienced such pressure before.  
@@ -1356,7 +1356,7 @@ He realized the truth only after she left.
 
 ---
 
-## 🌿 2. Emphatic “Not only… but also”
+##  2. Emphatic “Not only… but also”
 
 ### 4  
 She completed the report on time. She presented it perfectly.  
@@ -1382,7 +1382,7 @@ He supports the idea. He’s even funding it.
 
 ---
 
-## 💎 3. “So/Neither … Inversion”
+##  3. “So/Neither … Inversion”
 
 ### 6  
 She is an excellent speaker, and he is too.  
@@ -1408,7 +1408,7 @@ She doesn’t enjoy early meetings, and he doesn’t either.
 
 ---
 
-## ⚡ 4. Comparative & Degree Fronting
+##  4. Comparative & Degree Fronting
 
 ### 8  
 She was so determined that she succeeded.  
@@ -1434,7 +1434,7 @@ The noise was such that nobody could sleep.
 
 ---
 
-## 🔗 5. “No sooner… than / Scarcely… when”
+##  5. “No sooner… than / Scarcely… when”
 
 ### 10  
 He finished his sentence. The audience applauded.  
@@ -1460,7 +1460,7 @@ She entered the room, and everyone started laughing.
 
 ---
 
-## 🧠 6. Fronting for Focus & Contrast
+##  6. Fronting for Focus & Contrast
 
 ### 12  
 The manager approved the proposal only after careful consideration.  
@@ -1486,7 +1486,7 @@ You can understand this poem only if you know the symbolism.
 
 ---
 
-## 🌿 7. Adverbial Emphasis (Fronted Expressions)
+##  7. Adverbial Emphasis (Fronted Expressions)
 
 ### 14  
 He succeeded because of his persistence.  
@@ -1538,7 +1538,7 @@ She studied hard, yet she didn’t pass.
 
 ---
 
-## ⚡ 9. Cleft & Pseudo-Cleft Sentences
+##  9. Cleft & Pseudo-Cleft Sentences
 
 ### 18  
 I admire her dedication most.  
@@ -1564,7 +1564,7 @@ John told me the secret yesterday.
 
 ---
 
-## 🌟 10. Stylistic Summary Transformation
+##  10. Stylistic Summary Transformation
 
 ### 20  
 They didn’t realize the risks until too late.  
@@ -1597,14 +1597,14 @@ They didn’t realize the risks until too late.
 
 ---
 
-# 🎓 C2 Clause Compression & Transformation Mastery — Part 6
+#  C2 Clause Compression & Transformation Mastery — Part 6
 
 > Transform full clauses into compressed, embedded, or reduced forms.  
 > Click each section to reveal the **answer** and **C2-level grammatical insight**.
 
 ---
 
-## ⚙️ 1. Reduced Relative Clauses
+##  1. Reduced Relative Clauses
 
 ### 1  
 The students **who were selected for the exchange program** will travel next month.  
@@ -1635,7 +1635,7 @@ The man **who is sitting near the window** is my professor.
 
 ---
 
-## 🌿 2. Infinitive Clause Reduction
+##  2. Infinitive Clause Reduction
 
 ### 3  
 There are several problems **that need to be solved immediately.**  
@@ -1667,7 +1667,7 @@ He is the first person **who discovered the error.**
 
 ---
 
-## 💎 3. Nominal Clause Compression
+##  3. Nominal Clause Compression
 
 ### 5  
 That the results were inconsistent **was obvious to everyone.**  
@@ -1698,7 +1698,7 @@ It surprised everyone **that she refused the offer.**
 
 ---
 
-## 🔗 4. Participial and Adverbial Compression
+##  4. Participial and Adverbial Compression
 
 ### 7  
 While he was reading the report, he took notes.  
@@ -1729,7 +1729,7 @@ Because she had completed the analysis, she wrote the conclusion.
 
 ---
 
-## ⚡ 5. Embedded & Parallel Structures
+##  5. Embedded & Parallel Structures
 
 ### 9  
 The committee met. They discussed budget allocations. They set new deadlines.  
@@ -1759,7 +1759,7 @@ He completed his PhD. He immediately began post-doctoral research.
 
 ---
 
-## 🌿 6. Appositive and Embedded Noun Phrases
+##  6. Appositive and Embedded Noun Phrases
 
 ### 11  
 The fact that she achieved first place impressed everyone.  
@@ -1789,7 +1789,7 @@ The committee expressed concern that the data had been leaked.
 
 ---
 
-## 💎 7. Ellipsis in Comparative and Conditional Clauses
+##  7. Ellipsis in Comparative and Conditional Clauses
 
 ### 13  
 If you are invited, you should attend.  
@@ -1849,7 +1849,7 @@ Although the proposal was revised, it was rejected.
 
 ---
 
-## 🧠 9. Combining Cause and Result Clauses
+##  9. Combining Cause and Result Clauses
 
 ### 17  
 He ignored the warnings, so the accident happened.  
@@ -1879,7 +1879,7 @@ Since she was unaware of the risks, she signed the document.
 
 ---
 
-## 🌟 10. Complex Sentence Compression
+##  10. Complex Sentence Compression
 
 ### 19  
 The company implemented the policy, which resulted in lower costs and greater efficiency.  
@@ -1927,7 +1927,7 @@ The study was successful because the method was innovative.
 
 ---
 
-# 🎓 C2 Academic Writing Workshop — Part 7A & 7B  
+#  C2 Academic Writing Workshop — Part 7A & 7B  
 **Masterclass in Formal Syntax, Cohesion & Style**
 
 > Use all your previous grammar powers — inversion, nominalization, participles, ellipsis, emphasis — to write or transform academic paragraphs.  
@@ -2037,7 +2037,7 @@ Having collected and analyzed the data, the researchers published their findings
 
 ---
 
-## ✨ Part 7B — Paragraph Construction Practice
+##  Part 7B — Paragraph Construction Practice
 
 ### Task 1 — Cause & Effect Essay (Nominalization + Cohesion)
 **Prompt:**  
@@ -2149,7 +2149,7 @@ Write native-like academic paragraphs where each sentence contributes logically,
 
 ---
 
-## ✍️ Task 1 – Analytical Report (Use of Data & Compression)
+##  Task 1 – Analytical Report (Use of Data & Compression)
 
 **Prompt:**  
 You have been asked to write a short report (200 – 250 words) summarizing the trends in environmental investment shown below.  
@@ -2180,7 +2180,7 @@ Between 2015 and 2025, public investment in renewable energy has grown steadily,
 
 ---
 
-## 💬 Task 2 – Discursive Essay (Opinion + Balance)
+##  Task 2 – Discursive Essay (Opinion + Balance)
 
 **Prompt:**  
 *Some people claim that artificial intelligence will replace human creativity. Others believe technology can only enhance it.*  
@@ -2227,12 +2227,12 @@ Not only has technology expanded access to creative tools, but it has also diver
 
 ---
 
-# 🧾 IELTS Academic Writing Self-Scoring Workbook — Part 9  
+#  IELTS Academic Writing Self-Scoring Workbook — Part 9  
 **Task 1 + Task 2 with Band 9 Models and Descriptor Analysis**
 
 ---
 
-## ✍️ Task 1 — Academic Report
+##  Task 1 — Academic Report
 
 **Prompt:**  
 The chart below shows the percentage of total energy production from renewable sources in five countries between 2010 and 2020.  
@@ -2262,7 +2262,7 @@ While Canada and Australia both started at roughly 20 percent, Canada’s output
 
 ---
 
-## 💬 Task 2 — Discursive Essay
+##  Task 2 — Discursive Essay
 
 **Prompt:**  
 *Some people believe that online education will completely replace traditional classroom learning. Others think that in-person interaction remains essential for effective education.*  
@@ -2285,7 +2285,7 @@ In my view, technology will not eliminate classroom learning but redefine it. As
 
 ---
 
-### 🧠 Band 9 Score Analysis
+###  Band 9 Score Analysis
 **Task Response (9.0)** – Fully addresses both sides and opinion; sophisticated argument progression.  
 **Coherence & Cohesion (9.0)** – Seamless paragraph transitions (*however, conversely, nevertheless*); clear thematic unity.  
 **Lexical Resource (9.0)** – Precise academic lexis (*democratize, asynchronous, interpersonal depth*); collocations natural and varied.  
@@ -2294,7 +2294,7 @@ In my view, technology will not eliminate classroom learning but redefine it. As
 
 ---
 
-# 🧮 Self-Scoring Checklist
+#  Self-Scoring Checklist
 
 | Criterion | Band 9 Descriptor | Your Self-Assessment (✓) |
 |------------|------------------|---------------------------|
@@ -2316,12 +2316,12 @@ In my view, technology will not eliminate classroom learning but redefine it. As
 **End of File — IELTS Academic Writing Self-Scoring Workbook (Part 9)**
 
 
-# 💥 IELTS Band 9 Vocabulary & Grammar Booster — Part 10  
+#  IELTS Band 9 Vocabulary & Grammar Booster — Part 10  
 **Advanced Lexis, Structures, and Sentence Patterns for Writing Task 1 & Task 2**
 
 ---
 
-## 🧭 1. Band 9 Lexical Features
+##  1. Band 9 Lexical Features
 
 | Feature | Description | Example |
 |----------|--------------|----------|
@@ -2333,9 +2333,10 @@ In my view, technology will not eliminate classroom learning but redefine it. As
 
 ---
 
-## 📈 2. Task 1 Lexical & Structural Templates
+##  2. Task 1 Lexical & Structural Templates
 
 ### 2.1 Trend Verbs & Phrases
+
 | Upward | Downward | Stability |
 |---------|-----------|-----------|
 | rise, climb, soar, surge, escalate | decline, drop, plunge, plummet, deteriorate | remain stable, level off, plateau, maintain consistency |
@@ -2346,6 +2347,7 @@ In my view, technology will not eliminate classroom learning but redefine it. As
 - *Figures **remained relatively constant** over the period.*
 
 ### 2.2 Quantifiers & Degree
+
 | Word | Use Example |
 |------|--------------|
 | **substantial / considerable** | *a substantial rise in exports* |
@@ -2354,6 +2356,7 @@ In my view, technology will not eliminate classroom learning but redefine it. As
 | **marginal / negligible** | *a marginal improvement of 2 percent* |
 
 ### 2.3 Cohesive Devices for Task 1
+
 | Function | Connector |
 |-----------|------------|
 | Contrast | *whereas, while, in contrast, by comparison* |
@@ -2369,7 +2372,7 @@ In my view, technology will not eliminate classroom learning but redefine it. As
 
 ---
 
-## 💬 3. Task 2 Vocabulary Themes
+##  3. Task 2 Vocabulary Themes
 
 | Topic | Band 9 Collocations |
 |--------|--------------------|
@@ -2382,7 +2385,7 @@ In my view, technology will not eliminate classroom learning but redefine it. As
 
 ---
 
-## 🧠 4. Band 9 Grammar Patterns for Task 2
+##  4. Band 9 Grammar Patterns for Task 2
 
 ### 4.1 Inversion for Emphasis
 - *Rarely has a policy generated such widespread debate.*  
@@ -2401,6 +2404,7 @@ In my view, technology will not eliminate classroom learning but redefine it. As
 - *Students exposed to collaborative tasks perform better.*  
 
 ### 4.5 Complex Cohesive Devices
+
 | Function | Connector Examples |
 |-----------|--------------------|
 | Adding | *moreover, furthermore, in addition, likewise* |
@@ -2410,7 +2414,7 @@ In my view, technology will not eliminate classroom learning but redefine it. As
 
 ---
 
-## 🧩 5. Band 9 Sentence Models
+##  5. Band 9 Sentence Models
 
 ### Cause & Effect  
 > *Rapid urbanization has led to increased pollution, **resulting in** deteriorating air quality.*
@@ -2429,7 +2433,7 @@ In my view, technology will not eliminate classroom learning but redefine it. As
 
 ---
 
-## 🔍 6. Typical Band 9 Linking Phrases
+##  6. Typical Band 9 Linking Phrases
 
 | Purpose | Expression |
 |----------|-------------|
@@ -2442,7 +2446,7 @@ In my view, technology will not eliminate classroom learning but redefine it. As
 
 ---
 
-## 🧮 7. Self-Check: Band 9 Grammar Accuracy
+##  7. Self-Check: Band 9 Grammar Accuracy
 
 ✅ No fragment or comma splice.  
 ✅ Tense consistency (especially in Task 1 time trends).  
@@ -2479,14 +2483,14 @@ Use vocabulary and grammar from this file; then evaluate against the **Band 9 de
 
 ---
 
-# 🧠 IELTS Band 9 Interactive Writing Trainer — Part 11  
+#  IELTS Band 9 Interactive Writing Trainer — Part 11  
 **All-in-One Practice File: Markdown + HTML + Printable Workbook**
 
 ---
 
-## 🧩 1️⃣ MARKDOWN MODE (Click to Reveal)
+##  1️⃣ MARKDOWN MODE (Click to Reveal)
 
-### 🧠 Exercise 1 – Nominalization
+###  Exercise 1 – Nominalization
 Rewrite using a noun form of the underlined verb.
 
 1. Governments should **invest** more in public transport.  
@@ -2500,7 +2504,7 @@ Nominalization raises formality and cohesion.
 
 ---
 
-### 🧠 Exercise 2 – Inversion for Emphasis
+###  Exercise 2 – Inversion for Emphasis
 Transform the sentence to begin with *Rarely has / Not only does …*
 
 2. People have experienced such rapid technological change.  
@@ -2514,7 +2518,7 @@ Inversion adds rhetorical emphasis typical of Band 9 essays.
 
 ---
 
-### 🧠 Exercise 3 – Clause Compression
+###  Exercise 3 – Clause Compression
 3. Because researchers had completed the trial, they published their findings.  
 ➡ Rewrite using a perfect participle (*Having + past participle*).
 
@@ -2526,7 +2530,7 @@ Shows sequence + formality; replaces subordinating clause.
 
 ---
 
-### 🧠 Exercise 4 – Cause & Effect
+###  Exercise 4 – Cause & Effect
 4. The city expanded. Traffic congestion increased.  
 ➡ Combine into one sentence using *resulting in*.
 
@@ -2538,7 +2542,7 @@ Compression through participial phrase → concise Band 9 syntax.
 
 ---
 
-### 🧠 Exercise 5 – Academic Lexis
+###  Exercise 5 – Academic Lexis
 Fill in the blank with the best collocation: (*policy implementation / technological advancement / economic stability*)
 
 5. Long-term _________ depends on sustainable innovation and education.  
@@ -2551,7 +2555,7 @@ Strong lexical collocation; noun phrase suits academic register.
 
 ---
 
-## 🌐 2️⃣ HTML MODE (Dropdowns & Input Fields)
+##  2️⃣ HTML MODE (Dropdowns & Input Fields)
 
 > Save this section as `.html` and open in any browser for interactive typing practice.
 
@@ -2590,7 +2594,7 @@ Long-term <select>
 
 ---
 
-🖨️ 3️⃣ PRINTABLE WORKBOOK MODE
+ 3️⃣ PRINTABLE WORKBOOK MODE
 
 1. Governments should invest more in public transport.
 → Governments should increase their _______________________ in public transport.
@@ -2616,7 +2620,7 @@ Long-term <select>
 ---
 End of File — IELTS Band 9 Interactive Writing Trainer (Part 11)
 
-# 🧾 IELTS + C2 Integrated Band 9 Transformation Test — Part 12
+#  IELTS + C2 Integrated Band 9 Transformation Test — Part 12
 
 > Transform each sentence or paragraph into advanced academic English.  
 > Use inversion, nominalization, compression, and cohesive linking.  
@@ -2756,7 +2760,7 @@ When the researchers analyzed the data, they discovered a significant correlatio
 
 ---
 
-## 🧮 Self-Marking Rubric (0–9 per criterion)
+##  Self-Marking Rubric (0–9 per criterion)
 
 | Criterion | Band 9 Descriptor | Your Score |
 |------------|------------------|-------------|
@@ -2772,7 +2776,7 @@ When the researchers analyzed the data, they discovered a significant correlatio
 
 ---
 
-# 🎯 Next Step
+#  Next Step
 Repeat the test weekly using your own topics (e.g., technology, environment, education).  
 Focus on **nominalization + inversion + compression combo** in each sentence — the true Band 9 signature.
 
@@ -2782,7 +2786,7 @@ Focus on **nominalization + inversion + compression combo** in each sentence —
 
 ---
 
-# 📚 Band 9 Academic Phrasebank — Part 13  
+#  Band 9 Academic Phrasebank — Part 13  
 **Functional Expressions for IELTS Task 1 & Task 2 / C2 Academic Writing**
 
 > Use these expressions to introduce, connect, evaluate, and conclude arguments.  
@@ -2790,7 +2794,7 @@ Focus on **nominalization + inversion + compression combo** in each sentence —
 
 ---
 
-## 🪜 1️⃣  Introducing a Topic or Trend
+##  1️⃣  Introducing a Topic or Trend
 
 Fill the blank with a suitable subject (e.g. “urbanisation”, “renewable energy”).
 
@@ -2820,7 +2824,7 @@ There is an ongoing debate about whether governments should regulate social medi
 
 ---
 
-## 🔗 2️⃣  Presenting an Argument
+##  2️⃣  Presenting an Argument
 
 **Pattern A:**  
 It can be argued that _________ plays a pivotal role in _________.  
@@ -2846,7 +2850,7 @@ The primary reason for declining biodiversity lies in deforestation.
 
 ---
 
-## ⚖️ 3️⃣  Contrasting or Balancing Ideas
+##  3️⃣  Contrasting or Balancing Ideas
 
 **Pattern A:**  
 While _________, it is equally important to recognise that _________.  
@@ -2871,7 +2875,7 @@ On the one hand, online learning offers flexibility; on the other hand, it limit
 
 ---
 
-## 📈 4️⃣  Explaining Cause and Effect
+##  4️⃣  Explaining Cause and Effect
 
 **Pattern A:**  
 _________ has led to _________.  
@@ -2896,7 +2900,7 @@ The growing prevalence of lifestyle diseases can be attributed to sedentary beha
 
 ---
 
-## 🧠 5️⃣  Giving Examples or Evidence
+##  5️⃣  Giving Examples or Evidence
 
 **Pattern A:**  
 For instance, _________ demonstrates how _________.  
@@ -2921,7 +2925,7 @@ Empirical evidence suggests that bilingual education improves cognitive flexibil
 
 ---
 
-## 💬 6️⃣  Evaluating or Qualifying Statements
+##  6️⃣  Evaluating or Qualifying Statements
 
 **Pattern A:**  
 It is undeniable that _________; however, _________.  
@@ -2946,7 +2950,7 @@ The extent to which genetics influences intelligence remains a matter of debate.
 
 ---
 
-## 🧩 7️⃣  Drawing Conclusions or Implications
+##  7️⃣  Drawing Conclusions or Implications
 
 **Pattern A:**  
 In summary, _________ can be seen as _________.  
@@ -2971,7 +2975,7 @@ From the foregoing discussion, it may be concluded that education remains the co
 
 ---
 
-## 📋 8️⃣  Practice Task
+##  8️⃣  Practice Task
 
 Fill in at least **five blanks** using your own essay topic.  
 Then click open several <details> models to compare lexical and grammatical range.
