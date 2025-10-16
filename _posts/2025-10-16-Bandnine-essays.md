@@ -103,3 +103,143 @@ categories: [english, grammar]
 ---
 
 **End of File — Band 9 Annotated Essay**
+
+#  Band 9 Sentence Transformation Game — Part 16
+**Goal:** Transform informal sentences into Band 9 academic forms.
+
+> ✏️ Write your version first.  
+> 🔍 Click to reveal the Band 9 model + technique used.
+
+---
+
+##  Level 1 – Everyday → Formal
+
+1️⃣ **Original:** People say the government should spend more money on schools.  
+✏️ Your version: _____________________________________________  
+
+<details><summary>💡 Band 9 Answer</summary>
+It is **widely believed that the government should allocate additional funding to education.**  
+➡ *Passive reporting verb + lexical upgrade (“allocate funding”).*
+</details>
+
+---
+
+2️⃣ **Original:** A lot of students can’t find a job after graduation.  
+✏️ Your version: _____________________________________________  
+
+<details><summary>💡 Band 9 Answer</summary>
+A **significant proportion of graduates struggle to secure employment upon completion of their studies.**  
+➡ *Nominalisation + formal collocations (“secure employment”).*
+</details>
+
+---
+
+3️⃣ **Original:** Some people think cars are making cities too noisy.  
+✏️ Your version: _____________________________________________  
+
+<details><summary>💡 Band 9 Answer</summary>
+It is **argued that the proliferation of private vehicles has exacerbated urban noise pollution.**  
+➡ *Reporting verb + academic lexis (“proliferation / exacerbated”).*
+</details>
+
+---
+
+##  Level 2 – Combine and Compress
+
+4️⃣ **Original:** People use phones more. They spend less time talking face to face.  
+✏️ Your version: _____________________________________________  
+
+<details><summary>💡 Band 9 Answer</summary>
+**As the use of mobile devices has increased, face-to-face interaction has declined accordingly.**  
+➡ *Cause–effect link + parallel structure for balance.*
+</details>
+
+---
+
+5️⃣ **Original:** The company made a plan. It wanted to cut costs.  
+✏️ Your version: _____________________________________________  
+
+<details><summary>💡 Band 9 Answer</summary>
+**The company formulated a cost-reduction strategy.**  
+➡ *Compression → nominal phrase (“formulated + strategy”).*
+</details>
+
+---
+
+6️⃣ **Original:** Scientists finished the research. Then they published the results.  
+✏️ Your version: _____________________________________________  
+
+<details><summary>💡 Band 9 Answer</summary>
+**Having completed the research, the scientists published their findings.**  
+➡ *Perfect participle clause shows sequence.*
+</details>
+
+---
+
+##  Level 3 – Argument & Evaluation
+
+7️⃣ **Original:** I think online classes are better than traditional ones.  
+✏️ Your version: _____________________________________________  
+
+<details><summary>💡 Band 9 Answer</summary>
+**It can be argued that online instruction offers greater flexibility than traditional classroom learning.**  
+➡ *Impersonal stance + comparative structure + precise noun.*
+</details>
+
+---
+
+8️⃣ **Original:** Many people don’t like to work long hours, but they need money.  
+✏️ Your version: _____________________________________________  
+
+<details><summary>💡 Band 9 Answer</summary>
+**While extended working hours are often undesirable, financial necessity compels many individuals to accept them.**  
+➡ *Concessive clause + nominalisation (“financial necessity”).*
+</details>
+
+---
+
+##  Level 4 – C2 Compression & Cohesion
+
+9️⃣ **Original:** Because the law was changed, many companies had to adapt.  
+✏️ Your version: _____________________________________________  
+
+<details><summary>💡 Band 9 Answer</summary>
+**Following legislative reform, many companies were forced to adapt.**  
+➡ *Prepositional noun phrase replaces subordinate clause; formal lexis.*
+</details>
+
+---
+
+🔟 **Original:** The internet is useful, but it can also be dangerous for children.  
+✏️ Your version: _____________________________________________  
+
+<details><summary>💡 Band 9 Answer</summary>
+**Although the Internet serves as an invaluable educational resource, it poses considerable risks to children.**  
+➡ *Concessive complex sentence + high-value adjectives.*
+</details>
+
+---
+
+##  Scoring Guide
+
+| Criterion | Band 9 Descriptor | Self Score (0–9) |
+|------------|------------------|------------------|
+| **Accuracy** | Meaning preserved; no grammar errors | |
+| **Complexity** | Uses advanced structures (clauses, nominalisation, inversion) | |
+| **Lexical Range** | Precise and varied academic vocabulary | |
+| **Cohesion** | Logical connectors used naturally | |
+
+> 💡 Total Band = ( sum ÷ 4 ) — Aim for ≥ 8.5 for C2 control.
+
+---
+
+##  Next Challenge
+Create your own 10 informal sentences from daily topics (technology, environment, work, society) and convert them using:
+- **Nominalisation**
+- **Clause compression**
+- **Inversion**
+- **Concessive contrast**
+
+---
+
+**End of File — Band 9 Sentence Transformation Game (Part 16)**
