@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "MASTER ENGLISH Writing (A1 → C2 + Band-9)"
-date: 2025-10-16
+date: 2025-10-17
 categories: [english, writing]
 ---
 
