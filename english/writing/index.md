@@ -1,42 +1,33 @@
 ---
 layout: page
-title: "Writing"
+title: "listening"
+permalink: /english/listening/
 ---
 
-# ✍️ English Writing Practice
+# 📘 English Listening Blog
 
-Welcome to the Writing Section of Eric Scott’s English Course.  
-Learn how to express ideas clearly, correctly, and creatively. 📝
-
----
-
-## 📘 What You’ll Learn
-
-- 🧩 Sentence & Paragraph Structure  
-- ✏️ Formal vs. Informal Writing  
-- 📨 Emails, Essays, and Reports  
-- 💬 Common Grammar & Punctuation Fixes
+Welcome to the Listening section!  
+Here you'll find all posts related to English Listening — including tenses, sentence structure, and writing skills.
 
 ---
 
-## 🧠 Example Exercise
+{% assign listening_posts = site.posts 
+  | where_exp: "p", "p.categories contains 'english'" 
+  | where_exp: "p", "p.categories contains 'listening'" 
+  | sort: 'date' | reverse %}
 
-> Topic: *My Favourite Hobby*  
-> Write 5 sentences using correct tenses and connectors.
-
-Example:  
-> “My favourite hobby is reading. It helps me relax after work.  
-> I started reading when I was ten, and I still love it today.”
-
----
-
-## 💡 Writing Tips
-
-- Always plan before you write.  
-- Keep sentences short and clear.  
-- Review and correct before submitting.
-
----
-
-👉 [Back to English Home]({{ '/english/' | relative_url }})  
-👉 [Back to Main Home]({{ '/' | relative_url }})
+{% if listening_posts.size == 0 %}
+<p style="color:#888;">No listening posts yet. Please check back later.</p>
+{% else %}
+<div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:1.5rem;">
+  {% for post in grammar_posts %}
+  <div style="border:1px solid #eee; border-radius:10px; padding:1rem; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.05);">
+    <a href="{{ post.url | relative_url }}" style="text-decoration:none; font-weight:600; color:#0078D7;">
+      {{ post.title }}
+    </a>
+    <p style="font-size:0.9rem; color:#777;">{{ post.date | date: "%b %d, %Y" }}</p>
+    <p style="font-size:0.9rem; color:#555;">{{ post.excerpt | strip_html | truncate: 100 }}</p>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
