@@ -1,23 +1,23 @@
 ---
 layout: page
-title: "listening"
-permalink: /english/listening/
+title: "writing"
+permalink: /english/writing/
 ---
 
 # 📘 English Listening Blog
 
-Welcome to the Listening section!  
+Welcome to the Writing section!  
 Here you'll find all posts related to English Listening — including tenses, sentence structure, and writing skills.
 
 ---
 
-{% assign listening_posts = site.posts 
+{% assign writing_posts = site.posts 
   | where_exp: "p", "p.categories contains 'english'" 
-  | where_exp: "p", "p.categories contains 'listening'" 
+  | where_exp: "p", "p.categories contains 'writing'" 
   | sort: 'date' | reverse %}
 
-{% if listening_posts.size == 0 %}
-<p style="color:#888;">No listening posts yet. Please check back later.</p>
+{% if writing_posts.size == 0 %}
+<p style="color:#888;">No writing posts yet. Please check back later.</p>
 {% else %}
 <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:1.5rem;">
   {% for post in grammar_posts %}
