@@ -20,7 +20,7 @@ Here you'll find all posts related to English Writing — including tenses, sent
 <p style="color:#888;">No writing posts yet. Please check back later.</p>
 {% else %}
 <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:1.5rem;">
-  {% for post in grammar_posts %}
+  {% for post in writing_posts %}
   <div style="border:1px solid #eee; border-radius:10px; padding:1rem; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.05);">
     <a href="{{ post.url | relative_url }}" style="text-decoration:none; font-weight:600; color:#0078D7;">
       {{ post.title }}
