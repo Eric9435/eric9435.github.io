@@ -4,7 +4,7 @@ title: "writing"
 permalink: /english/writing/
 ---
 
-# 📘 English Listening Blog
+# 📘 English Writing Blog
 
 Welcome to the Writing section!  
 Here you'll find all posts related to English Listening — including tenses, sentence structure, and writing skills.
