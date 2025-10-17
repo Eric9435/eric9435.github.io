@@ -7,7 +7,7 @@ permalink: /english/writing/
 # 📘 English Writing Blog
 
 Welcome to the Writing section!  
-Here you'll find all posts related to English Listening — including tenses, sentence structure, and writing skills.
+Here you'll find all posts related to English Writing — including tenses, sentence structure, and writing skills.
 
 ---
 
