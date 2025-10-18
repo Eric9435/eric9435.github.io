@@ -83,7 +83,8 @@ The distribution system acts as the bridge between the transmission network and 
 - **Primary Distribution:** 11 kV → 400 V  
 - **Secondary Distribution:** 400 V → 230 V (single phase)  
 
-### 🔹 Key Components  
+### 🔹 Key Components
+  
 | Component | Function |
 |:--|:--|
 | Transformer | Step-down voltage |
@@ -91,7 +92,8 @@ The distribution system acts as the bridge between the transmission network and 
 | Service Mains | Final connection to consumers |
 | Circuit Breakers & Fuses | Protection against faults |
 
-### ⚡ Standard Levels in India/Myanmar Systems  
+### ⚡ Standard Levels in India/Myanmar Systems
+  
 | Stage | Voltage (kV) | Description |
 |:--|:--:|:--|
 | Generation | 11 kV | Alternator output |
@@ -172,6 +174,7 @@ bluish glow နဲ့ hissing sound ဖြစ်ပေါ်ခြင်းပ�
 Insulators ဆိုတာ mechanical support ပေးဖို့ နဲ့ current leakage မဖြစ်အောင် ကာကွယ်ဖို့ သုံးတယ်။  
 
 ### 🔹 Types of Insulators  
+
 | Type | Description |
 |:--|:--|
 | Pin Type | Up to 33 kV, mounted on cross arm |
@@ -218,6 +221,7 @@ Substation ဆိုတာ Power System Network အတွက် “Node Points�
 AC voltage ကို step-up သို့မဟုတ် step-down လုပ်ဖို့ နဲ့ switching အတွက် သုံးတယ်။  
 
 ### 🔹 Types  
+
 | Type | Voltage Level | Example |
 |:--|:--:|:--|
 | Step-up | 11 → 132 kV | Power Station output |
@@ -246,6 +250,7 @@ Protection System လိုအပ်တယ်။
 4. **Current Transformer (CT)** & **Potential Transformer (PT)** – for measurement and protection.  
 
 ### 🔹 Types of Protection  
+
 | Type | Description |
 |:--|:--|
 | Over-current | Trips when I > set value |
@@ -299,6 +304,7 @@ Power factor ဆိုတာက “သုံးစွဲသူတစ်ဦးရ
 - Higher electricity bill (demand charge ↑)  
 
 ### 🔹 Methods to Improve PF
+
 | Method | Working Principle | Typical Use |
 |:--|:--|:--|
 | Static Capacitors | Supply leading kVAR | Factories & Distribution lines |
@@ -320,6 +326,7 @@ It shows how the load varies with time.
 3. **Annual Load Curve** – Used for planning plant capacity  
 
 ### 🔹 Key Terminologies
+
 | Term | Meaning |
 |:--|:--|
 | Maximum Demand | Highest load recorded in a period |
@@ -342,6 +349,7 @@ Electricity Tariff ဆိုတာ လျှပ်စစ်ဓာတ်အား
 - Encourage load factor improvement  
 
 ### 🔹 Types of Tariff
+
 | Tariff Type | Structure | Typical User |
 |:--|:--|:--|
 | Simple Rate | Flat Rs/kWh | Domestic |
@@ -370,6 +378,7 @@ Each plant should generate power so that the incremental cost (per kWh) is equal
 → Minimizes total generation cost.  
 
 ### 🔹 Plant Types and Roles
+
 | Type | Role in System | Typical Use |
 |:--|:--|:--|
 | Base Load Plant (Thermal/Nuclear) | Continuous operation | Stable output |
@@ -437,6 +446,7 @@ I_{fault} = \frac{V}{Z_{system}}
 \]
 
 ### 🔹 Types of Circuit Breakers  
+
 | Type | Medium Used | Voltage Range | Notes |
 |:--|:--|:--|:--|
 | **Oil CB** | Mineral oil | Up to 132 kV | Oldest type, needs maintenance |
@@ -457,6 +467,7 @@ Relay ဆိုတာ Fault တစ်ခုကို Detect လုပ်ပြ�
 Circuit Breaker ကို “Trip” စေတဲ့ Intelligent Sensor ဖြစ်တယ်။  
 
 ### 🔹 Types of Relays  
+
 | Type | Operation | Used In |
 |:--|:--|:--|
 | Electromagnetic | Current & voltage coil | Old substations |
@@ -570,6 +581,7 @@ If voltage (V) ↑ → current (I) ↓ → transmission losses (I²R) ↓ signif
 4. **Filters & Reactive Power Compensators**
 
 ### 🔹 Types of HVDC Links  
+
 | Type | Description | Example |
 |:--|:--|:--|
 | Monopolar | Single conductor, earth return | Small capacity |
@@ -598,6 +610,7 @@ Renewable Energy (RE) ဆိုတာက Solar ☀️, Wind 🌬️, Hydro 💧,
 - Requires smart control systems  
 
 ### 🔹 Integration Challenges  
+
 | Challenge | Description |
 |:--|:--|
 | Variability | Solar & wind fluctuate rapidly |
@@ -620,6 +633,7 @@ Example:
 To balance generation and demand, energy storage is essential.  
 
 ### 🔹 Major Storage Technologies  
+
 | Type | Description | Efficiency |
 |:--|:--|:--:|
 | Pumped Hydro | Water stored at height | 75–85 % |
