@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "IELTS Writing Task 2 (Band 9 Model + Techniques)"
-date: 2025-10-17
+date: 2025-10-21
 categories: [english, writing]
 ---
 
