@@ -813,3 +813,109 @@ Each paragraph follows this pattern:
 - Include **2–3 complex clauses** per paragraph (when, which, having, it is not …but …).  
 - Finish every paragraph with a **logical linking sentence**.  
 - Accuracy > difficulty: examiners reward control, not complication.
+
+# 🔗 IELTS Band-9 Linking Sentences — All Essay Types
+*(Formal tone, clear flow, simple vocabulary)*
+
+---
+
+## 🧠 1. OPINION ESSAY  (Agree / Disagree)
+
+| Paragraph | Linking-Sentence Examples | Technique Used |
+|------------|---------------------------|----------------|
+| **Introduction** | This essay argues that online education is more effective, **provided that** interaction is maintained. | Conditional / Hedging |
+| **Body 1** | Nevertheless, strict classroom schedules can limit freedom. | Contrast |
+| **Body 2** | Therefore, combining online tools with tutor support offers the best result. | Result |
+| **Conclusion** | It is not the method but the motivation that ensures learning success. | Cleft / Emphasis |
+
+---
+
+## 💬 2. DISCUSSION ESSAY  (Both Views)
+
+| Paragraph | Linking-Sentence Examples | Technique Used |
+|------------|---------------------------|----------------|
+| **Introduction** | This essay argues that technology is valuable **when guided by** strong human support. | Conditional / Adverbial |
+| **Body 1** | Nevertheless, overuse of screens can reduce attention. | Contrast |
+| **Body 2** | Therefore, a balanced mix of digital and face-to-face learning is most effective. | Result |
+| **Conclusion** | Where balance exists, learning remains **clear and productive.** | Where-clause / Parallel adjectives |
+
+---
+
+## 🚗 3. PROBLEM–SOLUTION ESSAY
+
+| Paragraph | Linking-Sentence Examples | Technique Used |
+|------------|---------------------------|----------------|
+| **Introduction** | This essay argues that better transport and planning can solve the issue. | Thesis / Hedging |
+| **Body 1** | Nevertheless, such traffic problems **can be reduced** with strong policies. | Contrast + Passive |
+| **Body 2** | Therefore, public investment brings both comfort **and** cleaner air. | Result + Parallel adjectives |
+| **Conclusion** | It is not private cars but careful planning that improves cities. | Cleft emphasis |
+
+---
+
+## 🌿 4. CAUSES–SOLUTIONS ESSAY
+
+| Paragraph | Linking-Sentence Examples | Technique Used |
+|------------|---------------------------|----------------|
+| **Introduction** | This essay argues that human activity is the main cause, and clean energy is the best solution. | Thesis / Coordination |
+| **Body 1** | Nevertheless, awareness programmes **can reduce** harmful habits. | Contrast + Modal passive |
+| **Body 2** | Therefore, global cooperation makes progress possible. | Result |
+| **Conclusion** | Where clean energy is used, health improves for everyone. | Where-clause |
+
+---
+
+## 🏡 5. ADVANTAGES & DISADVANTAGES ESSAY
+
+| Paragraph | Linking-Sentence Examples | Technique Used |
+|------------|---------------------------|----------------|
+| **Introduction** | This essay argues that the benefits of remote work outweigh the drawbacks, **if balance is kept.** | Conditional hedge |
+| **Body 1** | Nevertheless, isolation remains a problem for some workers. | Contrast |
+| **Body 2** | Therefore, regular meetings help maintain teamwork and trust. | Result |
+| **Conclusion** | It is not the workplace but good management that ensures success. | Cleft / Focus |
+
+---
+
+## 💻 6. TWO-PART / DIRECT-QUESTION ESSAY
+
+| Paragraph | Linking-Sentence Examples | Technique Used |
+|------------|---------------------------|----------------|
+| **Introduction** | This essay argues that online contact is useful, **but safe limits are necessary.** | Balanced thesis |
+| **Body 1** | Nevertheless, misinformation remains a serious risk. | Contrast |
+| **Body 2** | Therefore, education about online safety is the most effective protection. | Result |
+| **Conclusion** | It is not the internet but human choice that defines its impact. | Cleft sentence |
+
+---
+
+# 🧩 UNIVERSAL LINKING PATTERNS (Apply Anywhere)
+
+| Type | Useful Starters | Function |
+|------|-----------------|-----------|
+| **Contrast** | Nevertheless, However, On the other hand, Yet | Show limit / opposite idea |
+| **Result / Consequence** | Therefore, As a result, Consequently, For this reason | Show logical outcome |
+| **Cleft (Focus)** | It is not X but Y that … | Emphasise key idea |
+| **Conditional / Hedge** | provided that …, if …, as long as … | Add condition, soften opinion |
+| **Where-Clause** | Where …, + result | Express situational truth |
+| **Parallel Adjectives** | clear and effective / fair and sustainable | Balanced rhythm |
+| **Passive Form** | … can be controlled / should be supported … | Formal objectivity |
+| **Cause–Effect Clause** | … , which is why … | Link reason to outcome |
+
+---
+
+# 🎯 Band-9 Writing Rule
+
+Each paragraph should **end with one strong linking sentence** that:
+1. Connects logically to your main idea.  
+2. Uses *one* advanced grammar feature (not several).  
+3. Is short (10–18 words), formal, and accurate.  
+
+---
+
+## 🧠 Example Integration (Opinion Essay)
+
+> **Complex Opener:** Not only does online study save time, but it also expands access.  
+> **Example:** For instance, students in small towns can learn global courses.  
+> **Complex Explanation:** When lessons are flexible, learners stay motivated.  
+> **Linking Sentence:** Nevertheless, without guidance, progress may slow — which is why teacher support remains essential.
+
+---
+
+*→ Master these linking-sentence patterns and you can close every paragraph naturally, with clear cohesion and Band-9 control.*
