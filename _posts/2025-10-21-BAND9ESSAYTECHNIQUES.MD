@@ -615,3 +615,201 @@ Inversion • Cleft Sentence • Not only–but also • Cause–effect “by + 
 ---
 
 *End of Essay Type 6 — Two-Part / Direct Question Essay*
+
+---
+
+# 🌟 IELTS Band-9 Paragraph Formula by Essay Type
+*(Using Simple Words that Flow Naturally)*
+
+Each paragraph follows this pattern:
+> 1️⃣ Complex Opener → 2️⃣ Example Sentence → 3️⃣ Complex Explanation → 4️⃣ Linking Sentence
+
+---
+
+## 🧠 1. Opinion Essay (Agree / Disagree)
+
+### 🔹 Introduction
+1. **Complex Opener:** Rarely has education faced such fast digital change.  
+2. **Example Sentence:** Many universities now use online courses.  
+3. **Complex Explanation:** Because this method saves time and money, many people prefer it.  
+4. **Linking Sentence:** This essay argues that online learning is more effective, provided that interaction is maintained.
+
+### 🔹 Body 1 (Opposite View)
+1. Not only does classroom learning give structure, but it also builds discipline.  
+2. For example, students follow a clear schedule and routine.  
+3. When learning is guided by teachers, progress becomes steady.  
+4. Nevertheless, strict schedules can reduce flexibility.
+
+### 🔹 Body 2 (Your Opinion)
+1. By contrast, online study offers freedom and global access.  
+2. Many learners can study while working full-time.  
+3. Having saved travel time, students can focus more on practice.  
+4. Therefore, mixing online tools with tutor support brings the best result.
+
+### 🔹 Conclusion
+1. It is not the method but the motivation that ensures learning success.  
+2. Online systems help, yet teachers give human guidance.  
+3. Where courses stay interactive, understanding grows deeper.  
+4. Overall, education should stay flexible but personal.
+
+---
+
+## 💬 2. Discussion Essay
+
+### 🔹 Introduction
+1. Rarely has modern society debated education so widely.  
+2. While some believe technology improves learning, others fear it weakens focus.  
+3. Because both sides have logic, balance is needed.  
+4. This essay argues that technology is valuable when guided by human support.
+
+### 🔹 Body 1 (Side A)
+1. Not only does technology offer quick access to information, but it also encourages creativity.  
+2. For instance, students can design projects online.  
+3. When digital tools are used correctly, results improve.  
+4. Nevertheless, overuse can cause distraction.
+
+### 🔹 Body 2 (Side B + Opinion)
+1. By contrast, traditional study keeps attention and teamwork.  
+2. Students discuss topics face-to-face in class.  
+3. Having shared ideas directly, they build stronger understanding.  
+4. Therefore, combining digital tools with discussion is most effective.
+
+### 🔹 Conclusion
+1. It is not technology but guidance that shapes success.  
+2. Where balance exists, learning remains clear and productive.  
+3. Overall, both styles must support each other for progress.  
+4. This approach leads to lasting improvement.
+
+---
+
+## 🔧 3. Problem–Solution Essay
+
+### 🔹 Introduction
+1. Rarely has traffic congestion caused such global concern.  
+2. Big cities now face long travel delays every day.  
+3. Because of poor planning and rising cars, the issue grows worse.  
+4. This essay argues that better public transport and city design can solve it.
+
+### 🔹 Body 1 (Problems)
+1. Not only does heavy traffic waste time, but it also harms the environment.  
+2. For example, more cars create more pollution.  
+3. When roads are overcrowded, accidents become common.  
+4. Nevertheless, such issues can be reduced with good policies.
+
+### 🔹 Body 2 (Solutions)
+1. By contrast, building subways and cycle lanes can ease congestion.  
+2. Cities like Seoul have reduced traffic this way.  
+3. Having improved transport networks, residents now travel safely.  
+4. Therefore, public investment brings both comfort and cleaner air.
+
+### 🔹 Conclusion
+1. It is not private cars but strong planning that improves cities.  
+2. Where systems stay organised, life becomes easier.  
+3. Overall, teamwork between people and government solves the problem.  
+4. Sustainable design ensures lasting benefits.
+
+---
+
+## 🌿 4. Causes–Solutions Essay
+
+### 🔹 Introduction
+1. Rarely has pollution reached such dangerous levels.  
+2. Factories and vehicles release harmful gases daily.  
+3. Because energy demand keeps rising, air quality falls.  
+4. This essay argues that strict laws and clean energy are needed to fix this.
+
+### 🔹 Body 1 (Causes)
+1. Not only does overuse of fuel cause pollution, but it also damages health.  
+2. For example, smog affects breathing in large cities.  
+3. When industries ignore rules, the air grows toxic.  
+4. Nevertheless, education can raise public awareness.
+
+### 🔹 Body 2 (Solutions)
+1. By contrast, renewable energy can replace dirty fuels.  
+2. Countries now invest in wind and solar power.  
+3. Having switched to clean energy, they see better air quality.  
+4. Therefore, global cooperation makes progress possible.
+
+### 🔹 Conclusion
+1. It is not policy promises but action that clears the air.  
+2. Where clean energy is used, health improves.  
+3. Overall, prevention is cheaper than repair.  
+4. Long-term effort builds a safer planet.
+
+---
+
+## ⚖️ 5. Advantages & Disadvantages Essay
+
+### 🔹 Introduction
+1. Rarely has remote work become so common.  
+2. Many employees now work from home with modern tools.  
+3. Because this trend grows quickly, both benefits and risks appear.  
+4. This essay argues that the advantages outweigh the disadvantages if balance is kept.
+
+### 🔹 Body 1 (Advantages)
+1. Not only does remote work save time, but it also increases flexibility.  
+2. Workers spend more time with family.  
+3. When people manage time freely, productivity rises.  
+4. Nevertheless, isolation may appear for some.
+
+### 🔹 Body 2 (Disadvantages)
+1. By contrast, working from home can reduce teamwork.  
+2. Many miss direct communication.  
+3. Having fewer social talks, employees may feel lonely.  
+4. Therefore, regular meetings keep teams connected.
+
+### 🔹 Conclusion
+1. It is not the workplace but good management that ensures success.  
+2. Where balance exists, performance improves.  
+3. Overall, hybrid work offers both comfort and cooperation.  
+4. Future jobs should combine both models.
+
+---
+
+## ❓ 6. Two-Part / Direct-Question Essay
+
+### 🔹 Introduction
+1. Rarely has technology changed how people communicate.  
+2. Many ask whether this is positive and how it can be improved.  
+3. Because digital use grows daily, new rules are needed.  
+4. This essay argues that online contact is useful, but safe limits are necessary.
+
+### 🔹 Body 1 (Answer 1)
+1. Not only do social media apps connect families, but they also spread information fast.  
+2. For example, people learn global news instantly.  
+3. When used wisely, technology brings communities closer.  
+4. Nevertheless, fake news remains a concern.
+
+### 🔹 Body 2 (Answer 2)
+1. By contrast, strong education helps users think critically.  
+2. Schools now teach online safety lessons.  
+3. Having learned digital skills, children can use the internet responsibly.  
+4. Therefore, awareness is the best protection.
+
+### 🔹 Conclusion
+1. It is not the internet but human choice that defines impact.  
+2. Where people use it with care, benefits continue.  
+3. Overall, balance ensures progress.  
+4. Responsible use builds a healthy digital world.
+
+---
+
+# 🎯 Universal Summary Table
+
+| Essay Type | Intro Focus | Body 1 | Body 2 | Conclusion |
+|-------------|-------------|--------|--------|-------------|
+| **Opinion** | State your side | Opposite view | Your view + balance | Re-emphasise stance |
+| **Discussion** | Both views | Side A | Side B + your opinion | Balanced summary |
+| **Problem–Solution** | Problem overview | Problems | Solutions | Evaluation |
+| **Causes–Solutions** | Causes + aim | Causes | Solutions | Call to action |
+| **Adv/Disadv** | Trend overview | Advantages | Disadvantages | Overall view |
+| **Two-Part Q** | Paraphrase both Qs | Answer 1 | Answer 2 | Final opinion |
+
+---
+
+# ✅ Band-9 Notes
+- Keep **sentences clear (15–25 words)**.  
+- Use **simple but precise vocabulary**.  
+- Include **2–3 complex clauses** per paragraph (when, which, having, it is not …but …).  
+- Finish every paragraph with a **logical linking sentence**.  
+- Accuracy > difficulty: examiners reward control, not complication.
