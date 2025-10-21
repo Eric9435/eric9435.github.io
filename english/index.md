@@ -29,6 +29,11 @@ title: "English Learning"
     <p style="color:#666; font-weight:400;">Improve your composition and fluency.</p>
   </a>
 
+  <a href="{{ '/english/reading/' | relative_url }}" style="background:#f9f9f9; border:1px solid #ddd; border-radius:12px; padding:2rem; text-align:center; text-decoration:none; color:#333; transition:.3s; font-weight:600;">
+    <h3>✍️ Reading</h3>
+    <p style="color:#666; font-weight:400;">Improve your composition and fluency.</p>
+  </a>
+
   <a href="{{ '/english/listening/' | relative_url }}" style="background:#f9f9f9; border:1px solid #ddd; border-radius:12px; padding:2rem; text-align:center; text-decoration:none; color:#333; transition:.3s; font-weight:600;">
     <h3>🎧 Listening</h3>
     <p style="color:#666; font-weight:400;">Develop active listening and comprehension.</p>
