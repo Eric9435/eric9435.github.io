@@ -9,7 +9,6 @@ categories: [english, grammar]
 Source: learnenglish.britishcouncil.org/grammar/b1-b2-grammar
 
 [Adjectives: gradable and non-gradable](https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar/adjectives-gradable-and-non-gradable)
-
 [British English and American English](https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar/british-english-and-american-english)  
 [Capital letters and apostrophes](https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar/capital-letters-and-apostrophes)  
 [Conditionals: third and mixed](https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar/conditionals-third-and-mixed)  
