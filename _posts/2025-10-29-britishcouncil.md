@@ -45,3 +45,23 @@ Source: learnenglish.britishcouncil.org/grammar/b1-b2-grammar
 [Verbs followed by ‘-ing’ or infinitive to change meaning](https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar/verbs-followed-by-ing-or-infinitive-to-change-meaning)  
 [Wishes: ‘wish’ and ‘if only’](https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar/wishes-wish-and-if-only)
 
+---
+
+C1
+
+[Advanced passives review](https://learnenglish.britishcouncil.org/grammar/c1-grammar/advanced-passives-review)  
+[Advanced present simple and continuous](https://learnenglish.britishcouncil.org/grammar/c1-grammar/advanced-present-simple-and-continuous)  
+[Avoiding repetition in a text](https://learnenglish.britishcouncil.org/grammar/c1-grammar/avoiding-repetition-in-a-text)  
+[Contrasting ideas](https://learnenglish.britishcouncil.org/grammar/c1-grammar/contrasting-ideas)  
+[Ellipsis](https://learnenglish.britishcouncil.org/grammar/c1-grammar/ellipsis)  
+[Emphasis: cleft sentences, inversion and auxiliaries](https://learnenglish.britishcouncil.org/grammar/c1-grammar/emphasis-cleft-sentences-inversion-and-auxiliaries)  
+[Inversion after negative adverbials](https://learnenglish.britishcouncil.org/grammar/c1-grammar/inversion-after-negative-adverbials)  
+[Inversion and conditionals](https://learnenglish.britishcouncil.org/grammar/c1-grammar/inversion-and-conditionals)  
+[Modals: probability](https://learnenglish.britishcouncil.org/grammar/c1-grammar/modals-probability)  
+[Participle clauses](https://learnenglish.britishcouncil.org/grammar/c1-grammar/participle-clauses)  
+[Patterns with reporting verbs](https://learnenglish.britishcouncil.org/grammar/c1-grammar/patterns-with-reporting-verbs)  
+[Possession and noun modifiers](https://learnenglish.britishcouncil.org/grammar/c1-grammar/possession-and-noun-modifiers)  
+[Unreal time](https://learnenglish.britishcouncil.org/grammar/c1-grammar/unreal-time)  
+[Word order in phrasal verbs](https://learnenglish.britishcouncil.org/grammar/c1-grammar/word-order-in-phrasal-verbs)
+
+
