@@ -1,3 +1,12 @@
+---
+layout: post
+title: "Electronics Engineering"
+date: 2025-11-4
+categories: [engineering, electrical]
+image: /assets/img/
+description: "Electronics Engineering"
+---
+
 Table of Contents
 
 Introduction to Electronics Engineering
