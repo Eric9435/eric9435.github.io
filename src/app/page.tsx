@@ -1,4 +1,5 @@
 import { getPosts, getCategories } from "@/lib/posts";
+import PieChart from "@/components/PieChart";
 
 export default function Home() {
   const posts = getPosts();
@@ -121,10 +122,7 @@ export default function Home() {
             </div>
 
             <div className="mt-8 flex items-center justify-center">
-              <div
-                className="h-52 w-52 rounded-full shadow-inner"
-                style={{ background: `conic-gradient(${slices.join(", ")})` }}
-              />
+              <PieChart data={categoryData} />
             </div>
 
             <div className="mt-8 grid gap-2">
