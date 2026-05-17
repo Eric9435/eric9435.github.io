@@ -197,6 +197,33 @@ export default function Home() {
           ))}
         </div>
       </section>
+    
+      <footer className="border-t border-slate-200 bg-white">
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-6 py-8 text-sm text-slate-500 md:flex-row">
+          
+          <div>
+            © 2026 Eric Multi Blog. All rights reserved.
+          </div>
+
+          <div className="flex items-center gap-5">
+            <a
+              href="https://github.com/Eric9435"
+              className="hover:text-blue-950"
+            >
+              GitHub
+            </a>
+
+            <a
+              href="/blog"
+              className="hover:text-blue-950"
+            >
+              Blog
+            </a>
+          </div>
+
+        </div>
+      </footer>
+
     </main>
   );
 }
