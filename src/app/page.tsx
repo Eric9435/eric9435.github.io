@@ -110,38 +110,71 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="categories" className="mx-auto max-w-7xl px-6 py-16">
-        <div className="mb-8 flex items-end justify-between">
-          <div>
-            <p className="text-sm font-black uppercase tracking-[0.25em] text-blue-900">
-              Browse by Topic
-            </p>
-            <h2 className="mt-3 text-4xl font-black text-blue-950">Categories</h2>
-          </div>
-          <a href="/blog" className="font-bold text-blue-900">All posts →</a>
-        </div>
+      
+<section id="categories" className="mx-auto max-w-7xl px-6 py-16">
+  <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
+    <div className="mb-8">
+      <p className="text-sm font-black uppercase tracking-[0.25em] text-blue-900">
+        Blog Data
+      </p>
+      <h2 className="mt-3 text-4xl font-black text-blue-950">
+        Category Distribution
+      </h2>
+    </div>
 
-        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-5">
-          {categoryData.map((item, index) => (
+    <div className="grid gap-10 lg:grid-cols-[360px_1fr] lg:items-center">
+      <div className="flex justify-center">
+        <div
+          className="h-72 w-72 rounded-full border border-slate-100 shadow-inner"
+          style={{ background: `conic-gradient(${slices.join(", ")})` }}
+        />
+      </div>
+
+      <div className="grid gap-4">
+        {categoryData.map((item, index) => {
+          const percent = total ? Math.round((item.count / total) * 100) : 0;
+
+          return (
             <a
               key={item.name}
               href={`/blog?category=${encodeURIComponent(item.name)}`}
-              className="group rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-blue-200 hover:shadow-xl"
+              className="rounded-2xl border border-slate-200 bg-white p-5 transition hover:border-blue-900 hover:shadow-md"
             >
-              <span
-                className="block h-3 w-12 rounded-full"
-                style={{ backgroundColor: colors[index % colors.length] }}
-              />
-              <h3 className="mt-6 text-lg font-black text-blue-950 group-hover:text-blue-700">
-                {item.name}
-              </h3>
-              <p className="mt-2 text-sm text-slate-500">{item.count} articles</p>
-            </a>
-          ))}
-        </div>
-      </section>
+              <div className="flex items-center justify-between gap-4">
+                <div className="flex items-center gap-3">
+                  <span
+                    className="h-4 w-4 rounded-full"
+                    style={{ backgroundColor: colors[index % colors.length] }}
+                  />
+                  <div>
+                    <h3 className="font-black text-blue-950">{item.name}</h3>
+                    <p className="text-sm text-slate-500">{item.count} articles</p>
+                  </div>
+                </div>
 
-      <section className="mx-auto max-w-7xl px-6 pb-24">
+                <div className="text-2xl font-black text-blue-950">
+                  {percent}%
+                </div>
+              </div>
+
+              <div className="mt-4 h-2 rounded-full bg-slate-100">
+                <div
+                  className="h-2 rounded-full"
+                  style={{
+                    width: `${percent}%`,
+                    backgroundColor: colors[index % colors.length],
+                  }}
+                />
+              </div>
+            </a>
+          );
+        })}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section className="mx-auto max-w-7xl px-6 pb-24">
         <div className="mb-8 flex items-end justify-between">
           <div>
             <p className="text-sm font-black uppercase tracking-[0.25em] text-blue-900">
