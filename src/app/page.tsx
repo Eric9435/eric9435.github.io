@@ -11,112 +11,144 @@ export default function Home() {
 
   const total = categoryData.reduce((sum, item) => sum + item.count, 0);
   let current = 0;
-
-  const colors = ["#1e3a8a", "#1d4ed8", "#2563eb", "#3b82f6", "#60a5fa", "#93c5fd"];
+  const colors = ["#0f172a", "#1e3a8a", "#1d4ed8", "#2563eb", "#3b82f6", "#93c5fd"];
 
   const slices = categoryData.map((item, index) => {
     const start = current;
-    const value = (item.count / total) * 100;
+    const value = total ? (item.count / total) * 100 : 0;
     current += value;
     return `${colors[index % colors.length]} ${start}% ${current}%`;
   });
 
   return (
     <main className="min-h-screen bg-white text-slate-950">
-      <nav className="sticky top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-          <a href="/" className="text-xl font-extrabold tracking-tight">
-            Aung Phone Myat
+      <nav className="sticky top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur-xl">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
+          <a href="/" className="text-xl font-black tracking-tight text-blue-950">
+            Eric Multi Blog
           </a>
 
-          <div className="flex items-center gap-6 text-sm font-semibold text-slate-600">
-            <a href="/blog" className="hover:text-blue-900">Blog</a>
-            <a href="https://github.com/Eric9435" className="hover:text-blue-900">GitHub</a>
+          <div className="flex items-center gap-8 text-sm font-semibold text-slate-600">
+            <a href="/blog" className="hover:text-blue-950">Blog</a>
+            <a href="https://github.com/Eric9435" className="hover:text-blue-950">GitHub</a>
           </div>
         </div>
       </nav>
 
-      <section className="mx-auto max-w-7xl px-6 py-16">
-        <div className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr]">
-          <div className="rounded-[32px] border border-slate-200 bg-white p-8 shadow-sm md:p-12">
-            <div className="flex flex-col gap-8 md:flex-row md:items-center">
-              <img
-                src="/assets/img/profile.jpg"
-                alt="Aung Phone Myat"
-                className="h-36 w-36 rounded-3xl border border-slate-200 object-cover shadow-sm"
-              />
+      <section className="relative overflow-hidden border-b border-slate-100">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,#dbeafe,transparent_35%),linear-gradient(to_bottom,#ffffff,#f8fafc)]" />
 
-              <div>
-                <p className="text-sm font-bold uppercase tracking-[0.25em] text-blue-900">
-                  Eric Multi Blog
-                </p>
-
-                <h1 className="mt-4 text-5xl font-black tracking-tight md:text-6xl">
-                  Aung Phone Myat
-                </h1>
-
-                <p className="mt-4 text-xl font-medium text-slate-600">
-                  Music · Engineering · Language · Technology
-                </p>
-              </div>
+        <div className="relative mx-auto grid max-w-7xl gap-12 px-6 py-20 lg:grid-cols-[1.1fr_0.9fr] lg:py-28">
+          <div>
+            <div className="inline-flex rounded-full border border-blue-100 bg-blue-50 px-4 py-2 text-sm font-bold text-blue-950">
+              Music · Engineering · Language · Technology
             </div>
 
-            <p className="mt-8 max-w-4xl text-lg leading-8 text-slate-600">
-              A personal multi-topic blog covering engineering, HVAC/ACMV,
-              PLC/SCADA, building services, English learning, music psychology,
-              and software-based knowledge systems.
+            <h1 className="mt-8 max-w-4xl text-6xl font-black tracking-tight text-blue-950 md:text-7xl">
+              Eric Multi Blog
+            </h1>
+
+            <p className="mt-6 max-w-3xl text-xl leading-9 text-slate-600">
+              A modern personal blog for multi-topic writing: engineering notes,
+              music psychology, English learning, HVAC/ACMV, PLC/SCADA,
+              and technology-based knowledge systems.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
-              <a href="/blog" className="rounded-2xl bg-blue-950 px-7 py-4 font-bold text-white shadow-sm hover:bg-blue-900">
-                Read Blog
+              <a href="/blog" className="rounded-full bg-blue-950 px-8 py-4 font-bold text-white shadow-lg shadow-blue-950/20 hover:bg-blue-900">
+                Explore Articles
               </a>
-              <a href="https://github.com/Eric9435" className="rounded-2xl border border-slate-300 bg-white px-7 py-4 font-bold hover:border-blue-900">
-                GitHub Profile
+
+              <a href="#categories" className="rounded-full border border-slate-300 bg-white px-8 py-4 font-bold text-blue-950 hover:border-blue-950">
+                View Categories
               </a>
+            </div>
+
+            <div className="mt-12 grid max-w-2xl grid-cols-3 gap-4">
+              <div className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
+                <div className="text-3xl font-black text-blue-950">{posts.length}</div>
+                <div className="mt-1 text-sm text-slate-500">Articles</div>
+              </div>
+
+              <div className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
+                <div className="text-3xl font-black text-blue-950">{categories.length}</div>
+                <div className="mt-1 text-sm text-slate-500">Categories</div>
+              </div>
+
+              <div className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
+                <div className="text-3xl font-black text-blue-950">4+</div>
+                <div className="mt-1 text-sm text-slate-500">Domains</div>
+              </div>
             </div>
           </div>
 
-          <div className="rounded-[32px] border border-blue-100 bg-blue-950 p-8 text-white shadow-sm">
-            <h2 className="text-3xl font-black">Blog Categories</h2>
-            <p className="mt-3 text-blue-100">
-              {posts.length} articles across music, engineering, language, and technology.
-            </p>
-
-            <div className="mt-8 flex justify-center">
-              <div
-                className="h-56 w-56 rounded-full shadow-inner"
-                style={{
-                  background: `conic-gradient(${slices.join(", ")})`,
-                }}
+          <aside className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-2xl shadow-blue-950/10">
+            <div className="flex items-center gap-5">
+              <img
+                src="/assets/img/profile.jpg"
+                alt="Aung Phone Myat"
+                className="h-24 w-24 rounded-3xl border border-slate-200 object-cover shadow-sm"
               />
+
+              <div>
+                <h2 className="text-2xl font-black text-blue-950">Aung Phone Myat</h2>
+                <p className="mt-1 text-slate-500">Author & Creator</p>
+              </div>
             </div>
 
-            <div className="mt-8 grid gap-3">
-              {categoryData.map((item, index) => (
-                <a
-                  key={item.name}
-                  href={`/blog?category=${encodeURIComponent(item.name)}`}
-                  className="flex items-center justify-between rounded-2xl border border-white/10 bg-white/5 p-4 transition hover:bg-white/10"
-                >
-                  <div className="flex items-center gap-3">
-                    <span
-                      className="h-3 w-3 rounded-full"
-                      style={{ backgroundColor: colors[index % colors.length] }}
-                    />
-                    <span className="font-bold">{item.name}</span>
-                  </div>
-                  <span className="text-sm text-blue-100">{item.count}</span>
-                </a>
-              ))}
+            <div className="mt-8 rounded-3xl bg-slate-50 p-6">
+              <h3 className="font-black text-blue-950">Blog Distribution</h3>
+
+              <div className="mt-6 flex justify-center">
+                <div
+                  className="h-56 w-56 rounded-full border border-white shadow-inner"
+                  style={{ background: `conic-gradient(${slices.join(", ")})` }}
+                />
+              </div>
             </div>
-          </div>
+          </aside>
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 pb-20">
+      <section id="categories" className="mx-auto max-w-7xl px-6 py-16">
         <div className="mb-8 flex items-end justify-between">
-          <h2 className="text-4xl font-black">Latest Articles</h2>
+          <div>
+            <p className="text-sm font-black uppercase tracking-[0.25em] text-blue-900">
+              Browse by Topic
+            </p>
+            <h2 className="mt-3 text-4xl font-black text-blue-950">Categories</h2>
+          </div>
+          <a href="/blog" className="font-bold text-blue-900">All posts →</a>
+        </div>
+
+        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-5">
+          {categoryData.map((item, index) => (
+            <a
+              key={item.name}
+              href={`/blog?category=${encodeURIComponent(item.name)}`}
+              className="group rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-blue-200 hover:shadow-xl"
+            >
+              <span
+                className="block h-3 w-12 rounded-full"
+                style={{ backgroundColor: colors[index % colors.length] }}
+              />
+              <h3 className="mt-6 text-lg font-black text-blue-950 group-hover:text-blue-700">
+                {item.name}
+              </h3>
+              <p className="mt-2 text-sm text-slate-500">{item.count} articles</p>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 pb-24">
+        <div className="mb-8 flex items-end justify-between">
+          <div>
+            <p className="text-sm font-black uppercase tracking-[0.25em] text-blue-900">
+              Recently Added
+            </p>
+            <h2 className="mt-3 text-4xl font-black text-blue-950">Latest Articles</h2>
+          </div>
           <a href="/blog" className="font-bold text-blue-900">View all →</a>
         </div>
 
@@ -125,18 +157,21 @@ export default function Home() {
             <a
               key={post.slug}
               href={`/blog/${post.slug}`}
-              className="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+              className="group rounded-[2rem] border border-slate-200 bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:border-blue-200 hover:shadow-xl"
             >
               <div className="text-xs font-black uppercase tracking-widest text-blue-900">
                 {post.category}
               </div>
-              <h3 className="mt-4 text-2xl font-black leading-snug">
+
+              <h3 className="mt-4 text-2xl font-black leading-snug text-blue-950 group-hover:text-blue-700">
                 {post.title}
               </h3>
+
               <p className="mt-4 line-clamp-3 text-sm leading-6 text-slate-600">
                 {post.excerpt}
               </p>
-              <div className="mt-6 text-sm font-black text-slate-950">
+
+              <div className="mt-7 font-black text-blue-950">
                 Read article →
               </div>
             </a>
