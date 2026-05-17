@@ -4,6 +4,23 @@ export default function Home() {
   const posts = getPosts();
   const categories = getCategories();
 
+  const categoryData = categories.map((category) => ({
+    name: category,
+    count: posts.filter((p) => p.category === category).length,
+  }));
+
+  const total = categoryData.reduce((sum, item) => sum + item.count, 0);
+  let current = 0;
+
+  const colors = ["#1e3a8a", "#1d4ed8", "#2563eb", "#3b82f6", "#60a5fa", "#93c5fd"];
+
+  const slices = categoryData.map((item, index) => {
+    const start = current;
+    const value = (item.count / total) * 100;
+    current += value;
+    return `${colors[index % colors.length]} ${start}% ${current}%`;
+  });
+
   return (
     <main className="min-h-screen bg-white text-slate-950">
       <nav className="sticky top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur">
@@ -45,8 +62,8 @@ export default function Home() {
             </div>
 
             <p className="mt-8 max-w-4xl text-lg leading-8 text-slate-600">
-              A personal multi-topic blog covering engineering,
-              HVAC/ACMV, PLC/SCADA, building services, English learning, music psychology,
+              A personal multi-topic blog covering engineering, HVAC/ACMV,
+              PLC/SCADA, building services, English learning, music psychology,
               and software-based knowledge systems.
             </p>
 
@@ -60,23 +77,36 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="rounded-[32px] bg-blue-950 p-8 text-white shadow-sm">
+          <div className="rounded-[32px] border border-blue-100 bg-blue-950 p-8 text-white shadow-sm">
             <h2 className="text-3xl font-black">Blog Categories</h2>
-            <p className="mt-3 text-slate-300">
-              {posts.length} articles organized into technical categories.
+            <p className="mt-3 text-blue-100">
+              {posts.length} articles across music, engineering, language, and technology.
             </p>
 
+            <div className="mt-8 flex justify-center">
+              <div
+                className="h-56 w-56 rounded-full shadow-inner"
+                style={{
+                  background: `conic-gradient(${slices.join(", ")})`,
+                }}
+              />
+            </div>
+
             <div className="mt-8 grid gap-3">
-              {categories.map((category) => (
+              {categoryData.map((item, index) => (
                 <a
-                  key={category}
-                  href={`/blog?category=${encodeURIComponent(category)}`}
-                  className="rounded-2xl border border-white/10 bg-white/5 p-5 transition hover:bg-white/10"
+                  key={item.name}
+                  href={`/blog?category=${encodeURIComponent(item.name)}`}
+                  className="flex items-center justify-between rounded-2xl border border-white/10 bg-white/5 p-4 transition hover:bg-white/10"
                 >
-                  <div className="font-bold">{category}</div>
-                  <div className="mt-1 text-sm text-slate-400">
-                    {posts.filter((p) => p.category === category).length} posts
+                  <div className="flex items-center gap-3">
+                    <span
+                      className="h-3 w-3 rounded-full"
+                      style={{ backgroundColor: colors[index % colors.length] }}
+                    />
+                    <span className="font-bold">{item.name}</span>
                   </div>
+                  <span className="text-sm text-blue-100">{item.count}</span>
                 </a>
               ))}
             </div>
