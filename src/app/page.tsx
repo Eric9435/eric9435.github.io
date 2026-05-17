@@ -10,36 +10,15 @@ export default function Home() {
     count: posts.filter((p) => p.category === category).length,
   }));
 
-  const total = categoryData.reduce((sum, item) => sum + item.count, 0);
-  let current = 0;
-  const colors = ["#0f172a", "#1e3a8a", "#1d4ed8", "#2563eb", "#3b82f6", "#93c5fd"];
-
-  const slices = categoryData.map((item, index) => {
-    const start = current;
-    const value = total ? (item.count / total) * 100 : 0;
-    current += value;
-    return `${colors[index % colors.length]} ${start}% ${current}%`;
-  });
-
   return (
     <main className="min-h-screen bg-white text-slate-950">
       <nav className="sticky top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
           <a href="/" className="flex items-center gap-3">
-            <img
-              src="/assets/img/profile.jpg"
-              alt="Aung Phone Myat"
-              className="h-11 w-11 rounded-2xl border border-slate-200 object-cover shadow-sm"
-            />
-
+            <img src="/assets/img/profile.jpg" alt="Aung Phone Myat" className="h-11 w-11 rounded-2xl border border-slate-200 object-cover shadow-sm" />
             <div>
-              <div className="text-lg font-black tracking-tight text-blue-950">
-                Eric Multi Blog
-              </div>
-
-              <div className="text-xs font-semibold text-slate-500">
-                Aung Phone Myat
-              </div>
+              <div className="text-lg font-black tracking-tight text-blue-950">Eric Multi Blog</div>
+              <div className="text-xs font-semibold text-slate-500">Aung Phone Myat</div>
             </div>
           </a>
 
@@ -64,9 +43,8 @@ export default function Home() {
             </h1>
 
             <p className="mt-6 max-w-3xl text-xl leading-9 text-slate-600">
-              A modern personal blog for multi-topic writing: engineering notes,
-              music psychology, English learning, HVAC/ACMV, PLC/SCADA,
-              and technology-based knowledge systems.
+              A modern personal blog for multi-topic writing: engineering notes, music psychology,
+              English learning, HVAC/ACMV, PLC/SCADA, and technology-based knowledge systems.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -74,81 +52,33 @@ export default function Home() {
                 Explore Articles
               </a>
 
-              <a href="#categories" className="rounded-full border border-slate-300 bg-white px-8 py-4 font-bold text-blue-950 hover:border-blue-950">
-                View Categories
+              <a href="#latest" className="rounded-full border border-slate-300 bg-white px-8 py-4 font-bold text-blue-950 hover:border-blue-950">
+                Latest Posts
               </a>
-            </div>
-
-            <div className="mt-12 grid max-w-2xl grid-cols-3 gap-4">
-              <div className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
-                <div className="text-3xl font-black text-blue-950">{posts.length}</div>
-                <div className="mt-1 text-sm text-slate-500">Articles</div>
-              </div>
-
-              <div className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
-                <div className="text-3xl font-black text-blue-950">{categories.length}</div>
-                <div className="mt-1 text-sm text-slate-500">Categories</div>
-              </div>
-
-              <div className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
-                <div className="text-3xl font-black text-blue-950">4+</div>
-                <div className="mt-1 text-sm text-slate-500">Domains</div>
-              </div>
-
             </div>
           </div>
 
           <aside className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-xl shadow-blue-950/5">
-            <div className="flex items-center justify-between">
-              <div>
-                <p className="text-xs font-black uppercase tracking-[0.2em] text-blue-900">
-                  Analytics
-                </p>
-
-                <h2 className="mt-2 text-2xl font-black text-blue-950">
-                  Blog Distribution
-                </h2>
-              </div>
-
-              <div className="rounded-2xl bg-blue-50 px-4 py-3 text-center">
-                <div className="text-2xl font-black text-blue-950">
-                  {posts.length}
-                </div>
-
-                <div className="text-xs font-semibold text-slate-500">
-                  Articles
-                </div>
-              </div>
-            </div>
+            <p className="text-xs font-black uppercase tracking-[0.2em] text-blue-900">Analytics</p>
+            <h2 className="mt-2 text-2xl font-black text-blue-950">Blog Distribution</h2>
 
             <div className="mt-8 flex items-center justify-center">
               <PieChart data={categoryData} />
             </div>
 
             <div className="mt-8 grid gap-2">
-              {categoryData.map((item, index) => {
-                const percent = total ? Math.round((item.count / total) * 100) : 0;
+              {categoryData.map((item) => {
+                const percent = posts.length ? Math.round((item.count / posts.length) * 100) : 0;
 
                 return (
-                  <div
+                  <a
                     key={item.name}
-                    className="flex items-center justify-between rounded-xl border border-slate-100 px-4 py-3"
+                    href={`/blog?category=${encodeURIComponent(item.name)}`}
+                    className="flex items-center justify-between rounded-xl border border-slate-100 px-4 py-3 hover:bg-blue-50"
                   >
-                    <div className="flex items-center gap-3">
-                      <span
-                        className="h-3 w-3 rounded-full"
-                        style={{ backgroundColor: colors[index % colors.length] }}
-                      />
-
-                      <span className="text-sm font-bold text-blue-950">
-                        {item.name}
-                      </span>
-                    </div>
-
-                    <span className="text-xs font-black text-slate-500">
-                      {percent}%
-                    </span>
-                  </div>
+                    <span className="text-sm font-bold text-blue-950">{item.name}</span>
+                    <span className="text-xs font-black text-slate-500">{percent}%</span>
+                  </a>
                 );
               })}
             </div>
@@ -156,16 +86,13 @@ export default function Home() {
         </div>
       </section>
 
-      
-
-<section className="mx-auto max-w-7xl px-6 pb-24">
+      <section id="latest" className="mx-auto max-w-7xl px-6 py-20">
         <div className="mb-8 flex items-end justify-between">
           <div>
-            <p className="text-sm font-black uppercase tracking-[0.25em] text-blue-900">
-              Recently Added
-            </p>
+            <p className="text-sm font-black uppercase tracking-[0.25em] text-blue-900">Recently Added</p>
             <h2 className="mt-3 text-4xl font-black text-blue-950">Latest Articles</h2>
           </div>
+
           <a href="/blog" className="font-bold text-blue-900">View all →</a>
         </div>
 
@@ -176,52 +103,24 @@ export default function Home() {
               href={`/blog/${post.slug}`}
               className="group rounded-[2rem] border border-slate-200 bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:border-blue-200 hover:shadow-xl"
             >
-              <div className="text-xs font-black uppercase tracking-widest text-blue-900">
-                {post.category}
-              </div>
-
-              <h3 className="mt-4 text-2xl font-black leading-snug text-blue-950 group-hover:text-blue-700">
-                {post.title}
-              </h3>
-
-              <p className="mt-4 line-clamp-3 text-sm leading-6 text-slate-600">
-                {post.excerpt}
-              </p>
-
-              <div className="mt-7 font-black text-blue-950">
-                Read article →
-              </div>
+              <div className="text-xs font-black uppercase tracking-widest text-blue-900">{post.category}</div>
+              <h3 className="mt-4 text-2xl font-black leading-snug text-blue-950 group-hover:text-blue-700">{post.title}</h3>
+              <p className="mt-4 line-clamp-3 text-sm leading-6 text-slate-600">{post.excerpt}</p>
+              <div className="mt-7 font-black text-blue-950">Read article →</div>
             </a>
           ))}
         </div>
       </section>
-    
+
       <footer className="border-t border-slate-200 bg-white">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-6 py-8 text-sm text-slate-500 md:flex-row">
-          
-          <div>
-            © 2026 Eric Multi Blog. All rights reserved.
-          </div>
-
+          <div>© 2026 Eric Multi Blog. All rights reserved.</div>
           <div className="flex items-center gap-5">
-            <a
-              href="https://github.com/Eric9435"
-              className="hover:text-blue-950"
-            >
-              GitHub
-            </a>
-
-            <a
-              href="/blog"
-              className="hover:text-blue-950"
-            >
-              Blog
-            </a>
+            <a href="https://github.com/Eric9435" className="hover:text-blue-950">GitHub</a>
+            <a href="/blog" className="hover:text-blue-950">Blog</a>
           </div>
-
         </div>
       </footer>
-
     </main>
   );
 }
