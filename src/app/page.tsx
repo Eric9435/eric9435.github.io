@@ -1,65 +1,88 @@
-import Image from "next/image";
+import { getPosts, getCategories } from "@/lib/posts";
 
 export default function Home() {
+  const posts = getPosts();
+  const categories = getCategories();
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <main className="min-h-screen bg-slate-50 text-slate-900">
+      <nav className="border-b bg-white/90 backdrop-blur sticky top-0 z-50">
+        <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+          <a href="/" className="font-bold text-xl">Aung Phone Myat</a>
+          <div className="flex gap-6 text-sm">
+            <a href="/blog" className="hover:text-blue-700">Blog</a>
+            <a href="https://github.com/Eric9435" className="hover:text-blue-700">GitHub</a>
+          </div>
+        </div>
+      </nav>
+
+      <section className="max-w-6xl mx-auto px-6 py-20 grid lg:grid-cols-[1.2fr_0.8fr] gap-12 items-center">
+        <div>
+          <img
+            src="/assets/img/profile.jpg"
+            alt="Aung Phone Myat"
+            className="w-36 h-36 rounded-full object-cover border shadow-md mb-8"
+          />
+
+          <h1 className="text-5xl md:text-6xl font-bold tracking-tight">
+            Aung Phone Myat
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+
+          <p className="mt-5 text-2xl text-slate-600">
+            Automation & Control Systems Engineer
           </p>
+
+          <p className="mt-8 max-w-3xl text-lg leading-8 text-slate-700">
+            Portfolio and technical blog covering electrical engineering, HVAC/ACMV,
+            PLC/SCADA, building services, English learning, music psychology,
+            and engineering knowledge systems.
+          </p>
+
+          <div className="mt-10 flex flex-wrap gap-4">
+            <a href="/blog" className="rounded-xl bg-slate-900 text-white px-6 py-3 shadow hover:bg-blue-900">
+              Read Blog
+            </a>
+
+            <a href="https://github.com/Eric9435" className="rounded-xl border border-slate-300 bg-white px-6 py-3 hover:border-blue-700">
+              GitHub Profile
+            </a>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+        <div className="rounded-3xl bg-white border shadow-sm p-8">
+          <h2 className="text-2xl font-bold">Knowledge Areas</h2>
+          <p className="mt-2 text-slate-500">Organized from your migrated blog archive.</p>
+
+          <div className="mt-6 grid gap-3">
+            {categories.map((category) => (
+              <a
+                key={category}
+                href={`/blog?category=${encodeURIComponent(category)}`}
+                className="rounded-xl border p-4 hover:border-blue-700 hover:bg-blue-50 transition"
+              >
+                <div className="font-semibold">{category}</div>
+                <div className="text-sm text-slate-500">
+                  {posts.filter((p) => p.category === category).length} posts
+                </div>
+              </a>
+            ))}
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+
+      <section className="max-w-6xl mx-auto px-6 pb-20">
+        <h2 className="text-3xl font-bold mb-6">Latest Blog Posts</h2>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+          {posts.slice(0, 6).map((post) => (
+            <a key={post.slug} href={`/blog/${post.slug}`} className="rounded-2xl bg-white border p-5 shadow-sm hover:shadow-md transition">
+              <div className="text-xs font-semibold text-blue-700">{post.category}</div>
+              <h3 className="mt-3 text-lg font-bold">{post.title}</h3>
+              <p className="mt-3 text-sm text-slate-500">{post.file}</p>
+            </a>
+          ))}
+        </div>
+      </section>
+    </main>
   );
 }
