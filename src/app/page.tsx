@@ -79,6 +79,7 @@ export default function Home() {
                 <div className="text-3xl font-black text-blue-950">4+</div>
                 <div className="mt-1 text-sm text-slate-500">Domains</div>
               </div>
+
             </div>
           </div>
 
