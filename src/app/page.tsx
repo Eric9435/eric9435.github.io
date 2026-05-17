@@ -145,53 +145,6 @@ export default function Home() {
 
       
 
-<section id="categories" className="mx-auto max-w-7xl px-6 py-12">
-  <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
-    <div className="grid gap-8 md:grid-cols-[280px_1fr] md:items-center">
-      <div
-        className="mx-auto h-64 w-64 rounded-full border border-slate-100 shadow-inner"
-        style={{ background: `conic-gradient(${slices.join(", ")})` }}
-      />
-
-      <div>
-        <p className="text-sm font-black uppercase tracking-[0.22em] text-blue-900">
-          Blog Distribution
-        </p>
-
-        <h2 className="mt-2 text-3xl font-black text-blue-950">
-          {posts.length} Articles by Category
-        </h2>
-
-        <div className="mt-6 grid gap-3">
-          {categoryData.map((item, index) => {
-            const percent = total ? Math.round((item.count / total) * 100) : 0;
-
-            return (
-              <a
-                key={item.name}
-                href={`/blog?category=${encodeURIComponent(item.name)}`}
-                className="flex items-center justify-between rounded-xl border border-slate-100 px-4 py-3 hover:border-blue-200 hover:bg-blue-50"
-              >
-                <div className="flex items-center gap-3">
-                  <span
-                    className="h-3 w-3 rounded-full"
-                    style={{ backgroundColor: colors[index % colors.length] }}
-                  />
-                  <span className="font-bold text-blue-950">{item.name}</span>
-                </div>
-
-                <span className="text-sm font-black text-slate-600">
-                  {item.count} · {percent}%
-                </span>
-              </a>
-            );
-          })}
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section className="mx-auto max-w-7xl px-6 pb-24">
         <div className="mb-8 flex items-end justify-between">
           <div>
