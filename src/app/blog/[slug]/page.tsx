@@ -7,12 +7,13 @@ export function generateStaticParams() {
   }));
 }
 
-export default function BlogPostPage({
+export default async function BlogPostPage({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
-  const post = getPost(params.slug);
+  const { slug } = await params;
+  const post = getPost(slug);
 
   if (!post) return notFound();
 
@@ -26,13 +27,17 @@ export default function BlogPostPage({
       </nav>
 
       <article className="max-w-4xl mx-auto px-6 py-14">
-        <div className="text-sm font-semibold text-blue-700">{post.category}</div>
+        <div className="text-sm font-semibold text-blue-700">
+          {post.category}
+        </div>
 
         <h1 className="mt-4 text-4xl md:text-5xl font-bold leading-tight">
           {post.title}
         </h1>
 
-        <p className="mt-4 text-slate-500">{post.file}</p>
+        <p className="mt-4 text-slate-500">
+          {post.file}
+        </p>
 
         <div className="mt-10 rounded-2xl bg-white border p-8 shadow-sm">
           <pre className="whitespace-pre-wrap font-sans leading-8 text-slate-800">
