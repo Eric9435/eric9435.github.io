@@ -1,17 +1,20 @@
 import fs from "fs";
 import path from "path";
+import matter from "gray-matter";
 
 export type Post = {
   slug: string;
   file: string;
   title: string;
+  date?: string;
   category: string;
+  excerpt: string;
   content: string;
 };
 
 const postsDir = path.join(process.cwd(), "content/posts");
 
-function titleFromFile(file: string) {
+function cleanTitle(file: string) {
   return file
     .replace(/\.md$/i, "")
     .replace(/^\d{4}-\d{2}-\d{1,2}-/i, "")
@@ -19,8 +22,8 @@ function titleFromFile(file: string) {
     .replace(/\b\w/g, (c) => c.toUpperCase());
 }
 
-function categoryFromFile(file: string) {
-  const name = file.toLowerCase();
+function categoryFromText(file: string, cats?: unknown) {
+  const name = `${file} ${Array.isArray(cats) ? cats.join(" ") : cats || ""}`.toLowerCase();
 
   if (name.includes("ielts") || name.includes("english") || name.includes("grammar") || name.includes("essay") || name.includes("reading") || name.includes("vocab")) return "English & IELTS";
   if (name.includes("music") || name.includes("therapy") || name.includes("brain") || name.includes("sleep") || name.includes("trauma")) return "Music & Psychology";
@@ -38,16 +41,24 @@ export function getPosts(): Post[] {
     .filter((file) => file.endsWith(".md") || file.endsWith(".MD"))
     .map((file) => {
       const slug = file.replace(/\.md$/i, "");
-      const content = fs.readFileSync(path.join(postsDir, file), "utf8");
+      const raw = fs.readFileSync(path.join(postsDir, file), "utf8");
+      const parsed = matter(raw);
+      const content = parsed.content.trim();
+      const title = String(parsed.data.title || cleanTitle(file)).replace(/^["']|["']$/g, "");
+      const category = categoryFromText(file, parsed.data.categories);
+      const excerpt = content.replace(/[#>*_`-]/g, "").slice(0, 170);
 
       return {
         slug,
         file,
-        title: titleFromFile(file),
-        category: categoryFromFile(file),
+        title,
+        date: parsed.data.date ? String(parsed.data.date) : undefined,
+        category,
+        excerpt,
         content,
       };
-    });
+    })
+    .sort((a, b) => b.file.localeCompare(a.file));
 }
 
 export function getPost(slug: string) {
@@ -55,6 +66,5 @@ export function getPost(slug: string) {
 }
 
 export function getCategories() {
-  const posts = getPosts();
-  return Array.from(new Set(posts.map((post) => post.category)));
+  return Array.from(new Set(getPosts().map((post) => post.category)));
 }
