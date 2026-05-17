@@ -18,19 +18,19 @@ export default async function BlogPostPage({
   if (!post) return notFound();
 
   return (
-    <main className="min-h-screen bg-slate-100 text-slate-950">
+    <main className="min-h-screen bg-white text-slate-950">
       <nav className="sticky top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur">
         <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
           <a href="/" className="text-xl font-extrabold">Aung Phone Myat</a>
-          <a href="/blog" className="text-sm font-bold text-slate-600 hover:text-blue-700">
+          <a href="/blog" className="text-sm font-bold text-slate-600 hover:text-blue-900">
             ← Back to Blog
           </a>
         </div>
       </nav>
 
       <article className="mx-auto max-w-5xl px-6 py-14">
-        <header className="rounded-[32px] bg-slate-950 p-8 text-white shadow-sm md:p-12">
-          <div className="text-sm font-black uppercase tracking-[0.25em] text-blue-300">
+        <header className="rounded-[32px] bg-blue-950 p-8 text-white shadow-sm md:p-12">
+          <div className="text-sm font-black uppercase tracking-[0.25em] text-blue-200">
             {post.category}
           </div>
 

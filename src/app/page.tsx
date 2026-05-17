@@ -5,7 +5,7 @@ export default function Home() {
   const categories = getCategories();
 
   return (
-    <main className="min-h-screen bg-slate-100 text-slate-950">
+    <main className="min-h-screen bg-white text-slate-950">
       <nav className="sticky top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
           <a href="/" className="text-xl font-extrabold tracking-tight">
@@ -13,8 +13,8 @@ export default function Home() {
           </a>
 
           <div className="flex items-center gap-6 text-sm font-semibold text-slate-600">
-            <a href="/blog" className="hover:text-blue-700">Blog</a>
-            <a href="https://github.com/Eric9435" className="hover:text-blue-700">GitHub</a>
+            <a href="/blog" className="hover:text-blue-900">Blog</a>
+            <a href="https://github.com/Eric9435" className="hover:text-blue-900">GitHub</a>
           </div>
         </div>
       </nav>
@@ -30,7 +30,7 @@ export default function Home() {
               />
 
               <div>
-                <p className="text-sm font-bold uppercase tracking-[0.25em] text-blue-700">
+                <p className="text-sm font-bold uppercase tracking-[0.25em] text-blue-900">
                   Engineering Portfolio
                 </p>
 
@@ -51,16 +51,16 @@ export default function Home() {
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
-              <a href="/blog" className="rounded-2xl bg-slate-950 px-7 py-4 font-bold text-white shadow-sm hover:bg-blue-800">
+              <a href="/blog" className="rounded-2xl bg-blue-950 px-7 py-4 font-bold text-white shadow-sm hover:bg-blue-900">
                 Explore Blog
               </a>
-              <a href="https://github.com/Eric9435" className="rounded-2xl border border-slate-300 bg-white px-7 py-4 font-bold hover:border-blue-700">
+              <a href="https://github.com/Eric9435" className="rounded-2xl border border-slate-300 bg-white px-7 py-4 font-bold hover:border-blue-900">
                 GitHub Profile
               </a>
             </div>
           </div>
 
-          <div className="rounded-[32px] bg-slate-950 p-8 text-white shadow-sm">
+          <div className="rounded-[32px] bg-blue-950 p-8 text-white shadow-sm">
             <h2 className="text-3xl font-black">Knowledge Areas</h2>
             <p className="mt-3 text-slate-300">
               {posts.length} articles organized into technical categories.
@@ -87,7 +87,7 @@ export default function Home() {
       <section className="mx-auto max-w-7xl px-6 pb-20">
         <div className="mb-8 flex items-end justify-between">
           <h2 className="text-4xl font-black">Latest Articles</h2>
-          <a href="/blog" className="font-bold text-blue-700">View all →</a>
+          <a href="/blog" className="font-bold text-blue-900">View all →</a>
         </div>
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -97,7 +97,7 @@ export default function Home() {
               href={`/blog/${post.slug}`}
               className="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
             >
-              <div className="text-xs font-black uppercase tracking-widest text-blue-700">
+              <div className="text-xs font-black uppercase tracking-widest text-blue-900">
                 {post.category}
               </div>
               <h3 className="mt-4 text-2xl font-black leading-snug">
