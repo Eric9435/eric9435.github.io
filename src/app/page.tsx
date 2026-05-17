@@ -31,7 +31,7 @@ export default function Home() {
 
               <div>
                 <p className="text-sm font-bold uppercase tracking-[0.25em] text-blue-900">
-                  Engineering Portfolio
+                  Eric Multi Blog
                 </p>
 
                 <h1 className="mt-4 text-5xl font-black tracking-tight md:text-6xl">
@@ -39,20 +39,20 @@ export default function Home() {
                 </h1>
 
                 <p className="mt-4 text-xl font-medium text-slate-600">
-                  Automation & Control Systems Engineer
+                  Music · Engineering · Language · Technology
                 </p>
               </div>
             </div>
 
             <p className="mt-8 max-w-4xl text-lg leading-8 text-slate-600">
-              Technical portfolio and knowledge archive covering electrical engineering,
+              A personal multi-topic blog covering engineering,
               HVAC/ACMV, PLC/SCADA, building services, English learning, music psychology,
               and software-based knowledge systems.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
               <a href="/blog" className="rounded-2xl bg-blue-950 px-7 py-4 font-bold text-white shadow-sm hover:bg-blue-900">
-                Explore Blog
+                Read Blog
               </a>
               <a href="https://github.com/Eric9435" className="rounded-2xl border border-slate-300 bg-white px-7 py-4 font-bold hover:border-blue-900">
                 GitHub Profile
@@ -61,7 +61,7 @@ export default function Home() {
           </div>
 
           <div className="rounded-[32px] bg-blue-950 p-8 text-white shadow-sm">
-            <h2 className="text-3xl font-black">Knowledge Areas</h2>
+            <h2 className="text-3xl font-black">Blog Categories</h2>
             <p className="mt-3 text-slate-300">
               {posts.length} articles organized into technical categories.
             </p>
