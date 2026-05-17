@@ -82,29 +82,62 @@ export default function Home() {
             </div>
           </div>
 
-          <aside className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-2xl shadow-blue-950/10">
-            <div className="flex items-center gap-5">
-              <img
-                src="/assets/img/profile.jpg"
-                alt="Aung Phone Myat"
-                className="h-24 w-24 rounded-3xl border border-slate-200 object-cover shadow-sm"
-              />
-
+          <aside className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-xl shadow-blue-950/5">
+            <div className="flex items-center justify-between">
               <div>
-                <h2 className="text-2xl font-black text-blue-950">Aung Phone Myat</h2>
-                <p className="mt-1 text-slate-500">Author & Creator</p>
+                <p className="text-xs font-black uppercase tracking-[0.2em] text-blue-900">
+                  Analytics
+                </p>
+
+                <h2 className="mt-2 text-2xl font-black text-blue-950">
+                  Blog Distribution
+                </h2>
+              </div>
+
+              <div className="rounded-2xl bg-blue-50 px-4 py-3 text-center">
+                <div className="text-2xl font-black text-blue-950">
+                  {posts.length}
+                </div>
+
+                <div className="text-xs font-semibold text-slate-500">
+                  Articles
+                </div>
               </div>
             </div>
 
-            <div className="mt-8 rounded-3xl bg-slate-50 p-6">
-              <h3 className="font-black text-blue-950">Blog Distribution</h3>
+            <div className="mt-8 flex items-center justify-center">
+              <div
+                className="h-52 w-52 rounded-full shadow-inner"
+                style={{ background: `conic-gradient(${slices.join(", ")})` }}
+              />
+            </div>
 
-              <div className="mt-6 flex justify-center">
-                <div
-                  className="h-56 w-56 rounded-full border border-white shadow-inner"
-                  style={{ background: `conic-gradient(${slices.join(", ")})` }}
-                />
-              </div>
+            <div className="mt-8 grid gap-2">
+              {categoryData.map((item, index) => {
+                const percent = total ? Math.round((item.count / total) * 100) : 0;
+
+                return (
+                  <div
+                    key={item.name}
+                    className="flex items-center justify-between rounded-xl border border-slate-100 px-4 py-3"
+                  >
+                    <div className="flex items-center gap-3">
+                      <span
+                        className="h-3 w-3 rounded-full"
+                        style={{ backgroundColor: colors[index % colors.length] }}
+                      />
+
+                      <span className="text-sm font-bold text-blue-950">
+                        {item.name}
+                      </span>
+                    </div>
+
+                    <span className="text-xs font-black text-slate-500">
+                      {percent}%
+                    </span>
+                  </div>
+                );
+              })}
             </div>
           </aside>
         </div>
