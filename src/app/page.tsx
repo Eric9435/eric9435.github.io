@@ -24,8 +24,22 @@ export default function Home() {
     <main className="min-h-screen bg-white text-slate-950">
       <nav className="sticky top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
-          <a href="/" className="text-xl font-black tracking-tight text-blue-950">
-            Eric Multi Blog
+          <a href="/" className="flex items-center gap-3">
+            <img
+              src="/assets/img/profile.jpg"
+              alt="Aung Phone Myat"
+              className="h-11 w-11 rounded-2xl border border-slate-200 object-cover shadow-sm"
+            />
+
+            <div>
+              <div className="text-lg font-black tracking-tight text-blue-950">
+                Eric Multi Blog
+              </div>
+
+              <div className="text-xs font-semibold text-slate-500">
+                Aung Phone Myat
+              </div>
+            </div>
           </a>
 
           <div className="flex items-center gap-8 text-sm font-semibold text-slate-600">
