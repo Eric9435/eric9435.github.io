@@ -111,64 +111,49 @@ export default function Home() {
       </section>
 
       
-<section id="categories" className="mx-auto max-w-7xl px-6 py-16">
-  <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
-    <div className="mb-8">
-      <p className="text-sm font-black uppercase tracking-[0.25em] text-blue-900">
-        Blog Data
-      </p>
-      <h2 className="mt-3 text-4xl font-black text-blue-950">
-        Category Distribution
-      </h2>
-    </div>
 
-    <div className="grid gap-10 lg:grid-cols-[360px_1fr] lg:items-center">
-      <div className="flex justify-center">
-        <div
-          className="h-72 w-72 rounded-full border border-slate-100 shadow-inner"
-          style={{ background: `conic-gradient(${slices.join(", ")})` }}
-        />
-      </div>
+<section id="categories" className="mx-auto max-w-7xl px-6 py-12">
+  <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+    <div className="grid gap-8 md:grid-cols-[280px_1fr] md:items-center">
+      <div
+        className="mx-auto h-64 w-64 rounded-full border border-slate-100 shadow-inner"
+        style={{ background: `conic-gradient(${slices.join(", ")})` }}
+      />
 
-      <div className="grid gap-4">
-        {categoryData.map((item, index) => {
-          const percent = total ? Math.round((item.count / total) * 100) : 0;
+      <div>
+        <p className="text-sm font-black uppercase tracking-[0.22em] text-blue-900">
+          Blog Distribution
+        </p>
 
-          return (
-            <a
-              key={item.name}
-              href={`/blog?category=${encodeURIComponent(item.name)}`}
-              className="rounded-2xl border border-slate-200 bg-white p-5 transition hover:border-blue-900 hover:shadow-md"
-            >
-              <div className="flex items-center justify-between gap-4">
+        <h2 className="mt-2 text-3xl font-black text-blue-950">
+          {posts.length} Articles by Category
+        </h2>
+
+        <div className="mt-6 grid gap-3">
+          {categoryData.map((item, index) => {
+            const percent = total ? Math.round((item.count / total) * 100) : 0;
+
+            return (
+              <a
+                key={item.name}
+                href={`/blog?category=${encodeURIComponent(item.name)}`}
+                className="flex items-center justify-between rounded-xl border border-slate-100 px-4 py-3 hover:border-blue-200 hover:bg-blue-50"
+              >
                 <div className="flex items-center gap-3">
                   <span
-                    className="h-4 w-4 rounded-full"
+                    className="h-3 w-3 rounded-full"
                     style={{ backgroundColor: colors[index % colors.length] }}
                   />
-                  <div>
-                    <h3 className="font-black text-blue-950">{item.name}</h3>
-                    <p className="text-sm text-slate-500">{item.count} articles</p>
-                  </div>
+                  <span className="font-bold text-blue-950">{item.name}</span>
                 </div>
 
-                <div className="text-2xl font-black text-blue-950">
-                  {percent}%
-                </div>
-              </div>
-
-              <div className="mt-4 h-2 rounded-full bg-slate-100">
-                <div
-                  className="h-2 rounded-full"
-                  style={{
-                    width: `${percent}%`,
-                    backgroundColor: colors[index % colors.length],
-                  }}
-                />
-              </div>
-            </a>
-          );
-        })}
+                <span className="text-sm font-black text-slate-600">
+                  {item.count} · {percent}%
+                </span>
+              </a>
+            );
+          })}
+        </div>
       </div>
     </div>
   </div>
