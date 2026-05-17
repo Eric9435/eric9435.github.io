@@ -19,38 +19,38 @@ export default async function BlogPostPage({
 
   return (
     <main className="min-h-screen bg-white text-slate-950">
-      <nav className="sticky top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur">
-        <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-          <a href="/" className="text-xl font-extrabold">Aung Phone Myat</a>
-          <a href="/blog" className="text-sm font-bold text-slate-600 hover:text-blue-900">
+      <nav className="sticky top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur-xl">
+        <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-5">
+          <a href="/" className="text-xl font-black text-blue-950">
+            Eric Multi Blog
+          </a>
+          <a href="/blog" className="text-sm font-bold text-slate-600 hover:text-blue-950">
             ← Back to Blog
           </a>
         </div>
       </nav>
 
-      <article className="mx-auto max-w-5xl px-6 py-14">
-        <header className="rounded-[32px] bg-blue-950 p-8 text-white shadow-sm md:p-12">
-          <div className="text-sm font-black uppercase tracking-[0.25em] text-blue-200">
+      <article className="mx-auto max-w-4xl px-6 py-14">
+        <header className="border-b border-slate-200 pb-10">
+          <div className="text-sm font-black uppercase tracking-[0.25em] text-blue-900">
             {post.category}
           </div>
 
-          <h1 className="mt-5 text-4xl font-black leading-tight md:text-6xl">
+          <h1 className="mt-5 text-4xl font-black leading-tight text-blue-950 md:text-6xl">
             {post.title}
           </h1>
 
           {post.date && (
-            <p className="mt-5 text-slate-300">
+            <p className="mt-5 text-slate-500">
               {post.date}
             </p>
           )}
         </header>
 
-        <section className="mt-8 rounded-[32px] border border-slate-200 bg-white p-7 shadow-sm md:p-12">
-          <div className="article-content">
-            <ReactMarkdown remarkPlugins={[remarkGfm]}>
-              {post.content}
-            </ReactMarkdown>
-          </div>
+        <section className="article-content mt-10">
+          <ReactMarkdown remarkPlugins={[remarkGfm]}>
+            {post.content}
+          </ReactMarkdown>
         </section>
       </article>
     </main>
