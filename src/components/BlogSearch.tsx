@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 type Post = {
   slug: string;
@@ -11,7 +11,12 @@ type Post = {
 };
 
 export default function BlogSearch({ posts }: { posts: Post[] }) {
+  const [mounted, setMounted] = useState(false);
   const [query, setQuery] = useState("");
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const results = useMemo(() => {
     const q = query.toLowerCase().trim();
@@ -24,13 +29,18 @@ export default function BlogSearch({ posts }: { posts: Post[] }) {
     });
   }, [query, posts]);
 
+  if (!mounted) {
+    return null;
+  }
+
   return (
-    <section>
+    <section suppressHydrationWarning>
       <div className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
         <input
+          suppressHydrationWarning
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="Search articles..."
+          placeholder="Search articles, categories, or full content..."
           className="w-full rounded-2xl border border-slate-200 px-5 py-4 text-base font-semibold outline-none focus:border-blue-900"
         />
 
