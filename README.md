@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Eric Multi Blog
 
-## Getting Started
+A personal publishing website by Aung Phone Myat, covering engineering, music, language learning, and technology.
 
-First, run the development server:
+## Features
+
+- Markdown articles with front matter.
+- Blog listing, article pages, and client-side search.
+- Automatic category grouping for English/IELTS, music/psychology, electrical engineering, HVAC/ACMV, building services, and technical notes.
+- Category distribution chart and recent articles on the home page.
+
+## Stack
+
+Next.js, React, TypeScript, Tailwind CSS, Gray Matter, and Markdown rendering libraries.
+
+## Local development
+
+Use Node.js 22 and npm. From a cloned repository:
 
 ```bash
+git clone https://github.com/Eric9435/eric9435.github.io.git
+cd eric9435.github.io
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000. To check and build the application:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run lint
+npm run build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Run `npm run start` after a successful build. Dependency installation requires internet.
 
-## Learn More
+## Content workflow
 
-To learn more about Next.js, take a look at the following resources:
+Add Markdown files to `content/posts/`. The filename becomes the article slug. The loader supports `title`, `date`, and `categories` metadata and derives an excerpt from the body. Articles are sorted by filename, so date-prefixed filenames help maintain chronological order.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `src/lib/posts.ts` — article loading and category rules.
+- `src/app/blog/` — listing and article routes.
+- `src/components/BlogSearch.tsx` — search interface.
+- `public/` — images and static assets.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Hosting and verification
 
-## Deploy on Vercel
+The repository name alone does not configure deployment. This is a Next.js application using filesystem-backed content; select a compatible hosting/build workflow. No automated test script is currently defined. Check article rendering and navigation after changes.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Maintainer
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+[Aung Phone Myat (Eric)](https://github.com/Eric9435)
